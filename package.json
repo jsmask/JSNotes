@@ -1,0 +1,11 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "> ##### 基本概念：\r >\r > 统一资源定位符\r >\r > 协议://主机:端口/路径?查询\r >\r > scheme://host:port/path?query#fragment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jsmask",
+  "license": "ISC"
+}
