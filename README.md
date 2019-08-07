@@ -10,7 +10,7 @@
 >
 > scheme://host:port/path?query#fragment
 
-___
+------
 
 ### Nginx
 
@@ -28,17 +28,16 @@ ___
 >
 > ##### 2、安装&启动(Centos)：
 >
-> 1.  yum install nginx #安装nginx
+> 1. yum install nginx #安装nginx
 > 2. systemctl start nginx.service # 开启nginx服务
 > 3. systemctl enable nginx.service # 跟随系统启动
 >
 > ##### 拓展：
 >
 > 1. 什么是服务器：一台电脑(没有显示器)，24小时为用户提供服务。
->
 > 2. 安装流程：主机 -> 操作系统 -> window(.net)/Linux -> tomcat/nginx(软件/反向代理)
 
-___
+------
 
 ### Promise
 
@@ -52,8 +51,8 @@ ___
 >
 > ```javascript
 > new Promise((resolve,reject)=>{
->     //resolve('success') -> 成功执行
->     //reject('error') -> 错误终止
+>  //resolve('success') -> 成功执行
+>  //reject('error') -> 错误终止
 > }).then().catch()
 > ```
 >
@@ -63,7 +62,7 @@ ___
 > - fulfill：满足状态，主动回调resolve时，便处于该状态，并会回调.then()
 > - reject：拒绝状态，主动回调reject时，便处于该状态，并会回调.catch()
 
-___
+------
 
 ### Vue CLI
 
@@ -71,36 +70,36 @@ ___
 
 2. runtime-compiler 和 runtime-only的区别：
 
-   + runtime-compiler流程为：template->抽象语法树(AST)->render->虚拟DOM->真实DOM
-   + runtime-only流程为：render->虚拟DOM->真实DOM
+   - runtime-compiler流程为：template->抽象语法树(AST)->render->虚拟DOM->真实DOM
+   - runtime-only流程为：render->虚拟DOM->真实DOM
 
-    ```javascript
+   ```javascript
    render: h => h(App)  //createElement
-    ```
+   ```
 
 3. 自定义配置文件：vue.config.js
 
-___
+------
 
 ### Vue Router
 
 1. 概念：Vue Router 是 Vue.js 官方的路由管理器
 2. 基本配置：
-   + 安装vue-router
-   + Vue.use ->创建Vue-router对象 -> 挂载到Vue实例
-   + 创建组件，配置映射关系
+   - 安装vue-router
+   - Vue.use ->创建Vue-router对象 -> 挂载到Vue实例
+   - 创建组件，配置映射关系
 3. 路由守卫：
-   + 全局导航守卫
-   + 路由独享守卫
-   + 组件类守卫
+   - 全局导航守卫
+   - 路由独享守卫
+   - 组件类守卫
 
 > ##### 拓展使用：
 >
 > ##### keep-alive：
 >
-> + 作用：对组件进行缓存，从而节省性能
-> + 属性：include：包含路由name。exclude：不包含路由name。
-> + 被切换时组件的activated、deactivated这两个生命周期钩子函数会被执行
+> - 作用：对组件进行缓存，从而节省性能
+> - 属性：include：包含路由name。exclude：不包含路由name。
+> - 被切换时组件的activated、deactivated这两个生命周期钩子函数会被执行
 >
 > ###### Vue Router mode模式：
 >
@@ -120,19 +119,18 @@ ___
 >   2. 传递方式：在path后面跟上对应值
 >   3. 传递后形成的路径：/router/123
 
-____
+------
 
 ### Vue 响应式
 
 1. 流程：
-   + 实例化Vue对象 
-   + 解析el模板Compile -> 初始化View视图
-   + Observer劫持所有data属性-> 每个属性各生成一个发布者 -> 添加订阅 -> 监听变化通知订阅者r -> 更新View视图
+   - 实例化Vue对象 
+   - 解析el模板Compile -> 初始化View视图
+   - Observer劫持所有data属性-> 每个属性各生成一个发布者 -> 添加订阅 -> 监听变化通知订阅者r -> 更新View视图
 2. 修改数据时如果监听发生改变？
-   + Object.defineProperty -> 劫持对象属性
+   - Object.defineProperty -> 劫持对象属性
 3. 当数据改变如何通知界面刷新？
-   + 发布订阅模式
-
+   - 发布订阅模式
 4. 基本实现原理:
 
 ```javascript
@@ -273,7 +271,7 @@ class Compiler {
 }
 ```
 
-___
+------
 
 ## 常用分享
 
@@ -287,7 +285,7 @@ ___
 6. css-doodle -> web图形 -> https://css-doodle.com
 7. Swagger UI -> 生成接口文档 ->https://swagger.io/
 8. webpack -> 前端模块化打包工具 -> https://www.webpackjs.com
-9.  typora -> 无障碍编写md文档的工具 -> https://www.typora.io/
+9. typora -> 无障碍编写md文档的工具 -> https://www.typora.io/
 10. vue-router -> vue中的路由组件官方文档 -> https://router.vuejs.org/
 11. AsciiMath -> 将 ASCII 字符的公式转为数学字体的网页工具 -> http://asciimath.org/
 12. algorithm-visualizer -> 收集了50多种算法的动画和示例 -> https://algorithm-visualizer.org/
@@ -311,10 +309,12 @@ ___
 30. toolfk -> 提供利于开发的一些在线工具 -> https://www.toolfk.com/
 31. WinSCP ->  Windows 环境可使用 SSH 的图形化SFTP客户端 -> https://winscp.net/eng/docs/lang:chs
 32. SecureCRT -> 支持SSH的终端仿真程序  -> https://www.vandyke.com/products/securecrt/windows.html
+33. myjson -> 一个json仓库可以模拟请求 -> http://myjson.com/
+34. gulp ->  自动化构建工具 -> https://www.gulpjs.com.cn/
 
 ------
 
-###  npm常用包(后端)
+### npm常用包(后端)
 
 1. bcrypt -> 加密解密
 2. gravatar -> 通过https://cn.gravatar.com/邮箱获取头像
@@ -327,7 +327,7 @@ ___
 9. mongoose -> 处理mongodb对象的建模工具
 10. express -> node开发框架
 
-___
+------
 
 ### npm常用包(前端)
 
@@ -340,8 +340,10 @@ ___
 7. normalize.css -> 重置css
 8. vue-lazyload -> vue项目中使用懒加载
 9. fastclick -> 消灭移动端300ms延时
+10. live-server -> 具有实时重新加载功能的服务器
+11. nuxt -> vue的通用框架,用来做服务器端渲染
 
-___
+------
 
 ### webpack常用插件
 
@@ -352,7 +354,34 @@ ___
 5. WebpackDevServer(需下载安装webpack-dev-server 依赖express) -> 本地服务器自动更新
 6. WebpackMerge(需下载安装webpack-merge) -> 合并文件
 
-___
+------
+
+### gulp常用插件
+
+1. gulp-sass -> sass编译成css
+2. gulp-less -> less编译成css
+3. gulp-stylus -> stylus编译成css
+4. gulp-typescript -> TypeScript编译成JavaScript
+5. webpack-stream -> 将webpack集成在Gulp中使用
+6. gulp-babel -> ES6编译成ES5
+7. gulp-concat -> 合并文件
+8. gulp-clean-css -> 压缩 CSS
+9. gulp-csso -> 压缩 CSS
+10. gulp-uglify -> 压缩 JavaScript
+11. gulp-imagemin -> 压缩图片
+12. gulp-htmlmin  -> 压缩 HTML
+13. gulp-svgmin -> 压缩 SVG
+14. gulp-uncss -> 移除未使用的CSS选择器
+15. gulp-css-base64 -> 将CSS文件中所有的图片资源转成base64
+16. gulp-responsive -> 生成不同尺寸的图片
+17. gulp-useref -> 解析HTML文件中特殊标签里面的script或style标签，合并成一个script或css文件，并替换
+18. gulp-inject ->g 将指定的css或js文件以标签的形式插入到HTML中的指定标志内。
+19. wiredep -> 将Bower依赖自动注入HTML文件中
+20. gulp-replace -> Gulp的一个字符串替换插件
+21. gulp-rename -> 轻松重命名文件
+22. gulp-rev -> 在静态文件名的后面添加哈希值
+
+------
 
 ### 脚手架常用插件
 
@@ -370,17 +399,18 @@ ___
 
    
 
-___
+------
 
 ### 构建项目常用指令
 
 1. 安装淘宝镜像 -> npm install -g cnpm --registry=https://registry.npm.taobao.orgnpm install -g cnpm --registry=[https://registry.npm.taobao.org](https://registry.npm.taobao.org)
-3. 创建vue cli2脚手架于xxx文件 -> vue init webpack xxx
+2. 创建vue cli2脚手架于xxx文件 -> vue init webpack xxx
 3. 创建vue cli3脚手架于xxx文件 -> vue create xxx
+4. 创建vue nuxt脚手架于xxx文件 -> npx create-nuxt-app xxx
 
-___
+------
 
-###  UI常用框架(Vue)
+### UI常用框架(Vue)
 
 1. element-ui -> 饿了么UI框架(PC) -> http://element-cn.eleme.io/#/zh-CN
 2. mint-ui -> 饿了么UI框架(M) -> http://mint-ui.github.io/#!/zh-cn
@@ -388,7 +418,7 @@ ___
 4. iview -> TalkingData维护(PC) -> https://iviewui.com/
 5. at-ui -> 凹凸实验室维护(PC) ->https://at-ui.github.io/at-ui/#/zh
 
-___
+------
 
 ### 游戏开发常用工具
 
@@ -400,7 +430,7 @@ ___
 | Cinema 4D        | 视觉特效制作     |
 | Particle2dx      | 粒子特效制作     |
 
-___
+------
 
 ### cmd常用命令
 
@@ -415,7 +445,7 @@ ___
 9. cd.>xxx.js ->创建xxx.js
 10. md xxx -> 新建xxx文件夹
 
-___
+------
 
 ### git常用命令
 
@@ -431,16 +461,17 @@ ___
 10. git push -u origin master -> 上传
 11. git rm -r --cache . ->移除所有文件
 
-___
+------
 
 ### 优秀网页分享
 
 1. 404猴子 -> https://codepen.io/thejohnyagiz/pen/npDyq
 2. 臆病な魔女 -> https://github.com/yui540/Cowardly-Witch
 
-___
+------
 
 ### 展示型页面插件
+
 | 名称         | 介绍                                 |
 | ------------ | ------------------------------------ |
 | imagesloaded | 图片加载插件,能够监测图片的加载状态  |
@@ -450,7 +481,7 @@ ___
 | fullpage     | 全屏滑动插件                         |
 | wow          | 实现滚动页面时触发CSS 动画效果的插件 |
 
-___
+------
 
 ### react安装
 
@@ -462,7 +493,7 @@ ___
 | npm start                           | react-basic项目构建预览 |
 | npm i redux react-redux redux-thunk | 安装redux               |
 
-___
+------
 
 ### npm&yarn命令对比
 
@@ -474,7 +505,7 @@ ___
 | npm install react --save-dev | yarn add react --dev |
 | npm update --save            | yarn upgrade         |
 
-___
+------
 
 ### typescript(vscode)配置
 
@@ -489,7 +520,7 @@ ___
 | typings install dt~node --global  | 安装node的.d.ts库                    |
 | ctrl+shift+b                      | 任务栏出现构建和监听两个选项         |
 
-___
+------
 
 ## 常用代码
 
@@ -597,7 +628,7 @@ router.post("/register", (req, res) => {
 });
 ```
 
-___
+------
 
 ### webpack基础配置
 
@@ -671,9 +702,9 @@ module.exports={
 }
 ```
 
-___
+------
 
-###  Vuex基本使用
+### Vuex基本使用
 
 1. store.js
 
@@ -734,7 +765,7 @@ this.$store
     .then(()=>console.log('退出登录'));
 ```
 
-___
+------
 
 ### vue.config.js配置
 
@@ -811,19 +842,11 @@ module.exports = {
             }
         },
         before: app => {}
-    },
-     resolve: {
-         //配置别名
-         alias: {
-             //如果是src等属性引用路径，需要加~，
-             //如：src="~assets/img/bg.png"
-             "assets": "@/assets"
-         }
     }
 }
 ```
 
-___
+------
 
 ### Vue事件总线
 
@@ -844,11 +867,11 @@ this.$bus.$on("myOnLoad",this.myEvent);
 this.$bus.$off("myOnLoad"this.myEvent);
 ```
 
-___
+------
 
 ### Vue插件封装
 
-+ common/toast/Toast.vue
+- common/toast/Toast.vue
 
 ```vue
 <template>
@@ -896,7 +919,7 @@ ___
 </style>
 ```
 
-+ common/toast/index.js
+- common/toast/index.js
 
 ```javascript
 import Toast from "./Toast.vue";
@@ -919,7 +942,7 @@ obj.install = Vue => {
 export default obj;
 ```
 
-+ main.js
+- main.js
 
 ```javascript
 import Vue from 'vue'
@@ -938,7 +961,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-___
+------
 
 ### 网络模块封装
 
@@ -1025,7 +1048,7 @@ const API = new MyHttp({}, allRequest);
 module.exports = API;
 ```
 
-___
+------
 
 #### 案例:element-ui+axios
 
@@ -1103,7 +1126,7 @@ export function getProductData(type, page) {
 }
 ```
 
-___
+------
 
 ### FastClick的使用
 
@@ -1151,7 +1174,7 @@ $(function() {
 })(document, window);
 ```
 
-___
+------
 
 ### 防抖&节流
 
@@ -1188,7 +1211,7 @@ function trottle(handler, delay) {
 }
 ```
 
-___
+------
 
 ### 浅拷贝
 
@@ -1208,7 +1231,7 @@ Object.assign = Object.assign || function(){
 }
 ```
 
-___
+------
 
 ### 深度拷贝
 
@@ -1232,7 +1255,7 @@ function deepClone(obj1, obj2) {
 }
 ```
 
-___
+------
 
 ### 对象是否为空
 
@@ -1247,7 +1270,7 @@ function isEmpty(value) {
 }
 ```
 
-___
+------
 
 ### 获取浏览器信息
 
@@ -1282,12 +1305,11 @@ function getExplorerInfo() {
 }
 ```
 
-___
+------
 
 ### 禁止键盘某些事件
 
 ```javascript
-
 document.addEventListener('keydown', function(event){
     return !(
         112 == event.keyCode || //F1
@@ -1301,7 +1323,7 @@ document.addEventListener('keydown', function(event){
 });
 ```
 
-___
+------
 
 ### 禁止右键、选择、复制
 
@@ -1313,7 +1335,7 @@ ___
 });
 ```
 
-___
+------
 
 ### 性能分析
 
@@ -1336,7 +1358,7 @@ window.onload = function(){
 }
 ```
 
-___
+------
 
 ### 是否为PC浏览器
 
@@ -1355,7 +1377,7 @@ function isPCBroswer() {
 }
 ```
 
-___
+------
 
 ### 时间格式化
 
@@ -1380,7 +1402,7 @@ function dateFormater(formater, t){
 // 2019-08-05 09:45
 ```
 
-___
+------
 
 ### 获取URL参数
 
@@ -1400,7 +1422,7 @@ function GetUrlParam(){
 }
 ```
 
-___
+------
 
 ### 随机数获取
 
@@ -1412,5 +1434,5 @@ function random(lower, upper){
 }
 ```
 
-___
+------
 
