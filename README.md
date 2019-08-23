@@ -1,7 +1,3 @@
-[TOC]
-
-------
-
 ## 基本概念
 
 ### URL
@@ -86,17 +82,29 @@
 ### React Router
 
 - 安装： npm install react-router-dom -D
+
 - 常用库：
-  1.  react-router -> 核心库，实现了所有路由的核心功能
-  2. react-router-dom -> 与浏览器DOM配合工作的版本
-  3. react-router-native -> 与React native配合工作的版本
-  4. react-router-config -> 用于静态配置
+
+  - react-router -> 核心库，实现了所有路由的核心功能
+
+  - react-router-dom -> 与浏览器DOM配合工作的版本
+
+  - react-router-native -> 与React native配合工作的版本
+
+  - react-router-config -> 用于静态配置
+
 - Router：路由对象，包括所有的路由配置、链接、逻辑等。
-  1. BrowserRouter
-  2. HashRouter
-  3. MemoryRouter
+
+  - BrowserRouter
+
+  - HashRouter
+
+  - MemoryRouter
+
 - Route：路由表，也称又有配置
+
 - Link：路由跳转
+
 - Redirect：路由重定向
 
 ------
