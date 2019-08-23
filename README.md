@@ -1,3 +1,7 @@
+[TOC]
+
+------
+
 ## 基本概念
 
 ### URL
@@ -19,6 +23,21 @@
 > 1. Mainline version：主力在做的版本，就是开发版
 > 2. Stable version：最新稳定版，生产环境上建议使用的版本
 > 3. Legacy version：遗留的老版本的稳定版
+>
+> ##### 命令行：
+>
+> 1. 格式：nginx -s reload
+> 2. 帮助：-? -h
+> 3. 使用指定的配置文件：-c
+> 4. 指定配置指令：-g
+> 5. 指定运行目录：-p
+> 6. 发送信号：-s
+> 7. 立刻停止服务： -s stop 
+> 8. 优雅的停止服务：-s quit
+> 9. 重载配置文件：-s reload
+> 10. 重新开始记录日志文件：-s reopen
+> 11. 测试配置文件是否有语法错误：-t -T
+> 12. 打印nginx的版本信息、编译信息等：-v -V
 >
 > ##### Linux环境：
 >
@@ -61,6 +80,24 @@
 > - pending：等待状态，如，正在进行网络请求，或者定时器没有到时间
 > - fulfill：满足状态，主动回调resolve时，便处于该状态，并会回调.then()
 > - reject：拒绝状态，主动回调reject时，便处于该状态，并会回调.catch()
+
+------
+
+### React Router
+
+- 安装： npm install react-router-dom -D
+- 常用库：
+  1.  react-router -> 核心库，实现了所有路由的核心功能
+  2. react-router-dom -> 与浏览器DOM配合工作的版本
+  3. react-router-native -> 与React native配合工作的版本
+  4. react-router-config -> 用于静态配置
+- Router：路由对象，包括所有的路由配置、链接、逻辑等。
+  1. BrowserRouter
+  2. HashRouter
+  3. MemoryRouter
+- Route：路由表，也称又有配置
+- Link：路由跳转
+- Redirect：路由重定向
 
 ------
 
@@ -311,6 +348,8 @@ class Compiler {
 32. SecureCRT -> 支持SSH的终端仿真程序  -> https://www.vandyke.com/products/securecrt/windows.html
 33. myjson -> 一个json仓库可以模拟请求 -> http://myjson.com/
 34. gulp ->  自动化构建工具 -> https://www.gulpjs.com.cn/
+35. easymock -> 可视化模拟数据的平台 -> https://www.easy-mock.com/
+36. Zdog ->  一个javascript的3D设计和动画制作库 -> https://zzz.dog/
 
 ------
 
@@ -325,7 +364,6 @@ class Compiler {
 7. concurrently -> 多个终端连载
 8. nodemon -> 发生变化自动保存重新开启服务
 9. mongoose -> 处理mongodb对象的建模工具
-10. express -> node开发框架
 
 ------
 
@@ -342,6 +380,10 @@ class Compiler {
 9. fastclick -> 消灭移动端300ms延时
 10. live-server -> 具有实时重新加载功能的服务器
 11. nuxt -> vue的通用框架,用来做服务器端渲染
+12. react-transition-group -> react动画库
+13. redux -> 状态管理
+14. redux-thunk -> redux中间件
+15. react-redux -> react中的专属redux
 
 ------
 
@@ -407,16 +449,20 @@ class Compiler {
 2. 创建vue cli2脚手架于xxx文件 -> vue init webpack xxx
 3. 创建vue cli3脚手架于xxx文件 -> vue create xxx
 4. 创建vue nuxt脚手架于xxx文件 -> npx create-nuxt-app xxx
+5. 创建react脚手架于xxx文件 -> create-react-app xxx
 
 ------
 
-### UI常用框架(Vue)
+### UI常用框架
 
-1. element-ui -> 饿了么UI框架(PC) -> http://element-cn.eleme.io/#/zh-CN
-2. mint-ui -> 饿了么UI框架(M) -> http://mint-ui.github.io/#!/zh-cn
-3. cube-ui -> 滴滴UI框架(M) ->https://didi.github.io/cube-ui/#/zh-CN
-4. iview -> TalkingData维护(PC) -> https://iviewui.com/
-5. at-ui -> 凹凸实验室维护(PC) ->https://at-ui.github.io/at-ui/#/zh
+1. element-ui -> 饿了么UI框架(Vue PC) -> http://element-cn.eleme.io/#/zh-CN
+2. mint-ui -> 饿了么UI框架(Vue Mobile) -> http://mint-ui.github.io/#!/zh-cn
+3. cube-ui -> 滴滴UI框架(Vue Mobile) ->https://didi.github.io/cube-ui/#/zh-CN
+4. iview -> TalkingData维护(Vue PC) -> https://iviewui.com/
+5. at-ui -> 凹凸实验室维护(Vue PC) ->https://at-ui.github.io/at-ui/#/zh
+6. vant -> 有赞解决方案(Vue Mobile) -> https://youzan.github.io/vant/#/zh-CN
+7. antd-mobile -> 支付宝UI框架(React Mobile / Native) -> https://mobile.ant.design/index-cn 
+8. antd -> 支付宝UI框架(React PC) ->https://ant.design/index-cn
 
 ------
 
@@ -483,15 +529,15 @@ class Compiler {
 
 ------
 
-### react安装
+### react安装脚手架
 
-| 指令                                | 解释                    |
-| ----------------------------------- | ----------------------- |
-| npm i -g create-react-app           | 全局安装                |
-| create-react-app react-basic        | 创建react-basic基础模板 |
-| cd react-basic                      | 进入react-basic项目文件 |
-| npm start                           | react-basic项目构建预览 |
-| npm i redux react-redux redux-thunk | 安装redux               |
+| 指令                                | 解释                                      |
+| ----------------------------------- | ----------------------------------------- |
+| npm i -g create-react-app           | 全局安装                                  |
+| create-react-app react-basic        | 创建react-basic基础模板                   |
+| cd react-basic                      | 进入react-basic项目文件                   |
+| npm start                           | react-basic项目构建预览                   |
+| npm i redux react-redux redux-thunk | 安装redux，react-redux和中间件redux-thunk |
 
 ------
 
@@ -519,6 +565,82 @@ class Compiler {
 | tsc --init                        | typescript项目                       |
 | typings install dt~node --global  | 安装node的.d.ts库                    |
 | ctrl+shift+b                      | 任务栏出现构建和监听两个选项         |
+
+------
+
+### ESLint配置
+
+1. 安装ESLint: npm install eslint eslint-loader -D
+2. 安装plugin: npm install eslint-plugin-react -D
+3. 配置ESLint: node node_modules/eslint/bin/eslint --init
+4. 配置webpack：
+
+```javascript
+//webpack.conifg.js
+module: {
+        rules:[{
+            test:/\.jsx?/i,
+            exclude: /(node_modules|bower_components)/,
+            use:[{
+                loader:"babel-loader",
+                options:{
+                    presets:['@babel/preset-react']
+                }
+            },{
+                loader:"eslint-loader"
+            }]
+        }
+}
+```
+
+5. 安装babel-eslint: npm install babel-eslint -D
+6. 在.eslintrc中添加:  
+
+```json
+"parser": "babel-eslint"
+```
+
+7. ESLint规则:
+
+```javascript
+//禁用ESLint
+/* eslint-disable */
+const swich = true;
+console.log(swich);  
+/* eslint-enable */
+
+//禁用一条规则
+/*eslint-disable no-console */
+const a = 1;
+console.log(a);
+/*eslint-enable no-console */
+
+/* eslint-disable no-unused-vars */
+import React from 'react';
+/* eslint-enable no-unused-vars */
+```
+
+------
+
+### Jest配置
+
+1. 安装Webpack: npm install webpack webpack-cli -D 
+2. 安装Jest: npm install jest@23.6.0 jest-webpack -D
+3. 配置package.json:
+
+```javascript
+"scripts":{
+   "test":"jast-webpack"
+},
+"jest":{
+    "roots":[
+        "./tests/"
+    ]
+}
+```
+
+4. npm run test
+5. 添加测试用例
 
 ------
 
@@ -641,13 +763,13 @@ const path=require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports={
  //入口：可以是字符串/数组/对象
- entry:'./src/main.js'，
+ entry:'./src/main.js',
  //入口：通常是一个对象，至少保证有path和filename两个属性
  output:{
    path:path.resolve(__dirname,'dist'), //绝对路径
    filename:'bundle.js',
    publicPath:'dist/'
- }，
+ },
 //模块
  module:{
    rules:[
@@ -700,6 +822,93 @@ module.exports={
         new VueLoaderPlugin()
     ],
 }
+```
+
+------
+
+### Redux基本使用
+
+1. 创建store目录
+2. 在store目录下创建reducer.js
+
+```javascript
+const defaultState={
+    list:['妙蛙种子','小火龙','杰尼龟']
+}
+export default (state = defaultState,action)=>{
+    const newState=JSON.parse(JSON.stringify(state));
+    if(action.type === "addListName"){
+        newState.list.push(action.value)
+        return newState;
+    }
+    return state
+}
+```
+
+3. 在store目录创建index.js
+
+```javascript
+import {createStore} from 'redux'
+import reducer from './reducer'
+// 创建数据存储仓库
+const store=createStore(
+    reducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() //谷歌浏览器redux插件激活
+);
+
+export default store;
+```
+
+4. React中App.js为例
+
+```react
+import React,{Component} from 'react'
+import 'antd/dist/antd.css';
+import { Input,Button,List} from "antd"
+import store from './store'
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    //store.getState()获取数据
+    this.state = {
+        list:store.getState().list, 
+        name:""
+    }
+     //订阅接收数据
+     store.subscribe(()=>{
+       this.setState({
+         list:store.getState().list
+       })
+     })
+  }
+    
+  render() { 
+    return (
+        <div>
+            <Input value={this.state.name} onChange={this.onChangeInput} />
+            <Button onClick={this.onSubmit}>确定</Button>
+            <List bordered size="small"
+                dataSource={this.state.list}
+                renderItem={(item,index)=>(<List.Item>{item}</List.Item>)}
+                />
+        </div>
+     )
+  }
+    
+  onSubmit = () =>{
+    //派发数据
+    store.dispatch({
+      type:"addListName",
+      value:this.state.name
+    });
+  }
+  
+  onChangeInput = e => {
+    this.setState({ name:e.target.value });
+  }
+}
+export default App;
 ```
 
 ------
