@@ -1,4 +1,4 @@
-## 基本概念
+## 基本知识
 
 ### URL
 
@@ -81,31 +81,64 @@
 
 ### React Router
 
-- 安装： npm install react-router-dom -D
+- 安装： npm install react-router-dom -S
 
 - 常用库：
 
   - react-router -> 核心库，实现了所有路由的核心功能
-
   - react-router-dom -> 与浏览器DOM配合工作的版本
-
   - react-router-native -> 与React native配合工作的版本
-
   - react-router-config -> 用于静态配置
 
 - Router：路由对象，包括所有的路由配置、链接、逻辑等。
 
   - BrowserRouter
 
+    | 解释                                             |
+    | ------------------------------------------------ |
+    | 基于HTML5的History API，使用path呈现             |
+    | 但不刷新时，服务器没有获得请求，需要服务器端配置 |
+    | 刷新时，服务参与其中，服务器配合                 |
+
   - HashRouter
+
+    | 解释                                 |
+    | ------------------------------------ |
+    | location.hash，页面不刷新            |
+    | 刷新时，服务器也不参与，服务器不配合 |
 
   - MemoryRouter
 
-- Route：路由表，也称又有配置
+    | 解释                             |
+    | -------------------------------- |
+    | 路由状态保存在内存中，刷新后消息 |
+    | 用于非浏览器的环境               |
+
+- Redirect：路由重定向
 
 - Link：路由跳转
 
-- Redirect：路由重定向
+```react
+//Link path属性：
+// 写法1：直接传字符串
+<Link to="/abc">TO Page</Link>
+// 写法2：传入对象
+<Link to={{pathname:"/1",state:{id:1,name:"js"}}}>TO Page</Link>
+```
+
+- Route：路由表，也称又有配置
+
+```react
+// Route 属性：
+// 1. component
+<Route exact  path="/" component={Page}></Route>
+// 2. render
+<Route exact path="/"
+    render={props => (
+       <Page {...props} data={id:1,name:"js"}></Page>
+    )}>
+</Route>
+```
 
 ------
 
@@ -318,6 +351,96 @@ class Compiler {
 
 ------
 
+### Flux 概念
+
+1. 概念：Flux是由Facebook官方提出的一套前端应用的框架模式
+2. 核心思想：单向数据流
+3. 剑指MVC模式
+4. 2013年与React同时发布，Facebook认为React与Flux可以相辅相成，构建大型JavaScript应用
+5. 而后，Redux继承了Flux的模式思想，青出于蓝而胜于蓝
+6. 流程：
+   - Dispatcher：分发Action,维持与Store的逻辑关系
+   - Store：存储数据，处理数据，JS对象
+   - Action：Dispatcher分发的JS对象
+   - View：视图
+   - 与Controller相比，Dispatcher暴露的接口是不变的
+   - Store改变后，View更新
+   - View希望更新Store无法直接操作，因为Store只要get方法，没有set方法。View需要向Dispatcher抛出Action来间接改变Store
+
+------
+
+### MVC 框架
+
+1. Module: 用于存放数据 ；View: 用于更新DOM；Controller: 调用Module给View渲染使用
+
+2. M与C是双向数据流，V和C是单向数据流
+
+3. HTML+CSS+JavaScript的分离，本质上不是“分而治之“的，在JavaScript中业务逻辑和界面逻辑混在一起非常难受，所以势必无法用于构造大型的前端应用
+
+4. Facebook开始使用MVC模式，但很快发现：
+
+   ```javascript
+   // 1. MVC模式让代码变得非常复杂，主要体现为不同模块之间的依赖和耦合增加
+   // 2. 当一位开发者修改一段代码后，会迅速影响到依赖这个模块的其他模块，代码变得脆弱，不可预测
+   // 3. MVC框架中，开发者为了图省事，经常选择不去扩展Controller，而是直接再Model和View之间通信
+   ```
+
+------
+
+### Rudex
+
+1. 流程：
+
+   - Action -> Dispatcher -> Reducer -> Store -> View 
+   - View -> Action -> Dispatcher
+
+2. 演示：
+
+   ```javascript
+   //1. 引入redux
+   import { createStore } from 'redux'
+   
+   //2. 创建一个reducer函数，用于状态更新
+   // reducer(state, action) 返回一个新对象
+   const defaultData = { id: 1, name: "小火龙" };
+   function reducer(state = defaultData, action) {
+       let newState=JSON.parse(JSON.stringify(state))
+       if (action.type === "merge") {
+           Object.keys(action.data).forEach(key=>{
+               newState[key]=action.data[key];
+           });
+           return newState;
+       }
+       return state;
+   }
+   
+   //3. 创建store
+   let store = createStore(reducer);
+   
+   //4. 当有人读取store中的state时，通过getState来调用
+   let state = store.getState();
+   console.log(state);
+   
+   //5. 订阅
+   store.subscribe(()=>{
+       console.log(store.getState());
+   })
+   
+   //6. 用dispatcher来修改store中的state
+   store.dispatch({
+       data: {
+           level: 5,
+           skill: ["撞击"]
+       },
+       type: "merge"
+   });
+   console.log(store.getState());
+   ```
+
+   
+
+------
+
 ## 常用分享
 
 ### 文档&工具&资源
@@ -358,6 +481,7 @@ class Compiler {
 34. gulp ->  自动化构建工具 -> https://www.gulpjs.com.cn/
 35. easymock -> 可视化模拟数据的平台 -> https://www.easy-mock.com/
 36. Zdog ->  一个javascript的3D设计和动画制作库 -> https://zzz.dog/
+37. Writeathon -> 一款基于极简理念的在线写作工具 -> https://www.writeathon.cn/
 
 ------
 
@@ -391,7 +515,6 @@ class Compiler {
 12. react-transition-group -> react动画库
 13. redux -> 状态管理
 14. redux-thunk -> redux中间件
-15. react-redux -> react中的专属redux
 
 ------
 
@@ -534,6 +657,7 @@ class Compiler {
 | swiper       | 移动端网页触摸内容滑动插件           |
 | fullpage     | 全屏滑动插件                         |
 | wow          | 实现滚动页面时触发CSS 动画效果的插件 |
+| animejs      | 轻量级JavaScript动画库               |
 
 ------
 
@@ -599,6 +723,7 @@ module: {
             }]
         }
 }
+
 ```
 
 5. 安装babel-eslint: npm install babel-eslint -D
@@ -606,6 +731,7 @@ module: {
 
 ```json
 "parser": "babel-eslint"
+
 ```
 
 7. ESLint规则:
@@ -626,6 +752,7 @@ console.log(a);
 /* eslint-disable no-unused-vars */
 import React from 'react';
 /* eslint-enable no-unused-vars */
+
 ```
 
 ------
@@ -645,6 +772,7 @@ import React from 'react';
         "./tests/"
     ]
 }
+
 ```
 
 4. npm run test
@@ -664,6 +792,7 @@ router.get("/test", (req, res) => {
         name: "mask"
     })
 });
+
 ```
 
 ------
@@ -682,6 +811,7 @@ mogoose.connect(db)
     .catch(err => {
         console.log('->数据库->连接失败 err:' + err);
     })
+
 ```
 
 2. 创建数据模型演示
@@ -713,6 +843,7 @@ const userSchema = new Schema({
     }
 });
 module.exports = User = mongoose.model("users", userSchema);
+
 ```
 
 3. 查询与插入演示
@@ -756,6 +887,7 @@ router.post("/register", (req, res) => {
         }
     })
 });
+
 ```
 
 ------
@@ -830,6 +962,7 @@ module.exports={
         new VueLoaderPlugin()
     ],
 }
+
 ```
 
 ------
@@ -851,6 +984,7 @@ export default (state = defaultState,action)=>{
     }
     return state
 }
+
 ```
 
 3. 在store目录创建index.js
@@ -865,6 +999,7 @@ const store=createStore(
 );
 
 export default store;
+
 ```
 
 4. React中App.js为例
@@ -917,6 +1052,7 @@ class App extends Component {
   }
 }
 export default App;
+
 ```
 
 ------
@@ -969,6 +1105,7 @@ export default new Vuex.Store({
     mutations,
     actions
 })
+
 ```
 
 2. 使用
@@ -980,6 +1117,7 @@ this.$store
 this.$store
     .dispatch("clearLogin")
     .then(()=>console.log('退出登录'));
+
 ```
 
 ------
@@ -1061,6 +1199,7 @@ module.exports = {
         before: app => {}
     }
 }
+
 ```
 
 ------
@@ -1070,11 +1209,13 @@ module.exports = {
 ```javascript
 //在main.js中挂在在原型挂在一个全新的vue实例
 Vue.prototype.$bus = new Vue()
+
 ```
 
 ```javascript
 //子组件中发出事件
 this.$bus.$emit("myOnLoad");
+
 ```
 
 ```javascript
@@ -1082,6 +1223,7 @@ this.$bus.$emit("myOnLoad");
 this.$bus.$on("myOnLoad",this.myEvent);
 //上级中取消监听
 this.$bus.$off("myOnLoad"this.myEvent);
+
 ```
 
 ------
@@ -1134,6 +1276,7 @@ this.$bus.$off("myOnLoad"this.myEvent);
     line-height: 20px;
 }
 </style>
+
 ```
 
 - common/toast/index.js
@@ -1157,6 +1300,7 @@ obj.install = Vue => {
 }
 
 export default obj;
+
 ```
 
 - main.js
@@ -1176,6 +1320,7 @@ new Vue({
     router,
     render: h => h(App)
 }).$mount('#app')
+
 ```
 
 ------
@@ -1192,6 +1337,7 @@ const serverUrl = ""; //配置请求服务器路径
 export default {
 	serverUrl
 }
+
 ```
 
 2. 封装request.js
@@ -1245,6 +1391,7 @@ function MyHttp(defaultParams, allRequest) {
 }
 
 export default MyHttp;
+
 ```
 
 3. 创建api.js,配置其相关请求接口
@@ -1263,6 +1410,7 @@ const allRequest = {
 const API = new MyHttp({}, allRequest);
 
 module.exports = API;
+
 ```
 
 ------
@@ -1317,6 +1465,7 @@ const request = options => {
 }
 
 export default request;
+
 ```
 
 2. 创建api.js,配置其相关请求接口
@@ -1341,6 +1490,7 @@ export function getProductData(type, page) {
     }
   })
 }
+
 ```
 
 ------
@@ -1355,6 +1505,7 @@ if ('addEventListener' in document) {    
         FastClick.attach(document.body);    
     }, false);  
 }
+
 ```
 
 - jquery
@@ -1363,6 +1514,7 @@ if ('addEventListener' in document) {    
 $(function() {
   FastClick.attach(document.body);
 });
+
 ```
 
 - Vue
@@ -1370,6 +1522,7 @@ $(function() {
 ```javascript
  import FastClick from 'fastclick'
  FastClick.attach(document.body);
+
 ```
 
 ------
@@ -1389,6 +1542,7 @@ $(function() {
 	win.addEventListener(resizeEvt, recalc, false);
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
+
 ```
 
 ------
@@ -1409,6 +1563,7 @@ function debounce(handler, delay) {
         }.bind(this), delay)
     }
 }
+
 ```
 
 2. 节流
@@ -1426,6 +1581,7 @@ function trottle(handler, delay) {
         }
     }
 }
+
 ```
 
 ------
@@ -1446,6 +1602,7 @@ Object.assign = Object.assign || function(){
     })
     return target
 }
+
 ```
 
 ------
@@ -1470,6 +1627,7 @@ function deepClone(obj1, obj2) {
     }
     return obj2;
 }
+
 ```
 
 ------
@@ -1485,6 +1643,7 @@ function isEmpty(value) {
         (typeof value == "string" && value.trim().length == 0)
     )
 }
+
 ```
 
 ------
@@ -1520,6 +1679,7 @@ function getExplorerInfo() {
         version: -1
     }
 }
+
 ```
 
 ------
@@ -1538,6 +1698,7 @@ document.addEventListener('keydown', function(event){
         "A" == event.srcElement.tagName && event.shiftKey //shift + 点击a标签
     ) || (event.returnValue = false)
 });
+
 ```
 
 ------
@@ -1550,6 +1711,7 @@ document.addEventListener('keydown', function(event){
         return event.returnValue = false
     })
 });
+
 ```
 
 ------
@@ -1573,6 +1735,7 @@ window.onload = function(){
         }
     })
 }
+
 ```
 
 ------
@@ -1592,6 +1755,7 @@ function isPCBroswer() {
 		, l = "windows mobile" == e.match(/windows mobile/i);
 	return !(t || i || r || n || a || o || s || l)
 }
+
 ```
 
 ------
@@ -1617,6 +1781,7 @@ function dateFormater(formater, t){
 }
 // dateFormater('YYYY-MM-DD HH:mm', t)
 // 2019-08-05 09:45
+
 ```
 
 ------
@@ -1637,6 +1802,7 @@ function GetUrlParam(){
 	}
 	return params;
 }
+
 ```
 
 ------
@@ -1649,6 +1815,7 @@ function random(lower, upper){
 	upper = +upper || 0
 	return Math.random() * (upper - lower) + lower;
 }
+
 ```
 
 ------
