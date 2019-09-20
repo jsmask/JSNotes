@@ -79,6 +79,39 @@
 
 ------
 
+### Fetch
+
+1. 概念：一个 JavaScript 接口用于访问和操作HTTP管道的零件。
+
+2. ```javascript
+   //fetch基本使用：
+   const url = "";
+   fetch(url).then(res => {
+     return res.json();
+   }, err => console.log(err))
+     .then(data => {
+       console.log(data)
+     }, err => console.log(err))
+   
+   //async&await使用：
+   (async function () {
+       try {
+           let res = await fetch(url);
+           let data = await res.json();
+           console.log(data)
+       } catch (err) { }
+   })()
+   ```
+
+3. res能解析的格式：
+
+   - .json()  -> JSON 和数组
+   - .arraryBuffer() -> 二进制的数组
+   - .blob() -> 二进制大对象（来源于数据库，不需要解析，多用于多媒体文件）
+   - .text() -> 文本
+
+------
+
 ### React Router
 
 - 安装： npm install react-router-dom -S
@@ -372,18 +405,12 @@ class Compiler {
 ### MVC 框架
 
 1. Module: 用于存放数据 ；View: 用于更新DOM；Controller: 调用Module给View渲染使用
-
 2. M与C是双向数据流，V和C是单向数据流
-
 3. HTML+CSS+JavaScript的分离，本质上不是“分而治之“的，在JavaScript中业务逻辑和界面逻辑混在一起非常难受，所以势必无法用于构造大型的前端应用
-
 4. Facebook开始使用MVC模式，但很快发现：
-
-   ```javascript
-   // 1. MVC模式让代码变得非常复杂，主要体现为不同模块之间的依赖和耦合增加
-   // 2. 当一位开发者修改一段代码后，会迅速影响到依赖这个模块的其他模块，代码变得脆弱，不可预测
-   // 3. MVC框架中，开发者为了图省事，经常选择不去扩展Controller，而是直接再Model和View之间通信
-   ```
+   - MVC模式让代码变得非常复杂，主要体现为不同模块之间的依赖和耦合增加
+   - 当一位开发者修改一段代码后，会迅速影响到依赖这个模块的其他模块，代码变得脆弱，不可预测
+   - MVC框架中，开发者为了图省事，经常选择不去扩展Controller，而是直接再Model和View之间通信
 
 ------
 
@@ -482,6 +509,25 @@ class Compiler {
 35. easymock -> 可视化模拟数据的平台 -> https://www.easy-mock.com/
 36. Zdog ->  一个javascript的3D设计和动画制作库 -> https://zzz.dog/
 37. Writeathon -> 一款基于极简理念的在线写作工具 -> https://www.writeathon.cn/
+38. qtool -> 站长资源平台,拥有很多实用的在线功能 -> https://www.qtool.net/
+39. yarn -> yarn命令介绍 ->https://yarnpkg.com/zh-Hans/docs/cli/
+40. next -> 一个轻量级的 React 服务端渲染应用框架的中文官网 -> https://nextjs.frontendx.cn/
+41. electron -> js+html+css构建跨平台的桌面应用 -> https://electronjs.org/
+
+------
+
+### 文章&电子书
+
+1. 彻底理解服务端渲染原理 -> https://juejin.im/post/5d1fe6be51882579db031a6d
+2. React打造精美WebApp -> https://sanyuan0704.github.io/react-cloud-music/
+
+------
+
+### 优秀Github作者
+
+1. 神三元 ->《React打造精美WebApp》作者【中国】 -> https://github.com/sanyuan0704
+2. 阮一峰 ->《ECMAScript 6入门》作者【中国】 -> https://github.com/ruanyf
+3. yui540 ->《臆病な魔女は》作者【日本】 -> https://github.com/yui540
 
 ------
 
@@ -515,6 +561,15 @@ class Compiler {
 12. react-transition-group -> react动画库
 13. redux -> 状态管理
 14. redux-thunk -> redux中间件
+
+------
+
+### JS重要对象或函数
+
+1. URL.createObjectURL()
+2. FormData()
+3. FileReader()
+4. XMLHttpRequest()
 
 ------
 
@@ -577,10 +632,15 @@ class Compiler {
 ### 构建项目常用指令
 
 1. 安装淘宝镜像 -> npm install -g cnpm --registry=https://registry.npm.taobao.orgnpm install -g cnpm --registry=[https://registry.npm.taobao.org](https://registry.npm.taobao.org)
-2. 创建vue cli2脚手架于xxx文件 -> vue init webpack xxx
-3. 创建vue cli3脚手架于xxx文件 -> vue create xxx
-4. 创建vue nuxt脚手架于xxx文件 -> npx create-nuxt-app xxx
-5. 创建react脚手架于xxx文件 -> create-react-app xxx
+2. 创建vue cli2脚手架于xxx文件夹 -> vue init webpack xxx
+3. 创建vue cli3脚手架于xxx文件夹 -> vue create xxx
+4. 创建vue nuxt脚手架于xxx文件夹 -> npx create-nuxt-app xxx
+5. 创建react脚手架于xxx文件夹 -> create-react-app xxx
+6. 全局安装react-native脚手架夹 ->  npm i -g yarn react-native-cli
+7. 创建react-native脚手架于xxx文件夹 -> react-native init xxx
+8. 安装vue cli3 下的cube-ui模板 -> vue add cube-ui
+9. 安装npx操作命令 -> npm install -g npx
+10. 创建next脚手架于xxx文件夹 ->create-next-app xxx
 
 ------
 
@@ -723,7 +783,6 @@ module: {
             }]
         }
 }
-
 ```
 
 5. 安装babel-eslint: npm install babel-eslint -D
@@ -731,7 +790,6 @@ module: {
 
 ```json
 "parser": "babel-eslint"
-
 ```
 
 7. ESLint规则:
@@ -752,7 +810,6 @@ console.log(a);
 /* eslint-disable no-unused-vars */
 import React from 'react';
 /* eslint-enable no-unused-vars */
-
 ```
 
 ------
@@ -772,7 +829,6 @@ import React from 'react';
         "./tests/"
     ]
 }
-
 ```
 
 4. npm run test
@@ -792,7 +848,6 @@ router.get("/test", (req, res) => {
         name: "mask"
     })
 });
-
 ```
 
 ------
@@ -811,7 +866,6 @@ mogoose.connect(db)
     .catch(err => {
         console.log('->数据库->连接失败 err:' + err);
     })
-
 ```
 
 2. 创建数据模型演示
@@ -843,7 +897,6 @@ const userSchema = new Schema({
     }
 });
 module.exports = User = mongoose.model("users", userSchema);
-
 ```
 
 3. 查询与插入演示
@@ -887,7 +940,6 @@ router.post("/register", (req, res) => {
         }
     })
 });
-
 ```
 
 ------
@@ -962,7 +1014,6 @@ module.exports={
         new VueLoaderPlugin()
     ],
 }
-
 ```
 
 ------
@@ -984,7 +1035,6 @@ export default (state = defaultState,action)=>{
     }
     return state
 }
-
 ```
 
 3. 在store目录创建index.js
@@ -999,7 +1049,6 @@ const store=createStore(
 );
 
 export default store;
-
 ```
 
 4. React中App.js为例
@@ -1052,7 +1101,6 @@ class App extends Component {
   }
 }
 export default App;
-
 ```
 
 ------
@@ -1105,7 +1153,6 @@ export default new Vuex.Store({
     mutations,
     actions
 })
-
 ```
 
 2. 使用
@@ -1117,7 +1164,6 @@ this.$store
 this.$store
     .dispatch("clearLogin")
     .then(()=>console.log('退出登录'));
-
 ```
 
 ------
@@ -1199,7 +1245,21 @@ module.exports = {
         before: app => {}
     }
 }
+```
 
+------
+
+### next.config.js配置
+
+```javascript
+//详见：https://nextjs.frontendx.cn/docs
+const withCss = require('@zeit/next-css')
+
+if(typeof require !== 'undefined'){
+    require.extensions['.css']=file=>{}
+}
+
+module.exports = withCss({})
 ```
 
 ------
@@ -1209,13 +1269,11 @@ module.exports = {
 ```javascript
 //在main.js中挂在在原型挂在一个全新的vue实例
 Vue.prototype.$bus = new Vue()
-
 ```
 
 ```javascript
 //子组件中发出事件
 this.$bus.$emit("myOnLoad");
-
 ```
 
 ```javascript
@@ -1223,12 +1281,43 @@ this.$bus.$emit("myOnLoad");
 this.$bus.$on("myOnLoad",this.myEvent);
 //上级中取消监听
 this.$bus.$off("myOnLoad"this.myEvent);
-
 ```
 
 ------
 
 ### Vue插件封装
+
+1. 介绍
+
+```javascript
+export default {
+    install(Vue, options) {
+        Vue.myGlobalMethod = function () {  // 1. 添加全局方法或属性，如:  vue-custom-element
+            // 逻辑...
+        }
+
+        Vue.directive('my-directive', {  // 2. 添加全局资源：指令/过滤器/过渡等，如 vue-touch
+            bind (el, binding, vnode, oldVnode) {
+                // 逻辑...
+            }
+        })
+        
+        // 3. 通过全局 mixin方法添加一些组件选项，如: vuex
+        Vue.mixin({
+            created: function () {  
+                // 逻辑...
+            }
+        })    
+        
+        // 4. 添加实例方法，通过把它们添加到 Vue.prototype 上实现
+        Vue.prototype.$myMethod = function (options) {  
+            // 逻辑...
+        }
+    }
+}
+```
+
+2. 演示
 
 - common/toast/Toast.vue
 
@@ -1276,7 +1365,6 @@ this.$bus.$off("myOnLoad"this.myEvent);
     line-height: 20px;
 }
 </style>
-
 ```
 
 - common/toast/index.js
@@ -1300,7 +1388,6 @@ obj.install = Vue => {
 }
 
 export default obj;
-
 ```
 
 - main.js
@@ -1320,7 +1407,6 @@ new Vue({
     router,
     render: h => h(App)
 }).$mount('#app')
-
 ```
 
 ------
@@ -1337,7 +1423,6 @@ const serverUrl = ""; //配置请求服务器路径
 export default {
 	serverUrl
 }
-
 ```
 
 2. 封装request.js
@@ -1391,7 +1476,6 @@ function MyHttp(defaultParams, allRequest) {
 }
 
 export default MyHttp;
-
 ```
 
 3. 创建api.js,配置其相关请求接口
@@ -1410,7 +1494,6 @@ const allRequest = {
 const API = new MyHttp({}, allRequest);
 
 module.exports = API;
-
 ```
 
 ------
@@ -1465,7 +1548,6 @@ const request = options => {
 }
 
 export default request;
-
 ```
 
 2. 创建api.js,配置其相关请求接口
@@ -1490,7 +1572,6 @@ export function getProductData(type, page) {
     }
   })
 }
-
 ```
 
 ------
@@ -1505,7 +1586,6 @@ if ('addEventListener' in document) {    
         FastClick.attach(document.body);    
     }, false);  
 }
-
 ```
 
 - jquery
@@ -1514,7 +1594,6 @@ if ('addEventListener' in document) {    
 $(function() {
   FastClick.attach(document.body);
 });
-
 ```
 
 - Vue
@@ -1522,7 +1601,6 @@ $(function() {
 ```javascript
  import FastClick from 'fastclick'
  FastClick.attach(document.body);
-
 ```
 
 ------
@@ -1542,7 +1620,6 @@ $(function() {
 	win.addEventListener(resizeEvt, recalc, false);
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
-
 ```
 
 ------
@@ -1563,7 +1640,6 @@ function debounce(handler, delay) {
         }.bind(this), delay)
     }
 }
-
 ```
 
 2. 节流
@@ -1581,7 +1657,6 @@ function trottle(handler, delay) {
         }
     }
 }
-
 ```
 
 ------
@@ -1602,7 +1677,6 @@ Object.assign = Object.assign || function(){
     })
     return target
 }
-
 ```
 
 ------
@@ -1627,7 +1701,6 @@ function deepClone(obj1, obj2) {
     }
     return obj2;
 }
-
 ```
 
 ------
@@ -1643,7 +1716,6 @@ function isEmpty(value) {
         (typeof value == "string" && value.trim().length == 0)
     )
 }
-
 ```
 
 ------
@@ -1679,7 +1751,6 @@ function getExplorerInfo() {
         version: -1
     }
 }
-
 ```
 
 ------
@@ -1698,7 +1769,6 @@ document.addEventListener('keydown', function(event){
         "A" == event.srcElement.tagName && event.shiftKey //shift + 点击a标签
     ) || (event.returnValue = false)
 });
-
 ```
 
 ------
@@ -1711,7 +1781,6 @@ document.addEventListener('keydown', function(event){
         return event.returnValue = false
     })
 });
-
 ```
 
 ------
@@ -1735,7 +1804,6 @@ window.onload = function(){
         }
     })
 }
-
 ```
 
 ------
@@ -1755,7 +1823,6 @@ function isPCBroswer() {
 		, l = "windows mobile" == e.match(/windows mobile/i);
 	return !(t || i || r || n || a || o || s || l)
 }
-
 ```
 
 ------
@@ -1781,7 +1848,6 @@ function dateFormater(formater, t){
 }
 // dateFormater('YYYY-MM-DD HH:mm', t)
 // 2019-08-05 09:45
-
 ```
 
 ------
@@ -1802,7 +1868,6 @@ function GetUrlParam(){
 	}
 	return params;
 }
-
 ```
 
 ------
@@ -1815,8 +1880,41 @@ function random(lower, upper){
 	upper = +upper || 0
 	return Math.random() * (upper - lower) + lower;
 }
-
 ```
+
+------
+
+### 上传图片
+
+```javascript
+document.querySelector("input[type=file]").onchange=e=>{
+	let files = e.currentTarget.files;
+    let reader = new FileReader();
+    reader.readAsDataURL(files);
+    reader.onload = e => {
+        console.log(e.target.result);
+    }
+}
+```
+
+------
+
+### 判断小数是否相等
+
+```javascript
+function epsEqu1(x,y) {  
+  return Math.abs(x - y) < Math.pow(2, -52);
+}
+function epsEqu2(x,y) {  
+  return Math.abs(x - y) < Number.EPSILON;
+}
+// 举例
+0.1 + 0.2 === 0.3 // false
+epsEqu1(0.1 + 0.2, 0.3) // true
+epsEqu2(0.1 + 0.2, 0.3) // true
+```
+
+
 
 ------
 
