@@ -408,9 +408,10 @@ class Compiler {
 2. M与C是双向数据流，V和C是单向数据流
 3. HTML+CSS+JavaScript的分离，本质上不是“分而治之“的，在JavaScript中业务逻辑和界面逻辑混在一起非常难受，所以势必无法用于构造大型的前端应用
 4. Facebook开始使用MVC模式，但很快发现：
-   - MVC模式让代码变得非常复杂，主要体现为不同模块之间的依赖和耦合增加
-   - 当一位开发者修改一段代码后，会迅速影响到依赖这个模块的其他模块，代码变得脆弱，不可预测
-   - MVC框架中，开发者为了图省事，经常选择不去扩展Controller，而是直接再Model和View之间通信
+
+- MVC模式让代码变得非常复杂，主要体现为不同模块之间的依赖和耦合增加
+  - 当一位开发者修改一段代码后，会迅速影响到依赖这个模块的其他模块，代码变得脆弱，不可预测
+  - MVC框架中，开发者为了图省事，经常选择不去扩展Controller，而是直接再Model和View之间通信
 
 ------
 
@@ -527,7 +528,7 @@ class Compiler {
 
 1. 神三元 ->《React打造精美WebApp》作者【中国】 -> https://github.com/sanyuan0704
 2. 阮一峰 ->《ECMAScript 6入门》作者【中国】 -> https://github.com/ruanyf
-3. yui540 ->《臆病な魔女は》作者【日本】 -> https://github.com/yui540
+3. yui540 ->《臆病な魔女》作者【日本】 -> https://github.com/yui540
 
 ------
 
@@ -542,6 +543,8 @@ class Compiler {
 7. concurrently -> 多个终端连载
 8. nodemon -> 发生变化自动保存重新开启服务
 9. mongoose -> 处理mongodb对象的建模工具
+10. multer -> 处理文件上传
+11. blueimp-md5 -> 实现md5加密
 
 ------
 
@@ -561,6 +564,8 @@ class Compiler {
 12. react-transition-group -> react动画库
 13. redux -> 状态管理
 14. redux-thunk -> redux中间件
+15. echarts-for-react -> 针对react的图表库
+16. react-draft-wysiwyg -> 针对react的富文本编辑器
 
 ------
 
@@ -686,6 +691,7 @@ class Compiler {
 
 ### git常用命令
 
+```
 1. git init -> 初始化
 2. git status -> 查看文件状态
 3. git add . ->提交所有文件
@@ -697,6 +703,32 @@ class Compiler {
 9. git remote rm origin  -> 删除源
 10. git push -u origin master -> 上传
 11. git rm -r --cache . ->移除所有文件
+```
+
+```javascript
+1. 创建远程仓库
+2. 创建本地仓库
+    a. 配置.gitignore
+    b. git init
+    c. git add .
+    d. git commit -m "init"
+3. 将本地仓库推送到远程仓库
+    git remote add origin url
+    git push origin master
+4. 在本地创建dev分支, 并推送到远程
+    git checkout -b dev
+    git push origin dev
+5. 如果本地有修改
+    git add .
+    git commit -m "xxx"
+    git push origin dev
+6. 新的同事: 克隆仓库
+    git clone url
+    git checkout -b dev origin/dev
+    git pull origin dev
+7. 如果远程修改
+    git pull origin dev
+```
 
 ------
 
