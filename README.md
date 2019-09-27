@@ -12,6 +12,46 @@
 
 ------
 
+### 高阶函数
+
+> ###### 基本概念：
+>
+> 1. 一类特别的函数:
+>
+>    a. 接收函数类型的参数
+>
+>    b. 返回值也是函数
+>
+> 2. 例如：
+>
+>    a. 定时器: setTimeout() / setInterval()
+>
+>    b. Promise: Promise(()=>{}) / then(()=>{},reason=>{})
+>
+>    c. 数组遍历相关的方法: forEach() / filter() / map() / reduce() /find() / findIndex()
+>
+>    d. 函数对象的bind()
+>
+>    e. antd Form: Form.create()() / Form.getFieldDecorator()()
+>
+> 3. 高阶函数更新动态，更加具有扩展性
+
+------
+
+### 高阶组件
+
+> ###### 基本概念：
+>
+> 1. 本质是一个函数
+> 2. 接收一个组件(被包装组件)，返回一个新的组件(包装组件)，包装组件会向被包装组件传入特点属性
+> 3. 作用：扩展组件的功能
+> 4. 也是一种高阶函数：接收一个组件函数，返回一个新的组件函数
+> 5. 例如：
+>
+> a. antd Input: <Input prefix={<Icon type="user" />} />
+
+------
+
 ### Nginx
 
 > ##### 版本解释：
@@ -514,6 +554,15 @@ class Compiler {
 39. yarn -> yarn命令介绍 ->https://yarnpkg.com/zh-Hans/docs/cli/
 40. next -> 一个轻量级的 React 服务端渲染应用框架的中文官网 -> https://nextjs.frontendx.cn/
 41. electron -> js+html+css构建跨平台的桌面应用 -> https://electronjs.org/
+42. docschina -> 为前端开发人员提供优质文档的平台 -> https://www.docschina.org/
+43. mocky -> 模拟丰富数据的平台 -> https://www.mocky.io/
+44. udacity -> 来自硅谷的前沿技术平台 -> https://cn.udacity.com/
+45. chart.xkcd -> XKCD漫画风格的网页图表库 -> https://github.com/timqian/chart.xkcd
+46. rough -> 生成手绘风格图片的 JS 库 -> https://github.com/pshihn/rough/
+47. pagemap -> 在网页插入页面缩略导航图的 JS 库 -> https://larsjung.de/pagemap/
+48. showmebug -> 在线实时编程环境的平台 -> https://www.showmebug.com/
+49. geekdocs -> 面向前端开发者的网址导航站 -> http://geekdocs.cn/
+50. fastmock -> 可视化模拟数据的平台 -> https://www.fastmock.site
 
 ------
 
@@ -566,6 +615,7 @@ class Compiler {
 14. redux-thunk -> redux中间件
 15. echarts-for-react -> 针对react的图表库
 16. react-draft-wysiwyg -> 针对react的富文本编辑器
+17. store -> 处理浏览器本地存储
 
 ------
 
@@ -736,6 +786,7 @@ class Compiler {
 
 1. 404猴子 -> https://codepen.io/thejohnyagiz/pen/npDyq
 2. 臆病な魔女 -> https://github.com/yui540/Cowardly-Witch
+3. 中国古典颜色表 -> https://colors.ichuantong.cn/
 
 ------
 
@@ -1945,8 +1996,6 @@ function epsEqu2(x,y) {
 epsEqu1(0.1 + 0.2, 0.3) // true
 epsEqu2(0.1 + 0.2, 0.3) // true
 ```
-
-
 
 ------
 
