@@ -12,6 +12,27 @@
 
 ------
 
+### jsonp
+
+> 1. jsonp只能解决GET类型的ajax请求跨域问题
+> 2. jsonp请求不是ajax请求，而是一般的get请求
+> 3. 基本原理：
+>    - 浏览器端：
+>
+>   动态生成<script>来请求后台接口（src就是接口的url）
+>
+>   定义好用于接收响应数据的函数，并将函数名通过请求参数提交给后台
+>
+> - 服务器端：
+>
+>   接收到请求处理产生的数据后，返回一个个函数调用的js代码，并将结果数据作为实参传入函数调用
+>
+> - 浏览器端：
+>
+>   接收到响应自动执行函数调用的js代码，也就是执行了提前定义好的回调函数，并得到了需要的结果函数
+
+------
+
 ### 高阶函数
 
 > ###### 基本概念：
@@ -43,16 +64,12 @@
 > ###### 基本概念：
 >
 > 1. 本质是一个函数
->
 > 2. 接收一个组件(被包装组件)，返回一个新的组件(包装组件)，包装组件会向被包装组件传入特点属性
->
 > 3. 作用：扩展组件的功能
->
 > 4. 也是一种高阶函数：接收一个组件函数，返回一个新的组件函数
->
 > 5. 例如：
 >
->    a. antd Input: <Input prefix={<Icon type="user" />} />
+> a. antd Input: <Input prefix={<Icon type="user" />} />
 
 ------
 
@@ -567,6 +584,8 @@ class Compiler {
 48. showmebug -> 在线实时编程环境的平台 -> https://www.showmebug.com/
 49. geekdocs -> 面向前端开发者的网址导航站 -> http://geekdocs.cn/
 50. fastmock -> 可视化模拟数据的平台 -> https://www.fastmock.site
+51. vConsole ->  移动端调试工具 -> https://github.com/Tencent/vConsole
+52. sitepoint -> 外国针对Web开发人员的加油站 -> https://www.sitepoint.com/
 
 ------
 
@@ -598,6 +617,7 @@ class Compiler {
 9. mongoose -> 处理mongodb对象的建模工具
 10. multer -> 处理文件上传
 11. blueimp-md5 -> 实现md5加密
+12. http-proxy-middleware -> 代理服务器
 
 ------
 
@@ -608,7 +628,7 @@ class Compiler {
 3. moment -> 时间转换
 4. qs -> 参数处理
 5. lodash -> 实用工具库
-6. better-scroll -> 移动端滚动条
+6. better-scroll -> 移动端滚动
 7. normalize.css -> 重置css
 8. vue-lazyload -> vue项目中使用懒加载
 9. fastclick -> 消灭移动端300ms延时
@@ -620,6 +640,28 @@ class Compiler {
 15. echarts-for-react -> 针对react的图表库
 16. react-draft-wysiwyg -> 针对react的富文本编辑器
 17. store -> 处理浏览器本地存储
+18. react-loadable -> 针对react-router按需加载
+19. store -> 本地存储处理
+20. vue-chat-scroll -> 针对vue聊天滚动
+21. bootstrap-vue -> 针对vue提供的bootstrap
+
+------
+
+### 数据可视化图表库
+
+1. echarts
+   a. https://echarts.baidu.com/
+   b. 百度开源, 如果要在 react 项目中使用, 需要下载 echarts-for-react
+2. G2
+   a. https://antv.alipay.com/zh-cn/g2/3.x/index.html
+   b. 阿里开源
+3. bizcharts
+   a. https://bizcharts.net/products/bizCharts
+   b. 基于 react 包装 G2 的开源库
+   c. 需要额外下载 @antv/data-set
+4. d3
+   a. https://d3js.org.cn/
+   b. 国外的免费可视化图表库
 
 ------
 
