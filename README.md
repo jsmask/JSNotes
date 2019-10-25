@@ -588,6 +588,8 @@ class Compiler {
 52. sitepoint -> 外国针对Web开发人员的加油站 -> https://www.sitepoint.com/
 53. instant.page -> 即时预加载的JS库 -> https://instant.page/
 54. liaoxuefeng -> 免费学习前端技术的博客 -> https://www.liaoxuefeng.com/
+55. doka -> 在线图像编辑器 -> https://doka.photo/
+56. resume -> 自动生成简历的平台 -> https://resume.io/
 
 ------
 
@@ -605,6 +607,15 @@ class Compiler {
 1. 神三元 ->《React打造精美WebApp》作者【中国】 -> https://github.com/sanyuan0704
 2. 阮一峰 ->《ECMAScript 6入门》作者【中国】 -> https://github.com/ruanyf
 3. yui540 ->《臆病な魔女》作者【日本】 -> https://github.com/yui540
+
+------
+
+### 优秀网页分享
+
+1. 404猴子 -> https://codepen.io/thejohnyagiz/pen/npDyq
+2. 臆病な魔女 -> https://github.com/yui540/Cowardly-Witch
+3. 中国古典颜色表 -> https://colors.ichuantong.cn/
+4. 打字机实时呈现 -> https://www.strml.net/
 
 ------
 
@@ -803,7 +814,6 @@ class Compiler {
 9. git remote rm origin  -> 删除源
 10. git push -u origin master -> 上传
 11. git rm -r --cache . ->移除所有文件
-
 ```
 
 ```javascript
@@ -829,16 +839,7 @@ class Compiler {
     git pull origin dev
 7. 如果远程修改
     git pull origin dev
-
 ```
-
-------
-
-### 优秀网页分享
-
-1. 404猴子 -> https://codepen.io/thejohnyagiz/pen/npDyq
-2. 臆病な魔女 -> https://github.com/yui540/Cowardly-Witch
-3. 中国古典颜色表 -> https://colors.ichuantong.cn/
 
 ------
 
@@ -918,7 +919,6 @@ module: {
             }]
         }
 }
-
 ```
 
 5. 安装babel-eslint: npm install babel-eslint -D
@@ -926,7 +926,6 @@ module: {
 
 ```json
 "parser": "babel-eslint"
-
 ```
 
 7. ESLint规则:
@@ -947,7 +946,6 @@ console.log(a);
 /* eslint-disable no-unused-vars */
 import React from 'react';
 /* eslint-enable no-unused-vars */
-
 ```
 
 ------
@@ -967,7 +965,6 @@ import React from 'react';
         "./tests/"
     ]
 }
-
 ```
 
 4. npm run test
@@ -987,7 +984,6 @@ router.get("/test", (req, res) => {
         name: "mask"
     })
 });
-
 ```
 
 ------
@@ -1006,7 +1002,6 @@ mogoose.connect(db)
     .catch(err => {
         console.log('->数据库->连接失败 err:' + err);
     })
-
 ```
 
 2. 创建数据模型演示
@@ -1038,7 +1033,6 @@ const userSchema = new Schema({
     }
 });
 module.exports = User = mongoose.model("users", userSchema);
-
 ```
 
 3. 查询与插入演示
@@ -1082,7 +1076,6 @@ router.post("/register", (req, res) => {
         }
     })
 });
-
 ```
 
 ------
@@ -1157,7 +1150,6 @@ module.exports={
         new VueLoaderPlugin()
     ],
 }
-
 ```
 
 ------
@@ -1179,7 +1171,6 @@ export default (state = defaultState,action)=>{
     }
     return state
 }
-
 ```
 
 3. 在store目录创建index.js
@@ -1194,7 +1185,6 @@ const store=createStore(
 );
 
 export default store;
-
 ```
 
 4. React中App.js为例
@@ -1247,7 +1237,6 @@ class App extends Component {
   }
 }
 export default App;
-
 ```
 
 ------
@@ -1300,7 +1289,6 @@ export default new Vuex.Store({
     mutations,
     actions
 })
-
 ```
 
 2. 使用
@@ -1312,7 +1300,6 @@ this.$store
 this.$store
     .dispatch("clearLogin")
     .then(()=>console.log('退出登录'));
-
 ```
 
 ------
@@ -1394,7 +1381,6 @@ module.exports = {
         before: app => {}
     }
 }
-
 ```
 
 ------
@@ -1410,7 +1396,6 @@ if(typeof require !== 'undefined'){
 }
 
 module.exports = withCss({})
-
 ```
 
 ------
@@ -1420,13 +1405,11 @@ module.exports = withCss({})
 ```javascript
 //在main.js中挂在在原型挂在一个全新的vue实例
 Vue.prototype.$bus = new Vue()
-
 ```
 
 ```javascript
 //子组件中发出事件
 this.$bus.$emit("myOnLoad");
-
 ```
 
 ```javascript
@@ -1434,7 +1417,6 @@ this.$bus.$emit("myOnLoad");
 this.$bus.$on("myOnLoad",this.myEvent);
 //上级中取消监听
 this.$bus.$off("myOnLoad"this.myEvent);
-
 ```
 
 ------
@@ -1469,7 +1451,6 @@ export default {
         }
     }
 }
-
 ```
 
 2. 演示
@@ -1520,7 +1501,6 @@ export default {
     line-height: 20px;
 }
 </style>
-
 ```
 
 - common/toast/index.js
@@ -1544,7 +1524,6 @@ obj.install = Vue => {
 }
 
 export default obj;
-
 ```
 
 - main.js
@@ -1564,7 +1543,6 @@ new Vue({
     router,
     render: h => h(App)
 }).$mount('#app')
-
 ```
 
 ------
@@ -1581,7 +1559,6 @@ const serverUrl = ""; //配置请求服务器路径
 export default {
 	serverUrl
 }
-
 ```
 
 2. 封装request.js
@@ -1635,7 +1612,6 @@ function MyHttp(defaultParams, allRequest) {
 }
 
 export default MyHttp;
-
 ```
 
 3. 创建api.js,配置其相关请求接口
@@ -1654,7 +1630,6 @@ const allRequest = {
 const API = new MyHttp({}, allRequest);
 
 module.exports = API;
-
 ```
 
 ------
@@ -1709,7 +1684,6 @@ const request = options => {
 }
 
 export default request;
-
 ```
 
 2. 创建api.js,配置其相关请求接口
@@ -1734,7 +1708,6 @@ export function getProductData(type, page) {
     }
   })
 }
-
 ```
 
 ------
@@ -1749,7 +1722,6 @@ if ('addEventListener' in document) {    
         FastClick.attach(document.body);    
     }, false);  
 }
-
 ```
 
 - jquery
@@ -1758,7 +1730,6 @@ if ('addEventListener' in document) {    
 $(function() {
   FastClick.attach(document.body);
 });
-
 ```
 
 - Vue
@@ -1766,7 +1737,6 @@ $(function() {
 ```javascript
  import FastClick from 'fastclick'
  FastClick.attach(document.body);
-
 ```
 
 ------
@@ -1786,7 +1756,6 @@ $(function() {
 	win.addEventListener(resizeEvt, recalc, false);
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
-
 ```
 
 ------
@@ -1807,7 +1776,6 @@ function debounce(handler, delay) {
         }.bind(this), delay)
     }
 }
-
 ```
 
 2. 节流
@@ -1825,7 +1793,6 @@ function trottle(handler, delay) {
         }
     }
 }
-
 ```
 
 ------
@@ -1846,7 +1813,6 @@ Object.assign = Object.assign || function(){
     })
     return target
 }
-
 ```
 
 ------
@@ -1871,7 +1837,6 @@ function deepClone(obj1, obj2) {
     }
     return obj2;
 }
-
 ```
 
 ------
@@ -1887,7 +1852,6 @@ function isEmpty(value) {
         (typeof value == "string" && value.trim().length == 0)
     )
 }
-
 ```
 
 ------
@@ -1923,7 +1887,6 @@ function getExplorerInfo() {
         version: -1
     }
 }
-
 ```
 
 ------
@@ -1942,7 +1905,6 @@ document.addEventListener('keydown', function(event){
         "A" == event.srcElement.tagName && event.shiftKey //shift + 点击a标签
     ) || (event.returnValue = false)
 });
-
 ```
 
 ------
@@ -1955,7 +1917,6 @@ document.addEventListener('keydown', function(event){
         return event.returnValue = false
     })
 });
-
 ```
 
 ------
@@ -1979,7 +1940,6 @@ window.onload = function(){
         }
     })
 }
-
 ```
 
 ------
@@ -1999,7 +1959,6 @@ function isPCBroswer() {
 		, l = "windows mobile" == e.match(/windows mobile/i);
 	return !(t || i || r || n || a || o || s || l)
 }
-
 ```
 
 ------
@@ -2025,7 +1984,6 @@ function dateFormater(formater, t){
 }
 // dateFormater('YYYY-MM-DD HH:mm', t)
 // 2019-08-05 09:45
-
 ```
 
 ------
@@ -2046,7 +2004,6 @@ function GetUrlParam(){
 	}
 	return params;
 }
-
 ```
 
 ------
@@ -2059,7 +2016,6 @@ function random(lower, upper){
 	upper = +upper || 0
 	return Math.random() * (upper - lower) + lower;
 }
-
 ```
 
 ------
@@ -2075,7 +2031,6 @@ document.querySelector("input[type=file]").onchange=e=>{
         console.log(e.target.result);
     }
 }
-
 ```
 
 ------
@@ -2093,7 +2048,6 @@ function epsEqu2(x,y) {
 0.1 + 0.2 === 0.3 // false
 epsEqu1(0.1 + 0.2, 0.3) // true
 epsEqu2(0.1 + 0.2, 0.3) // true
-
 ```
 
 ------
