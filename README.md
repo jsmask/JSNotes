@@ -590,6 +590,9 @@ class Compiler {
 54. liaoxuefeng -> 免费学习前端技术的博客 -> https://www.liaoxuefeng.com/
 55. doka -> 在线图像编辑器 -> https://doka.photo/
 56. resume -> 自动生成简历的平台 -> https://resume.io/
+57. tietuku-> 免费图片上传平台（7天） -> http://www.tietuku.com
+58. yupoo -> 免费图片上传平台（100M） -> https://x.yupoo.com
+59. pages.github -> 在github部署静态页(1G)  -> [https://pages.github.com](https://pages.github.com/)
 
 ------
 
@@ -731,17 +734,22 @@ class Compiler {
 
 1. postcss-pxtorem ->  px转换rem
 
-   常用配置：
+   常用配置（package.json）：
 
    ```javascript
-   "postcss-pxtorem": {
-        "rootValue": 100,
-        "propList": ["*"],
-        "selectorBlackList": [".vux-",".weui-",".mt-",".mint-",".dp-",".ig-"]
-   }
+   "postcss": {
+           "plugins": {
+               "autoprefixer": {},
+               "postcss-pxtorem": {
+                   "rootValue": 100,
+                   "propList": ["*"],
+               	"selectorBlackList": [".vux-",".weui-",".mt-",".mint-",".dp-",".ig-"]
+               }
+           }
+       }
    ```
 
-   
+2. babel-plugin-component -> 按需加载
 
 ------
 
@@ -1033,6 +1041,7 @@ const userSchema = new Schema({
     }
 });
 module.exports = User = mongoose.model("users", userSchema);
+
 ```
 
 3. 查询与插入演示
@@ -1076,6 +1085,7 @@ router.post("/register", (req, res) => {
         }
     })
 });
+
 ```
 
 ------
@@ -1150,6 +1160,7 @@ module.exports={
         new VueLoaderPlugin()
     ],
 }
+
 ```
 
 ------
@@ -1171,6 +1182,7 @@ export default (state = defaultState,action)=>{
     }
     return state
 }
+
 ```
 
 3. 在store目录创建index.js
@@ -1185,6 +1197,7 @@ const store=createStore(
 );
 
 export default store;
+
 ```
 
 4. React中App.js为例
@@ -1237,6 +1250,7 @@ class App extends Component {
   }
 }
 export default App;
+
 ```
 
 ------
@@ -1289,6 +1303,7 @@ export default new Vuex.Store({
     mutations,
     actions
 })
+
 ```
 
 2. 使用
@@ -1296,10 +1311,11 @@ export default new Vuex.Store({
 ```javascript
 this.$store
     .dispatch('setUser',{usernmae:"mask"})
-    .then(()=>console.log('设置完成'+res));
+    .then(()=>console.log('设置完成'));
 this.$store
     .dispatch("clearLogin")
     .then(()=>console.log('退出登录'));
+
 ```
 
 ------
@@ -1381,6 +1397,7 @@ module.exports = {
         before: app => {}
     }
 }
+
 ```
 
 ------
@@ -1396,6 +1413,7 @@ if(typeof require !== 'undefined'){
 }
 
 module.exports = withCss({})
+
 ```
 
 ------
@@ -1405,11 +1423,13 @@ module.exports = withCss({})
 ```javascript
 //在main.js中挂在在原型挂在一个全新的vue实例
 Vue.prototype.$bus = new Vue()
+
 ```
 
 ```javascript
 //子组件中发出事件
 this.$bus.$emit("myOnLoad");
+
 ```
 
 ```javascript
@@ -1417,6 +1437,7 @@ this.$bus.$emit("myOnLoad");
 this.$bus.$on("myOnLoad",this.myEvent);
 //上级中取消监听
 this.$bus.$off("myOnLoad"this.myEvent);
+
 ```
 
 ------
@@ -1451,6 +1472,7 @@ export default {
         }
     }
 }
+
 ```
 
 2. 演示
@@ -1501,6 +1523,7 @@ export default {
     line-height: 20px;
 }
 </style>
+
 ```
 
 - common/toast/index.js
@@ -1524,6 +1547,7 @@ obj.install = Vue => {
 }
 
 export default obj;
+
 ```
 
 - main.js
@@ -1543,6 +1567,7 @@ new Vue({
     router,
     render: h => h(App)
 }).$mount('#app')
+
 ```
 
 ------
@@ -1559,6 +1584,7 @@ const serverUrl = ""; //配置请求服务器路径
 export default {
 	serverUrl
 }
+
 ```
 
 2. 封装request.js
@@ -1612,6 +1638,7 @@ function MyHttp(defaultParams, allRequest) {
 }
 
 export default MyHttp;
+
 ```
 
 3. 创建api.js,配置其相关请求接口
@@ -1630,6 +1657,7 @@ const allRequest = {
 const API = new MyHttp({}, allRequest);
 
 module.exports = API;
+
 ```
 
 ------
@@ -1684,6 +1712,7 @@ const request = options => {
 }
 
 export default request;
+
 ```
 
 2. 创建api.js,配置其相关请求接口
@@ -1708,6 +1737,7 @@ export function getProductData(type, page) {
     }
   })
 }
+
 ```
 
 ------
@@ -1722,6 +1752,7 @@ if ('addEventListener' in document) {    
         FastClick.attach(document.body);    
     }, false);  
 }
+
 ```
 
 - jquery
@@ -1730,6 +1761,7 @@ if ('addEventListener' in document) {    
 $(function() {
   FastClick.attach(document.body);
 });
+
 ```
 
 - Vue
@@ -1737,6 +1769,7 @@ $(function() {
 ```javascript
  import FastClick from 'fastclick'
  FastClick.attach(document.body);
+
 ```
 
 ------
@@ -1756,6 +1789,7 @@ $(function() {
 	win.addEventListener(resizeEvt, recalc, false);
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
+
 ```
 
 ------
@@ -1776,6 +1810,7 @@ function debounce(handler, delay) {
         }.bind(this), delay)
     }
 }
+
 ```
 
 2. 节流
@@ -1793,6 +1828,7 @@ function trottle(handler, delay) {
         }
     }
 }
+
 ```
 
 ------
@@ -1813,6 +1849,7 @@ Object.assign = Object.assign || function(){
     })
     return target
 }
+
 ```
 
 ------
@@ -1837,6 +1874,7 @@ function deepClone(obj1, obj2) {
     }
     return obj2;
 }
+
 ```
 
 ------
@@ -1852,6 +1890,7 @@ function isEmpty(value) {
         (typeof value == "string" && value.trim().length == 0)
     )
 }
+
 ```
 
 ------
@@ -1887,6 +1926,7 @@ function getExplorerInfo() {
         version: -1
     }
 }
+
 ```
 
 ------
@@ -1905,6 +1945,7 @@ document.addEventListener('keydown', function(event){
         "A" == event.srcElement.tagName && event.shiftKey //shift + 点击a标签
     ) || (event.returnValue = false)
 });
+
 ```
 
 ------
@@ -1917,6 +1958,7 @@ document.addEventListener('keydown', function(event){
         return event.returnValue = false
     })
 });
+
 ```
 
 ------
@@ -1940,6 +1982,7 @@ window.onload = function(){
         }
     })
 }
+
 ```
 
 ------
@@ -1959,6 +2002,7 @@ function isPCBroswer() {
 		, l = "windows mobile" == e.match(/windows mobile/i);
 	return !(t || i || r || n || a || o || s || l)
 }
+
 ```
 
 ------
@@ -1984,6 +2028,7 @@ function dateFormater(formater, t){
 }
 // dateFormater('YYYY-MM-DD HH:mm', t)
 // 2019-08-05 09:45
+
 ```
 
 ------
@@ -2004,6 +2049,7 @@ function GetUrlParam(){
 	}
 	return params;
 }
+
 ```
 
 ------
@@ -2016,6 +2062,7 @@ function random(lower, upper){
 	upper = +upper || 0
 	return Math.random() * (upper - lower) + lower;
 }
+
 ```
 
 ------
@@ -2031,6 +2078,7 @@ document.querySelector("input[type=file]").onchange=e=>{
         console.log(e.target.result);
     }
 }
+
 ```
 
 ------
@@ -2048,6 +2096,7 @@ function epsEqu2(x,y) {
 0.1 + 0.2 === 0.3 // false
 epsEqu1(0.1 + 0.2, 0.3) // true
 epsEqu2(0.1 + 0.2, 0.3) // true
+
 ```
 
 ------
