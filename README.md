@@ -593,6 +593,7 @@ class Compiler {
 57. tietuku-> 免费图片上传平台（7天） -> http://www.tietuku.com
 58. yupoo -> 免费图片上传平台（100M） -> https://x.yupoo.com
 59. pages.github -> 在github部署静态页(1G)  -> [https://pages.github.com](https://pages.github.com/)
+60. hackernoon -> 外国对程序员和创业者学习开放平台 -> https://hackernoon.com/
 
 ------
 
@@ -602,6 +603,8 @@ class Compiler {
 2. React打造精美WebApp -> https://sanyuan0704.github.io/react-cloud-music/
 3. 短网址(short URL)系统的原理及其实现 -> https://hufangyun.com/2017/short-url/
 4. React.js 小书 -> http://huziketang.mangojuice.top/books/react/
+5. TensorFlow 教程 -> https://github.com/machinelearningmindset/TensorFlow-Course 
+6. 关于机器学习的电子书[英文] -> http://mbmlbook.com/
 
 ------
 
@@ -609,7 +612,8 @@ class Compiler {
 
 1. 神三元 ->《React打造精美WebApp》作者【中国】 -> https://github.com/sanyuan0704
 2. 阮一峰 ->《ECMAScript 6入门》作者【中国】 -> https://github.com/ruanyf
-3. yui540 ->《臆病な魔女》作者【日本】 -> https://github.com/yui540
+3. 廖雪峰 ->《Spring 2.0核心技术与最佳实践》作者【中国】 ->https://github.com/liaoxuefeng
+4. yui540 ->《臆病な魔女》作者【日本】 -> https://github.com/yui540
 
 ------
 
@@ -1041,7 +1045,6 @@ const userSchema = new Schema({
     }
 });
 module.exports = User = mongoose.model("users", userSchema);
-
 ```
 
 3. 查询与插入演示
@@ -1085,7 +1088,6 @@ router.post("/register", (req, res) => {
         }
     })
 });
-
 ```
 
 ------
@@ -1160,7 +1162,6 @@ module.exports={
         new VueLoaderPlugin()
     ],
 }
-
 ```
 
 ------
@@ -1182,7 +1183,6 @@ export default (state = defaultState,action)=>{
     }
     return state
 }
-
 ```
 
 3. 在store目录创建index.js
@@ -1197,7 +1197,6 @@ const store=createStore(
 );
 
 export default store;
-
 ```
 
 4. React中App.js为例
@@ -1250,7 +1249,6 @@ class App extends Component {
   }
 }
 export default App;
-
 ```
 
 ------
@@ -1303,7 +1301,6 @@ export default new Vuex.Store({
     mutations,
     actions
 })
-
 ```
 
 2. 使用
@@ -1315,7 +1312,6 @@ this.$store
 this.$store
     .dispatch("clearLogin")
     .then(()=>console.log('退出登录'));
-
 ```
 
 ------
@@ -1397,7 +1393,6 @@ module.exports = {
         before: app => {}
     }
 }
-
 ```
 
 ------
@@ -1413,7 +1408,6 @@ if(typeof require !== 'undefined'){
 }
 
 module.exports = withCss({})
-
 ```
 
 ------
@@ -1423,13 +1417,11 @@ module.exports = withCss({})
 ```javascript
 //在main.js中挂在在原型挂在一个全新的vue实例
 Vue.prototype.$bus = new Vue()
-
 ```
 
 ```javascript
 //子组件中发出事件
 this.$bus.$emit("myOnLoad");
-
 ```
 
 ```javascript
@@ -1437,7 +1429,6 @@ this.$bus.$emit("myOnLoad");
 this.$bus.$on("myOnLoad",this.myEvent);
 //上级中取消监听
 this.$bus.$off("myOnLoad"this.myEvent);
-
 ```
 
 ------
@@ -1472,7 +1463,6 @@ export default {
         }
     }
 }
-
 ```
 
 2. 演示
@@ -1523,7 +1513,6 @@ export default {
     line-height: 20px;
 }
 </style>
-
 ```
 
 - common/toast/index.js
@@ -1547,7 +1536,6 @@ obj.install = Vue => {
 }
 
 export default obj;
-
 ```
 
 - main.js
@@ -1567,7 +1555,6 @@ new Vue({
     router,
     render: h => h(App)
 }).$mount('#app')
-
 ```
 
 ------
@@ -1584,7 +1571,6 @@ const serverUrl = ""; //配置请求服务器路径
 export default {
 	serverUrl
 }
-
 ```
 
 2. 封装request.js
@@ -1638,7 +1624,6 @@ function MyHttp(defaultParams, allRequest) {
 }
 
 export default MyHttp;
-
 ```
 
 3. 创建api.js,配置其相关请求接口
@@ -1657,7 +1642,6 @@ const allRequest = {
 const API = new MyHttp({}, allRequest);
 
 module.exports = API;
-
 ```
 
 ------
@@ -1712,7 +1696,6 @@ const request = options => {
 }
 
 export default request;
-
 ```
 
 2. 创建api.js,配置其相关请求接口
@@ -1737,7 +1720,6 @@ export function getProductData(type, page) {
     }
   })
 }
-
 ```
 
 ------
@@ -1752,7 +1734,6 @@ if ('addEventListener' in document) {    
         FastClick.attach(document.body);    
     }, false);  
 }
-
 ```
 
 - jquery
@@ -1761,7 +1742,6 @@ if ('addEventListener' in document) {    
 $(function() {
   FastClick.attach(document.body);
 });
-
 ```
 
 - Vue
@@ -1769,7 +1749,6 @@ $(function() {
 ```javascript
  import FastClick from 'fastclick'
  FastClick.attach(document.body);
-
 ```
 
 ------
@@ -1789,7 +1768,6 @@ $(function() {
 	win.addEventListener(resizeEvt, recalc, false);
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
-
 ```
 
 ------
@@ -1810,7 +1788,6 @@ function debounce(handler, delay) {
         }.bind(this), delay)
     }
 }
-
 ```
 
 2. 节流
@@ -1828,7 +1805,6 @@ function trottle(handler, delay) {
         }
     }
 }
-
 ```
 
 ------
@@ -1849,7 +1825,6 @@ Object.assign = Object.assign || function(){
     })
     return target
 }
-
 ```
 
 ------
@@ -1874,7 +1849,6 @@ function deepClone(obj1, obj2) {
     }
     return obj2;
 }
-
 ```
 
 ------
@@ -1890,7 +1864,6 @@ function isEmpty(value) {
         (typeof value == "string" && value.trim().length == 0)
     )
 }
-
 ```
 
 ------
@@ -1926,7 +1899,6 @@ function getExplorerInfo() {
         version: -1
     }
 }
-
 ```
 
 ------
@@ -1945,7 +1917,6 @@ document.addEventListener('keydown', function(event){
         "A" == event.srcElement.tagName && event.shiftKey //shift + 点击a标签
     ) || (event.returnValue = false)
 });
-
 ```
 
 ------
@@ -1958,7 +1929,6 @@ document.addEventListener('keydown', function(event){
         return event.returnValue = false
     })
 });
-
 ```
 
 ------
@@ -1982,7 +1952,6 @@ window.onload = function(){
         }
     })
 }
-
 ```
 
 ------
@@ -2002,7 +1971,6 @@ function isPCBroswer() {
 		, l = "windows mobile" == e.match(/windows mobile/i);
 	return !(t || i || r || n || a || o || s || l)
 }
-
 ```
 
 ------
@@ -2028,7 +1996,6 @@ function dateFormater(formater, t){
 }
 // dateFormater('YYYY-MM-DD HH:mm', t)
 // 2019-08-05 09:45
-
 ```
 
 ------
@@ -2049,7 +2016,6 @@ function GetUrlParam(){
 	}
 	return params;
 }
-
 ```
 
 ------
@@ -2062,7 +2028,6 @@ function random(lower, upper){
 	upper = +upper || 0
 	return Math.random() * (upper - lower) + lower;
 }
-
 ```
 
 ------
@@ -2078,7 +2043,6 @@ document.querySelector("input[type=file]").onchange=e=>{
         console.log(e.target.result);
     }
 }
-
 ```
 
 ------
