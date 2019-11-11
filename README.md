@@ -857,15 +857,16 @@ class Compiler {
 
 ### 展示型页面插件
 
-| 名称         | 介绍                                 |
-| ------------ | ------------------------------------ |
-| imagesloaded | 图片加载插件,能够监测图片的加载状态  |
-| TweenMax     | 超高性能专业级动画插件               |
-| charming     | 改变单个字体                         |
-| swiper       | 移动端网页触摸内容滑动插件           |
-| fullpage     | 全屏滑动插件                         |
-| wow          | 实现滚动页面时触发CSS 动画效果的插件 |
-| animejs      | 轻量级JavaScript动画库               |
+| 名称         | 介绍                                        |
+| ------------ | ------------------------------------------- |
+| imagesloaded | 图片加载插件,能够监测图片的加载状态         |
+| TweenMax     | 超高性能专业级动画插件                      |
+| charming     | 改变单个字体                                |
+| swiper       | 移动端网页触摸内容滑动插件                  |
+| fullpage     | 全屏滑动插件                                |
+| wow          | 实现滚动页面时触发CSS 动画效果的插件        |
+| animejs      | 轻量级JavaScript动画库                      |
+| AnnieJS      | 专注于Html5 互动交互的2d动画引擎（偏flash） |
 
 ------
 
@@ -1417,11 +1418,13 @@ module.exports = withCss({})
 ```javascript
 //在main.js中挂在在原型挂在一个全新的vue实例
 Vue.prototype.$bus = new Vue()
+
 ```
 
 ```javascript
 //子组件中发出事件
 this.$bus.$emit("myOnLoad");
+
 ```
 
 ```javascript
@@ -1429,6 +1432,7 @@ this.$bus.$emit("myOnLoad");
 this.$bus.$on("myOnLoad",this.myEvent);
 //上级中取消监听
 this.$bus.$off("myOnLoad"this.myEvent);
+
 ```
 
 ------
@@ -1463,6 +1467,7 @@ export default {
         }
     }
 }
+
 ```
 
 2. 演示
@@ -1513,6 +1518,7 @@ export default {
     line-height: 20px;
 }
 </style>
+
 ```
 
 - common/toast/index.js
@@ -1536,6 +1542,7 @@ obj.install = Vue => {
 }
 
 export default obj;
+
 ```
 
 - main.js
@@ -1555,6 +1562,7 @@ new Vue({
     router,
     render: h => h(App)
 }).$mount('#app')
+
 ```
 
 ------
@@ -1571,6 +1579,7 @@ const serverUrl = ""; //配置请求服务器路径
 export default {
 	serverUrl
 }
+
 ```
 
 2. 封装request.js
@@ -1624,6 +1633,7 @@ function MyHttp(defaultParams, allRequest) {
 }
 
 export default MyHttp;
+
 ```
 
 3. 创建api.js,配置其相关请求接口
@@ -1642,6 +1652,7 @@ const allRequest = {
 const API = new MyHttp({}, allRequest);
 
 module.exports = API;
+
 ```
 
 ------
@@ -1696,6 +1707,7 @@ const request = options => {
 }
 
 export default request;
+
 ```
 
 2. 创建api.js,配置其相关请求接口
@@ -1720,6 +1732,7 @@ export function getProductData(type, page) {
     }
   })
 }
+
 ```
 
 ------
@@ -1734,6 +1747,7 @@ if ('addEventListener' in document) {    
         FastClick.attach(document.body);    
     }, false);  
 }
+
 ```
 
 - jquery
@@ -1742,6 +1756,7 @@ if ('addEventListener' in document) {    
 $(function() {
   FastClick.attach(document.body);
 });
+
 ```
 
 - Vue
@@ -1749,6 +1764,7 @@ $(function() {
 ```javascript
  import FastClick from 'fastclick'
  FastClick.attach(document.body);
+
 ```
 
 ------
@@ -1768,6 +1784,7 @@ $(function() {
 	win.addEventListener(resizeEvt, recalc, false);
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);
+
 ```
 
 ------
@@ -1788,6 +1805,7 @@ function debounce(handler, delay) {
         }.bind(this), delay)
     }
 }
+
 ```
 
 2. 节流
@@ -1805,6 +1823,7 @@ function trottle(handler, delay) {
         }
     }
 }
+
 ```
 
 ------
@@ -1825,6 +1844,7 @@ Object.assign = Object.assign || function(){
     })
     return target
 }
+
 ```
 
 ------
@@ -1849,6 +1869,7 @@ function deepClone(obj1, obj2) {
     }
     return obj2;
 }
+
 ```
 
 ------
@@ -1864,6 +1885,7 @@ function isEmpty(value) {
         (typeof value == "string" && value.trim().length == 0)
     )
 }
+
 ```
 
 ------
@@ -1899,6 +1921,7 @@ function getExplorerInfo() {
         version: -1
     }
 }
+
 ```
 
 ------
@@ -1917,6 +1940,7 @@ document.addEventListener('keydown', function(event){
         "A" == event.srcElement.tagName && event.shiftKey //shift + 点击a标签
     ) || (event.returnValue = false)
 });
+
 ```
 
 ------
@@ -1929,6 +1953,7 @@ document.addEventListener('keydown', function(event){
         return event.returnValue = false
     })
 });
+
 ```
 
 ------
@@ -1952,6 +1977,7 @@ window.onload = function(){
         }
     })
 }
+
 ```
 
 ------
@@ -1971,6 +1997,7 @@ function isPCBroswer() {
 		, l = "windows mobile" == e.match(/windows mobile/i);
 	return !(t || i || r || n || a || o || s || l)
 }
+
 ```
 
 ------
@@ -1996,6 +2023,7 @@ function dateFormater(formater, t){
 }
 // dateFormater('YYYY-MM-DD HH:mm', t)
 // 2019-08-05 09:45
+
 ```
 
 ------
@@ -2016,6 +2044,7 @@ function GetUrlParam(){
 	}
 	return params;
 }
+
 ```
 
 ------
@@ -2028,6 +2057,7 @@ function random(lower, upper){
 	upper = +upper || 0
 	return Math.random() * (upper - lower) + lower;
 }
+
 ```
 
 ------
@@ -2043,6 +2073,7 @@ document.querySelector("input[type=file]").onchange=e=>{
         console.log(e.target.result);
     }
 }
+
 ```
 
 ------
