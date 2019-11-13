@@ -867,6 +867,7 @@ class Compiler {
 | wow          | 实现滚动页面时触发CSS 动画效果的插件        |
 | animejs      | 轻量级JavaScript动画库                      |
 | AnnieJS      | 专注于Html5 互动交互的2d动画引擎（偏flash） |
+| Hilo         | 轻量Html5小游戏引擎（阿里）                 |
 
 ------
 
@@ -1046,6 +1047,7 @@ const userSchema = new Schema({
     }
 });
 module.exports = User = mongoose.model("users", userSchema);
+
 ```
 
 3. 查询与插入演示
@@ -1089,6 +1091,7 @@ router.post("/register", (req, res) => {
         }
     })
 });
+
 ```
 
 ------
@@ -1163,6 +1166,7 @@ module.exports={
         new VueLoaderPlugin()
     ],
 }
+
 ```
 
 ------
@@ -1184,6 +1188,7 @@ export default (state = defaultState,action)=>{
     }
     return state
 }
+
 ```
 
 3. 在store目录创建index.js
@@ -1198,6 +1203,7 @@ const store=createStore(
 );
 
 export default store;
+
 ```
 
 4. React中App.js为例
@@ -1250,6 +1256,7 @@ class App extends Component {
   }
 }
 export default App;
+
 ```
 
 ------
@@ -1302,6 +1309,7 @@ export default new Vuex.Store({
     mutations,
     actions
 })
+
 ```
 
 2. 使用
@@ -1313,6 +1321,7 @@ this.$store
 this.$store
     .dispatch("clearLogin")
     .then(()=>console.log('退出登录'));
+
 ```
 
 ------
@@ -1394,6 +1403,7 @@ module.exports = {
         before: app => {}
     }
 }
+
 ```
 
 ------
@@ -1409,6 +1419,7 @@ if(typeof require !== 'undefined'){
 }
 
 module.exports = withCss({})
+
 ```
 
 ------
