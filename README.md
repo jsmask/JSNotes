@@ -1,4 +1,8 @@
 # 收集整理
 
-1.[前端开发笔记](https://github.com/jsmask/JS-Notes/blob/master/docs/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0.md)
+1.[基础概念](https://github.com/jsmask/JS-Notes/blob/master/docs/concept.md)
+
+2.[常用分享](https://github.com/jsmask/JS-Notes/blob/master/docs/share.md)
+
+3.[常用代码](https://github.com/jsmask/JS-Notes/blob/master/docs/code.md)
 
