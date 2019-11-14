@@ -1,4 +1,4 @@
-# 收集整理
+# JSNotes
 
 1.[基础概念](https://github.com/jsmask/JS-Notes/blob/master/docs/concept.md)
 
