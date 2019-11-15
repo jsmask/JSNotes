@@ -134,6 +134,7 @@
 19. store -> 本地存储处理
 20. vue-chat-scroll -> 针对vue聊天滚动
 21. bootstrap-vue -> 针对vue提供的bootstrap
+22. react-hook-form -> 针对react-hook的表单组件
 
 ------
 

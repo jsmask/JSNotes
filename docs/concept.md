@@ -12,6 +12,21 @@
 
 ------
 
+### 页面加载过程
+
+1. 用户输入网址
+2. 浏览器通过NDS，把网址解析成IP
+3. 和IP地址建立TCP链接，发送HTTP请求
+4. 服务器接收到请求，查库，读文件等，拼接好返回的HTTP响应
+5. 浏览器收到首屏html，开始渲染
+6. 解析html为dom
+7. 解析css为css tree
+8. dom+css 生成render-tree 绘图
+9. 加载script的js文件
+10. 执行js
+
+___
+
 ### jsonp
 
 > 1. jsonp只能解决GET类型的ajax请求跨域问题
