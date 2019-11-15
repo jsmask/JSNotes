@@ -162,6 +162,7 @@
 2. FormData()
 3. FileReader()
 4. XMLHttpRequest()
+5. performance
 
 ------
 

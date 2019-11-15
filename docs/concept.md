@@ -27,6 +27,21 @@
 
 ___
 
+### performance
+
+1. performance.getEntriesByType('navigation') -> 获取加载信息
+2. 查询加载耗时：
+   + 重定向耗时：redirectEnd - redirectStart
+   + DNS查询耗时：domainLookupEnd - domainLookupStart
+   + TCP链接耗时：connectEnd - connectStart
+   + HTTP请求耗时：responseEnd - responseStart
+   + 解析dom树耗时：domComplete - domInteractive
+   + 白屏时间： responseStart - navigationStart
+   + DOM ready时间：domContentLoadedEventEnd - navigationStart
+   + onload时间：loadEventEnd - loadEventStart
+
+___
+
 ### jsonp
 
 > 1. jsonp只能解决GET类型的ajax请求跨域问题
