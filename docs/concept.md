@@ -31,14 +31,14 @@ ___
 
 1. performance.getEntriesByType('navigation') -> 获取加载信息
 2. 查询加载耗时：
-   + 重定向耗时：redirectEnd - redirectStart
-   + DNS查询耗时：domainLookupEnd - domainLookupStart
-   + TCP链接耗时：connectEnd - connectStart
-   + HTTP请求耗时：responseEnd - responseStart
-   + 解析dom树耗时：domComplete - domInteractive
-   + 白屏时间： responseStart - navigationStart
-   + DOM ready时间：domContentLoadedEventEnd - navigationStart
-   + onload时间：loadEventEnd - loadEventStart
+   1. 重定向耗时：redirectEnd - redirectStart
+   2. DNS查询耗时：domainLookupEnd - domainLookupStart
+   3. TCP链接耗时：connectEnd - connectStart
+   4. HTTP请求耗时：responseEnd - responseStart
+   5. 解析dom树耗时：domComplete - domInteractive
+   6. 白屏时间： responseStart - navigationStart
+   7. DOM ready时间：domContentLoadedEventEnd - navigationStart
+   8. onload时间：loadEventEnd - loadEventStart
 
 ___
 
