@@ -62,6 +62,7 @@
 58. yupoo -> 免费图片上传平台（100M） -> https://x.yupoo.com
 59. pages.github -> 在github部署静态页(1G)  -> [https://pages.github.com](https://pages.github.com/)
 60. hackernoon -> 外国对程序员和创业者学习开放平台 -> https://hackernoon.com/
+61. leetcode -> 算法、数据结构、系统设计等技术题库平台 -> https://leetcode-cn.com/
 
 ------
 
@@ -135,6 +136,8 @@
 20. vue-chat-scroll -> 针对vue聊天滚动
 21. bootstrap-vue -> 针对vue提供的bootstrap
 22. react-hook-form -> 针对react-hook的表单组件
+23. react-virtualized -> 虚拟列表处理无限滚动dom过多卡顿
+24. vuedraggable ->  针对vue提供的元素拖拽
 
 ------
 
