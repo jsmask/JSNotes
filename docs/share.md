@@ -63,6 +63,7 @@
 59. pages.github -> 在github部署静态页(1G)  -> [https://pages.github.com](https://pages.github.com/)
 60. hackernoon -> 外国对程序员和创业者学习开放平台 -> https://hackernoon.com/
 61. leetcode -> 算法、数据结构、系统设计等技术题库平台 -> https://leetcode-cn.com/
+62. dwz -> 百度的短网址服务 -> https://dwz.cn/
 
 ------
 
