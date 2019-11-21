@@ -1,14 +1,15 @@
 ### 算法
 
 1. [啊哈!算法](https://book.douban.com/subject/25894685/)
+
 2. [算法图解](https://book.douban.com/subject/26979890/)
+
 3. [算法（第4版）](https://book.douban.com/subject/19952400/)
+
 
 ### 设计模式
 
 1. [大话设计模式](https://book.douban.com/subject/2334288/)
-
-   ![https://img1.doubanio.com/view/subject/l/public/s6908318.jpg]()
 
 2. [Head First 设计模式](https://book.douban.com/subject/2243615/)
 
@@ -16,8 +17,9 @@
 
 4. [图解设计模式](https://book.douban.com/subject/26933281/)
 
+
 ### 软件质量
 
 1. [代码整洁之道](https://book.douban.com/subject/4199741/)
-2. [代码大全（第2版）](https://book.douban.com/subject/1477390/)
 
+2. [代码大全（第2版）](https://book.douban.com/subject/1477390/)

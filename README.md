@@ -15,3 +15,5 @@
 
 3. [常用代码](https://github.com/jsmask/JS-Notes/blob/master/docs/code.md)
 
+4. [推荐书籍](https://github.com/jsmask/JS-Notes/blob/master/docs/book.md)
+
