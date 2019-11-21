@@ -162,11 +162,12 @@
 
 ### JS重要对象或函数
 
-1. URL.createObjectURL()
-2. FormData()
-3. FileReader()
-4. XMLHttpRequest()
+1. URL.createObjectURL
+2. FormData
+3. FileReader
+4. XMLHttpRequest
 5. performance
+6. Object.defineProperty
 
 ------
 

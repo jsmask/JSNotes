@@ -1078,3 +1078,35 @@ epsEqu2(0.1 + 0.2, 0.3) // true
 
 ------
 
+### requestAnimFrame 兼容
+
+```javascript
+window.requestAnimFrame = (function() {
+    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+        function(callback,element) {
+            return window.setTimeout(callback, 1000 / 60);
+        };
+})();
+```
+
+___
+
+### 动态创建script标签
+
+```javascript
+function loadScript(url, func) {
+    var head = document.head || document.getElementByTagName('head')[0];
+    var script = document.createElement('script');
+    script.src = url;
+    script.onload = script.onreadystatechange = function() {
+        if (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') {
+            func();
+            script.onload = script.onreadystatechange = null;
+        }
+    };
+    head.appendChild(script);
+}
+```
+
+____
+
