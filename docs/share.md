@@ -65,6 +65,7 @@
 61. leetcode -> 算法、数据结构、系统设计等技术题库平台 -> https://leetcode-cn.com/
 62. dwz -> 百度的短网址服务 -> https://dwz.cn/
 63. sunny-ngrok -> 模拟公网IP端口 -> http://www.ngrok.cc/
+64. pinbox -> 跨平台收藏工具 -> https://withpinbox.com/
 
 ------
 
