@@ -146,8 +146,8 @@ module.exports={
        use:['style-loader','css-loader']
     },
     {
-        test:/\.(png|jpg|gif|jpeg)$/
-        use:[{
+        test:/\.(png|jpg|gif|jpeg)$/,
+        use:{
             loader:'url-loader',
             options:{
 //当加载的图片小于limit时，会将图片编译成base64字符串形式
@@ -155,7 +155,7 @@ module.exports={
                  limit:8192,
                  name:'img/[name].[hash:8].[ext]'
              }
-             }]
+         }
     },
    {
             test: /\.vue$/,

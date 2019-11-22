@@ -1,4 +1,4 @@
-### 算法
+### 算法逻辑
 
 1. [啊哈!算法](https://book.douban.com/subject/25894685/)
 
@@ -18,7 +18,7 @@
 4. [图解设计模式](https://book.douban.com/subject/26933281/)
 
 
-### 软件质量
+### 代码质量
 
 1. [代码整洁之道](https://book.douban.com/subject/4199741/)
 
