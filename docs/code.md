@@ -104,9 +104,142 @@ router.post("/register", (req, res) => {
 });
 ```
 
-------
+____
 
-### webpack基础配置
+### webpack 基础配置
+
+```javascript
+const path = require("path")
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const devMode = process.env.NODE_ENV !== 'production';
+
+const { HotModuleReplacementPlugin } = webpack;
+
+module.exports = {
+  // mode:"production",
+  // mode:"development",
+  entry: {
+    index: "./src/index.js",
+    // another: "@babel/polyfill"
+  },
+  output: {
+    path: path.resolve(__dirname, './build'),
+    filename: "main.js",
+
+    // publicPath: ''
+  },
+  devServer: {
+    contentBase: "./build",
+    open: true,
+    hot: true,
+    hotOnly: true,
+    port: 8081,
+    proxy: {
+      "/api": {
+        target: ""
+      }
+    }
+  },
+  // devtool:"cheap-module-eval-source-map",// 开发环境配置
+  // devtool:"cheap-module-source-map",   // 线上生成配置
+  // devtool: devMode ? "source-map" : "none",
+  // devtool:"eval",
+  devtool: devMode ? "cheap-module-eval-source-map" : "none",
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [[
+              '@babel/preset-env', {
+                targets: {
+                  chrome: 53,
+                  browsers: [
+                    "last 2 versions",
+                    "safari 7",
+                    "android >= 4.0",
+                    "not ie <= 8"
+                  ]
+                },
+                useBuiltIns: "usage",
+                corejs: 2
+              }
+            ]]
+          }
+        }
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 8192,
+            name: "[name].[hash:8].[ext]",
+            outputPath: "images/"
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          devMode ? "style-loader" : {
+            loader: MiniCssExtractPlugin.loader,
+            // options: {
+            //    hmr: false,
+            //    publicPath: '../../'
+            // }
+          },
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins: [
+                require('autoprefixer')({
+                  "overrideBrowserslist": [
+                    "> 1%",
+                    "last 7 versions",
+                    "not ie <= 8",
+                    "ios >= 8",
+                    "android >= 4.0"
+                  ]
+                }),
+                require('postcss-pxtorem')({
+                  rootValue: 100,
+                  propWhiteList: ["*"],
+                  selectorBlackList: [".vux-", ".weui-", ".mt-", ".mint-", ".dp-", ".ig-"]
+                })
+              ]
+            }
+          }]
+      }
+    ]
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: "DEMO",
+      filename: "index.html",
+      template: "./public/index.html"
+    }),
+    new MiniCssExtractPlugin({
+      filename: "style.[hash:8].css"
+    }),
+    new HotModuleReplacementPlugin(),
+  ]
+}
+
+```
+
+____
+
+### webpack vue配置
 
 1. 创建webpack.config.js文件
 2. babel安装 -> npm install --save-dev babel-loader@7 babel-core babel-preset-es2015
@@ -134,7 +267,8 @@ module.exports={
       use: {
         loader: 'babel-loader',
         options: {
-          presets: ['es2015']
+          //babel<7用es2015，babel>=7使用@babel/preset-env
+          presets: ['es2015']  
         }
       }
     },
