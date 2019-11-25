@@ -122,7 +122,7 @@ module.exports={
  output:{
    path:path.resolve(__dirname,'dist'), //绝对路径
    filename:'bundle.js',
-   publicPath:'dist/'
+   //publicPath:'dist/'
  },
 //模块
  module:{
@@ -146,7 +146,7 @@ module.exports={
        use:['style-loader','css-loader']
     },
     {
-        test:/\.(png|jpg|gif|jpeg)$/,
+        test:/\.(png|gif|jpe?g)$/,
         use:{
             loader:'url-loader',
             options:{

@@ -1,3 +1,5 @@
+[TOC]
+
 ## 常用分享
 
 ### 文档&工具&资源
@@ -66,6 +68,7 @@
 62. dwz -> 百度的短网址服务 -> https://dwz.cn/
 63. sunny-ngrok -> 模拟公网IP端口 -> http://www.ngrok.cc/
 64. pinbox -> 跨平台收藏工具 -> https://withpinbox.com/
+65. free-for -> 收集各种免费使用的互联网服务的仓库 -> https://free-for.dev/
 
 ------
 
@@ -232,6 +235,12 @@
    ```
 
 2. babel-plugin-component -> 按需加载
+
+3. clean-webpack-plugin -> 清除打包文件
+
+4. html-webpack-plugin -> 设置模板页
+
+5. mini-css-extract-plugin -> 导出css文件
 
 ------
 
