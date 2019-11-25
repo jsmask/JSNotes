@@ -175,18 +175,50 @@
 
 ------
 
-### webpack常用插件
+### webpack 相关
 
-1. HtmlWebpackPlugin(需下载安装html-webpack-plugin) -> 绑定html
-2. VueLoaderPlugin(安装vue后，存在于vue-loader/lib/plugin) -> 解析vue文件
-3. BannerPlugin(自带) -> 头部声明注释
-4. UglifyjsPlugin(需下载安装uglifyjs-webpack-plugin) -> 丑化js代码
-5. WebpackDevServer(需下载安装webpack-dev-server 依赖express) -> 本地服务器自动更新
-6. WebpackMerge(需下载安装webpack-merge) -> 合并文件
+1. VueLoaderPlugin(安装vue后，存在于vue-loader/lib/plugin) -> 解析vue文件
+
+2. BannerPlugin(自带) -> 头部声明注释
+
+3. UglifyjsPlugin(需下载安装uglifyjs-webpack-plugin) -> 丑化js代码
+
+4. WebpackDevServer(需下载安装webpack-dev-server 依赖express) -> 本地服务器自动更新
+
+5. WebpackMerge(需下载安装webpack-merge) -> 合并文件
+
+6. cross-env -> 获取环境变量
+
+7. webpack-merge -> 模式区分打包
+
+8. postcss-pxtorem ->  px转换rem
+
+   常用配置（package.json）：
+
+   ```javascript
+   "postcss": {
+           "plugins": {
+               "autoprefixer": {},
+               "postcss-pxtorem": {
+                   "rootValue": 100,
+                   "propList": ["*"],
+               	"selectorBlackList": [".vux-",".weui-",".mt-",".mint-",".dp-",".ig-"]
+               }
+           }
+       }
+   ```
+
+9. babel-plugin-component -> 按需加载
+
+10. clean-webpack-plugin -> 清除打包文件
+
+11. html-webpack-plugin -> 设置模板页
+
+12. mini-css-extract-plugin -> 导出css文件
 
 ------
 
-### gulp常用插件
+### gulp 相关
 
 1. gulp-sass -> sass编译成css
 2. gulp-less -> less编译成css
@@ -210,35 +242,6 @@
 20. gulp-replace -> Gulp的一个字符串替换插件
 21. gulp-rename -> 轻松重命名文件
 22. gulp-rev -> 在静态文件名的后面添加哈希值
-
-------
-
-### 脚手架常用插件
-
-1. postcss-pxtorem ->  px转换rem
-
-   常用配置（package.json）：
-
-   ```javascript
-   "postcss": {
-           "plugins": {
-               "autoprefixer": {},
-               "postcss-pxtorem": {
-                   "rootValue": 100,
-                   "propList": ["*"],
-               	"selectorBlackList": [".vux-",".weui-",".mt-",".mint-",".dp-",".ig-"]
-               }
-           }
-       }
-   ```
-
-2. babel-plugin-component -> 按需加载
-
-3. clean-webpack-plugin -> 清除打包文件
-
-4. html-webpack-plugin -> 设置模板页
-
-5. mini-css-extract-plugin -> 导出css文件
 
 ------
 

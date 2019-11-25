@@ -109,15 +109,15 @@ ____
 ### webpack 基础配置
 
 ```javascript
-const path = require("path")
-const webpack = require("webpack");
+const path = require("path");
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require("webpack");
+const { HotModuleReplacementPlugin } = webpack;
 
 const devMode = process.env.NODE_ENV !== 'production';
-
-const { HotModuleReplacementPlugin } = webpack;
 
 module.exports = {
   // mode:"production",
@@ -129,7 +129,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './build'),
     filename: "main.js",
-
     // publicPath: ''
   },
   devServer: {
@@ -152,7 +151,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
@@ -232,7 +231,11 @@ module.exports = {
       filename: "style.[hash:8].css"
     }),
     new HotModuleReplacementPlugin(),
-  ]
+  ],
+  optimization: {
+    //在package:json 需配置 "sideEffects": false
+    usedExports: true
+  }
 }
 
 ```
