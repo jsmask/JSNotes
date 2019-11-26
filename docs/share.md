@@ -193,10 +193,8 @@
 
 8. postcss-pxtorem ->  px转换rem
 
-   常用配置（package.json）：
-
    ```javascript
-   "postcss": {
+"postcss": {
            "plugins": {
                "autoprefixer": {},
                "postcss-pxtorem": {
@@ -207,7 +205,7 @@
            }
        }
    ```
-
+   
 9. babel-plugin-component -> 按需加载
 
 10. clean-webpack-plugin -> 清除打包文件
@@ -215,6 +213,35 @@
 11. html-webpack-plugin -> 设置模板页
 
 12. mini-css-extract-plugin -> 导出css文件
+
+13. split-chunks-plugin -> 代码分割
+
+    ```javascript
+    //webpack中还提供了一种更加方便的代码分割
+    optimization: {
+     splitChunks: {
+      chunks: 'async',//对同步，异步，所有的模块有效
+      minSize: 30000,//当模块大于30kb
+      maxSize: 0,//对模块进行二次分割时使用，不推荐使用
+      minChunks: 1,//打包生成的chunk文件最少有几个chunk引用了这个模块
+      maxAsyncRequests: 5,//模块请求5次
+      maxInitialRequests: 3,//入口文件同步请求3次
+      automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+       vendors: {
+        test: /[\\/]node_modules[\\/]/,
+        priority: -10//优先级 数字越大，优先级越高
+       },
+       default: {
+        minChunks: 2,
+        priority: -20,
+        reuseExistingChunk: true
+       }
+      }
+     }
+    }
+    ```
 
 ------
 
