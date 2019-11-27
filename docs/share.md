@@ -195,16 +195,16 @@
 8. postcss-pxtorem ->  px转换rem  
 
    ```javascript
-"postcss": {
-           "plugins": {
-               "autoprefixer": {},
-               "postcss-pxtorem": {
-                   "rootValue": 100,
-                   "propList": ["*"],
-               	"selectorBlackList": [".vux-",".weui-",".mt-",".mint-",".dp-",".ig-"]
-               }
-           }
-       }
+        postcss: {
+                "plugins": {
+                    "autoprefixer": {},
+                    "postcss-pxtorem": {
+                        "rootValue": 100,
+                        "propList": ["*"],
+                        "selectorBlackList": [".vux-",".weui-",".mt-",".mint-",".dp-",".ig-"]
+                    }
+                }
+        }
    ```
    
    
