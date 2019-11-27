@@ -192,8 +192,23 @@
 
 7. webpack-merge -> 模式区分打包
 
-8. postcss-pxtorem ->  px转换rem
+8. postcss-pxtorem ->  px转换rem  
 
+   ```javascript
+"postcss": {
+           "plugins": {
+               "autoprefixer": {},
+               "postcss-pxtorem": {
+                   "rootValue": 100,
+                   "propList": ["*"],
+               	"selectorBlackList": [".vux-",".weui-",".mt-",".mint-",".dp-",".ig-"]
+               }
+           }
+       }
+   ```
+   
+   
+   
 9. babel-plugin-component -> 按需加载
 
 10. clean-webpack-plugin -> 清除打包文件
