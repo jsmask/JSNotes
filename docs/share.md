@@ -98,6 +98,7 @@
 3. 中国古典颜色表 -> https://colors.ichuantong.cn/
 4. 打字机实时呈现 -> https://www.strml.net/
 5. 3D小车网站 -> https://bruno-simon.com/
+6. 英文字特效 -> https://leon-kim.com/
 
 ------
 
