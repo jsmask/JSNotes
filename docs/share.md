@@ -68,6 +68,7 @@
 64. pinbox -> 跨平台收藏工具 -> https://withpinbox.com/
 65. free-for -> 收集各种免费使用的互联网服务的仓库 -> https://free-for.dev/
 66. sikiedu -> 有关游戏开发课程的网站 -> http://www.sikiedu.com/
+67.  shields -> 自定义生成github徽章 -> https://img.shields.io/badge/name-version-brightgreen.svg
 
 ------
 
