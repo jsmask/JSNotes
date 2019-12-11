@@ -1,6 +1,24 @@
 # JSNotes
 
-### 前言
+个人整理发现与总结的前端笔记
+
+帮助学习者掌握JavaScript的部分技巧原理与学习方法，更好的在大环境下进一步发展。
+
+同时方便自身查阅与回顾容易遗忘遗漏的知识与技能。
+
+
+
+1. [基础概念](https://github.com/jsmask/JS-Notes/blob/master/docs/base.md)
+
+2. [常用分享](https://github.com/jsmask/JS-Notes/blob/master/docs/share.md)
+
+3. [常用代码](https://github.com/jsmask/JS-Notes/blob/master/docs/code.md)
+
+4. [推荐书籍](https://github.com/jsmask/JS-Notes/blob/master/docs/book.md)
+
+
+
+### 题外话
 
 之前几年工作都是外包(H5,小程序)和从事一些后端(C#.NET)任务，一向太忙，没有完整的时间学习一些前端技术，
 致使老技能虽然熟练度增加，但带来技能滞后，没有革新现在的技术，
@@ -23,21 +41,4 @@
 但里面的代码现在看太拿不上台面了，惭愧惭愧~~我还是好好学习好好玩游戏吧，希望有一天量变到质变。。
 
 
-### 介绍
-
-个人整理发现与总结的前端笔记
-
-帮助学习者掌握JavaScript的部分技巧原理与学习方法，更好的在大环境下进一步发展。
-
-同时方便自身查阅与回顾容易遗忘遗漏的知识与技能。
-
-
-
-1. [基础概念](https://github.com/jsmask/JS-Notes/blob/master/docs/base.md)
-
-2. [常用分享](https://github.com/jsmask/JS-Notes/blob/master/docs/share.md)
-
-3. [常用代码](https://github.com/jsmask/JS-Notes/blob/master/docs/code.md)
-
-4. [推荐书籍](https://github.com/jsmask/JS-Notes/blob/master/docs/book.md)
 
