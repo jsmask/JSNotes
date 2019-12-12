@@ -377,17 +377,18 @@
 
 ### 展示型页面插件
 
-| 名称         | 介绍                                        |
-| ------------ | ------------------------------------------- |
-| imagesloaded | 图片加载插件,能够监测图片的加载状态         |
-| TweenMax     | 超高性能专业级动画插件                      |
-| charming     | 改变单个字体                                |
-| swiper       | 移动端网页触摸内容滑动插件                  |
-| fullpage     | 全屏滑动插件                                |
-| wow          | 实现滚动页面时触发CSS 动画效果的插件        |
-| animejs      | 轻量级JavaScript动画库                      |
-| AnnieJS      | 专注于Html5 互动交互的2d动画引擎（偏flash） |
-| Hilo         | 轻量Html5小游戏引擎（阿里）                 |
+| 名称         | 介绍                                        | 资源                                 |
+| ------------ | ------------------------------------------- | ------------------------------------ |
+| imagesloaded | 图片加载插件,能够监测图片的加载状态         | https://imagesloaded.desandro.com/   |
+| TweenMax     | 超高性能专业级动画插件                      | https://www.tweenmax.com.cn/         |
+| charming     | 改变单个字体                                | https://github.com/yuanqing/charming |
+| swiper       | 移动端网页触摸内容滑动插件                  | https://www.swiper.com.cn/           |
+| fullpage     | 全屏滑动插件                                | http://fullpage.81hu.com/            |
+| wow          | 实现滚动页面时触发CSS 动画效果的插件        | https://www.delac.io/wow/            |
+| animejs      | 轻量级JavaScript动画库                      | https://www.animejs.cn/              |
+| AnnieJS      | 专注于Html5 互动交互的2d动画引擎（偏flash） | http://www.annie2x.com/              |
+| Hilo         | 轻量Html5小游戏引擎（阿里）                 | http://hiloteam.github.io/           |
+| paperjs      | 矢量图形脚本框架                            | http://paperjs.org/                  |
 
 ------
 
