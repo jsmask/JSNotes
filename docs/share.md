@@ -69,6 +69,8 @@
 65. free-for -> 收集各种免费使用的互联网服务的仓库 -> https://free-for.dev/
 66. sikiedu -> 有关游戏开发课程的网站 -> http://www.sikiedu.com/
 67.  shields -> 自定义生成github徽章 -> https://img.shields.io/badge/name-version-brightgreen.svg
+68. fast-astar -> a*寻路算法 -> https://sbfkcel.github.io/fast-astar/
+69. designwithai -> ai自动生成渐变色 -> https://www.designwithai.com/aigradient
 
 ------
 
@@ -377,18 +379,20 @@
 
 ### 展示型页面插件
 
-| 名称         | 介绍                                        | 资源                                 |
-| ------------ | ------------------------------------------- | ------------------------------------ |
-| imagesloaded | 图片加载插件,能够监测图片的加载状态         | https://imagesloaded.desandro.com/   |
-| TweenMax     | 超高性能专业级动画插件                      | https://www.tweenmax.com.cn/         |
-| charming     | 改变单个字体                                | https://github.com/yuanqing/charming |
-| swiper       | 移动端网页触摸内容滑动插件                  | https://www.swiper.com.cn/           |
-| fullpage     | 全屏滑动插件                                | http://fullpage.81hu.com/            |
-| wow          | 实现滚动页面时触发CSS 动画效果的插件        | https://www.delac.io/wow/            |
-| animejs      | 轻量级JavaScript动画库                      | https://www.animejs.cn/              |
-| AnnieJS      | 专注于Html5 互动交互的2d动画引擎（偏flash） | http://www.annie2x.com/              |
-| Hilo         | 轻量Html5小游戏引擎（阿里）                 | http://hiloteam.github.io/           |
-| paperjs      | 矢量图形脚本框架                            | http://paperjs.org/                  |
+| 名称         | 介绍                                        | 资源                                   |
+| ------------ | ------------------------------------------- | -------------------------------------- |
+| imagesloaded | 图片加载插件,能够监测图片的加载状态         | https://imagesloaded.desandro.com/     |
+| TweenMax     | 超高性能专业级动画插件                      | https://www.tweenmax.com.cn/           |
+| charming     | 改变单个字体                                | https://github.com/yuanqing/charming   |
+| swiper       | 移动端网页触摸内容滑动插件                  | https://www.swiper.com.cn/             |
+| fullpage     | 全屏滑动插件                                | http://fullpage.81hu.com/              |
+| wow          | 实现滚动页面时触发CSS 动画效果的插件        | https://www.delac.io/wow/              |
+| animejs      | 轻量级JavaScript动画库                      | https://www.animejs.cn/                |
+| AnnieJS      | 专注于Html5 互动交互的2d动画引擎（偏flash） | http://www.annie2x.com/                |
+| Hilo         | 轻量Html5小游戏引擎（阿里）                 | http://hiloteam.github.io/             |
+| paperjs      | 矢量图形脚本框架                            | http://paperjs.org/                    |
+| Sortable     | 适用于PC和移动端的拖拽插件                  | https://github.com/SortableJS/Sortable |
+| photoswipe   | 浏览放大图片插件                            | https://photoswipe.com/                |
 
 ------
 
