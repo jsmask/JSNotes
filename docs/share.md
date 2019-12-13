@@ -71,6 +71,7 @@
 67.  shields -> 自定义生成github徽章 -> https://img.shields.io/badge/name-version-brightgreen.svg
 68. fast-astar -> a*寻路算法 -> https://sbfkcel.github.io/fast-astar/
 69. designwithai -> ai自动生成渐变色 -> https://www.designwithai.com/aigradient
+70. yuanjisong -> 程序兼职平台可以发现更多的程序猿 -> https://www.yuanjisong.com/
 
 ------
 
@@ -82,6 +83,7 @@
 4. React.js 小书 -> http://huziketang.mangojuice.top/books/react/
 5. TensorFlow 教程 -> https://github.com/machinelearningmindset/TensorFlow-Course 
 6. 关于机器学习的电子书[英文] -> http://mbmlbook.com/
+7. [100个直接可以拿来用的JavaScript实用功能代码片段 -> https://www.cnblogs.com/wxydigua/p/3314274.html
 
 ------
 
