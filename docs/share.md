@@ -45,7 +45,6 @@
 41. electron -> js+html+css构建跨平台的桌面应用 -> https://electronjs.org/
 42. docschina -> 为前端开发人员提供优质文档的平台 -> https://www.docschina.org/
 43. mocky -> 模拟丰富数据的平台 -> https://www.mocky.io/
-44. udacity -> 来自硅谷的前沿技术平台 -> https://cn.udacity.com/
 45. chart.xkcd -> XKCD漫画风格的网页图表库 -> https://github.com/timqian/chart.xkcd
 46. rough -> 生成手绘风格图片的 JS 库 -> https://github.com/pshihn/rough/
 47. pagemap -> 在网页插入页面缩略导航图的 JS 库 -> https://larsjung.de/pagemap/
@@ -67,7 +66,6 @@
 63. sunny-ngrok -> 模拟公网IP端口 -> http://www.ngrok.cc/
 64. pinbox -> 跨平台收藏工具 -> https://withpinbox.com/
 65. free-for -> 收集各种免费使用的互联网服务的仓库 -> https://free-for.dev/
-66. sikiedu -> 有关游戏开发课程的网站 -> http://www.sikiedu.com/
 67.  shields -> 自定义生成github徽章 -> https://img.shields.io/badge/name-version-brightgreen.svg
 68. fast-astar -> a*寻路算法 -> https://sbfkcel.github.io/fast-astar/
 69. designwithai -> ai自动生成渐变色 -> https://www.designwithai.com/aigradient
@@ -87,6 +85,26 @@
 8. 猴子都能懂的GIT入门 -> https://backlog.com/git-tutorial/cn/
 
 ------
+
+### 优秀在线学习网站
+
+1. 慕课网 -> https://www.imooc.com/
+
+2. 优达学城 -> https://cn.udacity.com/
+3. 阿里大学 -> https://edu.aliyun.com/
+4. 极客学院 -> https://www.jikexueyuan.com/
+5. 腾讯公开课 -> https://ke.qq.com/
+6. 网易公开课 -> https://open.163.com/
+7. 麦子学院 -> http://www.maiziedu.com/
+8. 好知网 -> http://www.howzhi.com/
+9. sikiedu学院 -> http://www.sikiedu.com/
+10. 51自学网 -> https://www.51zxw.net/
+11. 万门大学 -> https://www.wanmen.org/
+12. 中国大学MOOC -> https://www.icourse163.org/
+13. open21ic公开课 -> http://open.21ic.com/
+14. 顶你学堂 -> http://www.topu.com/
+
+____
 
 ### 优秀Github作者
 
