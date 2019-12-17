@@ -25,7 +25,7 @@
 21. caniuse -> css兼容性检测 -> https://www.caniuse.com/
 22. phpStudy ->  PHP调试环境的程序集成包 -> http://phpstudy.php.cn/
 23. FlashFXP -> 功能强大的FXP/FTP软件 -> https://www.flashfxp.com/
-24. PxCook -> 切图设计工具软件 -> https://www.fancynode.com.cn/pxcook
+24. PxCook -> psd格式标注处理软件 -> https://www.fancynode.com.cn/pxcook
 25. sprite-css -> 在线制作css雪碧图 -> https://www.toptal.com/developers/css/sprite-generator/
 26. ngrok -> 将本机映射为外网Web服务器 -> https://ngrok.com/
 27. GitLab -> 使用Git作为代码管理工具 -> https://about.gitlab.com/
