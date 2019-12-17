@@ -75,7 +75,7 @@
 
 ------
 
-### 文章&电子书
+### 文章&电子书&&教程
 
 1. 彻底理解服务端渲染原理 -> https://juejin.im/post/5d1fe6be51882579db031a6d
 2. React打造精美WebApp -> https://sanyuan0704.github.io/react-cloud-music/
@@ -83,7 +83,8 @@
 4. React.js 小书 -> http://huziketang.mangojuice.top/books/react/
 5. TensorFlow 教程 -> https://github.com/machinelearningmindset/TensorFlow-Course 
 6. 关于机器学习的电子书[英文] -> http://mbmlbook.com/
-7. [100个直接可以拿来用的JavaScript实用功能代码片段 -> https://www.cnblogs.com/wxydigua/p/3314274.html
+7. 100个直接可以拿来用的JavaScript实用功能代码片段 -> https://www.cnblogs.com/wxydigua/p/3314274.html
+8. 猴子都能懂的GIT入门 -> https://backlog.com/git-tutorial/cn/
 
 ------
 
