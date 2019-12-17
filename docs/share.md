@@ -32,44 +32,45 @@
 28. Jenkins -> 自动化服务器 -> https://jenkins.io/zh/
 29. nginx -> 服务器反向代理 -> http://nginx.org/
 30. toolfk -> 提供利于开发的一些在线工具 -> https://www.toolfk.com/
-31. WinSCP ->  Windows 环境可使用 SSH 的图形化SFTP客户端 -> https://winscp.net/eng/docs/lang:chs
-32. SecureCRT -> 支持SSH的终端仿真程序  -> https://www.vandyke.com/products/securecrt/windows.html
-33. myjson -> 一个json仓库可以模拟请求 -> http://myjson.com/
-34. gulp ->  自动化构建工具 -> https://www.gulpjs.com.cn/
-35. easymock -> 可视化模拟数据的平台 -> https://www.easy-mock.com/
-36. Zdog ->  一个javascript的3D设计和动画制作库 -> https://zzz.dog/
-37. Writeathon -> 一款基于极简理念的在线写作工具 -> https://www.writeathon.cn/
-38. qtool -> 站长资源平台,拥有很多实用的在线功能 -> https://www.qtool.net/
+31. qtool -> 站长资源平台,拥有很多实用的在线功能 -> https://www.qtool.net/
+32. WinSCP ->  Windows 环境可使用 SSH 的图形化SFTP客户端 -> https://winscp.net/eng/docs/lang:chs
+33. SecureCRT -> 支持SSH的终端仿真程序  -> https://www.vandyke.com/products/securecrt/windows.html
+34. myjson -> 一个json仓库可以模拟请求 -> http://myjson.com/
+35. gulp ->  自动化构建工具 -> https://www.gulpjs.com.cn/
+36. easymock -> 可视化模拟数据的平台 -> https://www.easy-mock.com/
+37. Zdog ->  一个javascript的3D设计和动画制作库 -> https://zzz.dog/
+38. Writeathon -> 一款基于极简理念的在线写作工具 -> https://www.writeathon.cn/
 39. yarn -> yarn命令介绍 ->https://yarnpkg.com/zh-Hans/docs/cli/
 40. next -> 一个轻量级的 React 服务端渲染应用框架的中文官网 -> https://nextjs.frontendx.cn/
 41. electron -> js+html+css构建跨平台的桌面应用 -> https://electronjs.org/
 42. docschina -> 为前端开发人员提供优质文档的平台 -> https://www.docschina.org/
 43. mocky -> 模拟丰富数据的平台 -> https://www.mocky.io/
-45. chart.xkcd -> XKCD漫画风格的网页图表库 -> https://github.com/timqian/chart.xkcd
-46. rough -> 生成手绘风格图片的 JS 库 -> https://github.com/pshihn/rough/
-47. pagemap -> 在网页插入页面缩略导航图的 JS 库 -> https://larsjung.de/pagemap/
-48. showmebug -> 在线实时编程环境的平台 -> https://www.showmebug.com/
-49. geekdocs -> 面向前端开发者的网址导航站 -> http://geekdocs.cn/
-50. fastmock -> 可视化模拟数据的平台 -> https://www.fastmock.site
-51. vConsole ->  移动端调试工具 -> https://github.com/Tencent/vConsole
-52. sitepoint -> 外国针对Web开发人员的加油站 -> https://www.sitepoint.com/
-53. instant.page -> 即时预加载的JS库 -> https://instant.page/
-54. liaoxuefeng -> 免费学习前端技术的博客 -> https://www.liaoxuefeng.com/
-55. doka -> 在线图像编辑器 -> https://doka.photo/
-56. resume -> 自动生成简历的平台 -> https://resume.io/
-57. tietuku-> 免费图片上传平台（7天） -> http://www.tietuku.com
-58. yupoo -> 免费图片上传平台（100M） -> https://x.yupoo.com
-59. pages.github -> 在github部署静态页(1G)  -> [https://pages.github.com](https://pages.github.com/)
-60. hackernoon -> 外国对程序员和创业者学习开放平台 -> https://hackernoon.com/
-61. leetcode -> 算法、数据结构、系统设计等技术题库平台 -> https://leetcode-cn.com/
-62. dwz -> 百度的短网址服务 -> https://dwz.cn/
-63. sunny-ngrok -> 模拟公网IP端口 -> http://www.ngrok.cc/
-64. pinbox -> 跨平台收藏工具 -> https://withpinbox.com/
-65. free-for -> 收集各种免费使用的互联网服务的仓库 -> https://free-for.dev/
-67.  shields -> 自定义生成github徽章 -> https://img.shields.io/badge/name-version-brightgreen.svg
-68. fast-astar -> a*寻路算法 -> https://sbfkcel.github.io/fast-astar/
-69. designwithai -> ai自动生成渐变色 -> https://www.designwithai.com/aigradient
-70. yuanjisong -> 程序兼职平台可以发现更多的程序猿 -> https://www.yuanjisong.com/
+44. chart.xkcd -> XKCD漫画风格的网页图表库 -> https://github.com/timqian/chart.xkcd
+45. rough -> 生成手绘风格图片的 JS 库 -> https://github.com/pshihn/rough/
+46. pagemap -> 在网页插入页面缩略导航图的 JS 库 -> https://larsjung.de/pagemap/
+47. showmebug -> 在线实时编程环境的平台 -> https://www.showmebug.com/
+48. geekdocs -> 面向前端开发者的网址导航站 -> http://geekdocs.cn/
+49. fastmock -> 可视化模拟数据的平台 -> https://www.fastmock.site
+50. vConsole ->  移动端调试工具 -> https://github.com/Tencent/vConsole
+51. sitepoint -> 外国针对Web开发人员的加油站 -> https://www.sitepoint.com/
+52. instant.page -> 即时预加载的JS库 -> https://instant.page/
+53. liaoxuefeng -> 免费学习前端技术的博客 -> https://www.liaoxuefeng.com/
+54. doka -> 在线图像编辑器 -> https://doka.photo/
+55. resume -> 自动生成简历的平台 -> https://resume.io/
+56. tietuku-> 免费图片上传平台（7天） -> http://www.tietuku.com
+57. yupoo -> 免费图片上传平台（100M） -> https://x.yupoo.com
+58. pages.github -> 在github部署静态页(1G)  -> [https://pages.github.com](https://pages.github.com/)
+59. hackernoon -> 外国对程序员和创业者学习开放平台 -> https://hackernoon.com/
+60. leetcode -> 算法、数据结构、系统设计等技术题库平台 -> https://leetcode-cn.com/
+61. dwz -> 百度的短网址服务 -> https://dwz.cn/
+62. sunny-ngrok -> 模拟公网IP端口 -> http://www.ngrok.cc/
+63. pinbox -> 跨平台收藏工具 -> https://withpinbox.com/
+64. free-for -> 收集各种免费使用的互联网服务的仓库 -> https://free-for.dev/
+65. shields -> 自定义生成github徽章 -> https://img.shields.io/badge/name-version-brightgreen.svg
+66. fast-astar -> a*寻路算法 -> https://sbfkcel.github.io/fast-astar/
+67. designwithai -> ai自动生成渐变色 -> https://www.designwithai.com/aigradient
+68. yuanjisong -> 程序兼职平台可以发现更多的程序猿 -> https://www.yuanjisong.com/
+69. parceljs -> 零配置打包工具 -> https://parceljs.docschina.org/
 
 ------
 
@@ -83,6 +84,8 @@
 6. 关于机器学习的电子书[英文] -> http://mbmlbook.com/
 7. 100个直接可以拿来用的JavaScript实用功能代码片段 -> https://www.cnblogs.com/wxydigua/p/3314274.html
 8. 猴子都能懂的GIT入门 -> https://backlog.com/git-tutorial/cn/
+9. 现代 JavaScript 教程 -> https://zh.javascript.info/
+10.  TypeScript 入门教程 -> https://ts.xcatliu.com/
 
 ------
 
