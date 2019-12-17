@@ -73,7 +73,7 @@
 
 ------
 
-### 文章&电子书&&教程
+### 文章&电子书&教程
 
 1. 彻底理解服务端渲染原理 -> https://juejin.im/post/5d1fe6be51882579db031a6d
 2. React打造精美WebApp -> https://sanyuan0704.github.io/react-cloud-music/
