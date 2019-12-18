@@ -339,6 +339,7 @@
 | TexturePackerGUI | 拆分合并图片资源 |
 | Cinema 4D        | 视觉特效制作     |
 | Particle2dx      | 粒子特效制作     |
+| FairyGUI         | 超强 UI 编辑器   |
 
 ------
 
