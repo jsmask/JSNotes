@@ -110,8 +110,8 @@
 
 ### 优秀Github作者
 
-1. 神三元 ->《React打造精美WebApp》作者【中国】 -> https://github.com/sanyuan0704
-2. 阮一峰 ->《ECMAScript 6入门》作者【中国】 -> https://github.com/ruanyf
+1. 阮一峰 ->《ECMAScript 6入门》作者【中国】 -> https://github.com/ruanyf
+2. 神三元 ->《React打造精美WebApp》作者【中国】 -> https://github.com/sanyuan0704
 3. 廖雪峰 ->《Spring 2.0核心技术与最佳实践》作者【中国】 ->https://github.com/liaoxuefeng
 4. yui540 ->《臆病な魔女》作者【日本】 -> https://github.com/yui540
 
