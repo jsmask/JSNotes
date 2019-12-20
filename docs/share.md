@@ -88,6 +88,7 @@
 9. 现代 JavaScript 教程 -> https://zh.javascript.info/
 10.  TypeScript 入门教程 -> https://ts.xcatliu.com/
 11. 逐行剖析 Vue.js 源码 -> https://nlrx-wjc.github.io/Learn-Vue-Source-Code/
+12. 使用Typescript重构axios -> https://www.cnblogs.com/wangjiachen666/p/11234180.html
 
 ------
 
