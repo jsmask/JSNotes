@@ -72,6 +72,7 @@
 68. yuanjisong -> 程序兼职平台可以发现更多的程序猿 -> https://www.yuanjisong.com/
 69. parceljs -> 零配置打包工具 -> https://parceljs.docschina.org/
 70. whocanuse -> 配色可用性查看工具 -> https://whocanuse.com/
+71. wuruihong -> 生成app启动图的图标工场 -> http://icon.wuruihong.com/
 
 ------
 
