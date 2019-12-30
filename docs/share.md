@@ -409,7 +409,7 @@
 
 ------
 
-### 展示型页面插件
+### 实用插件
 
 | 名称         | 介绍                                        | 资源                                    |
 | ------------ | ------------------------------------------- | --------------------------------------- |
@@ -428,6 +428,7 @@
 | jtopo        | 轻量级拓扑图形化界面开发工具                | http://www.jtopo.com/                   |
 | QRCode       | 二维码生成器                                | https://github.com/davidshimjs/qrcodejs |
 | html2canvas  | 将页面渲染成画布                            | https://github.com/niklasvh/html2canvas |
+| mescroll     | 滚动加载刷新                                | http://www.mescroll.com                 |
 
 ------
 
