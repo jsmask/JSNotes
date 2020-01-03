@@ -77,6 +77,8 @@
 73. Trello -> 智能的团队协作工具 ->  https://trello.com/
 74. codecks -> 针对游戏开发的项目管理工具 -> https://www.codecks.io/
 75. riot -> 简单优雅的基于组件的UI库 -> https://riot.js.org/
+76. JSONCrush ->  JSON 数据的压缩工具 -> https://github.com/KilledByAPixel/JSONCrush
+77. legra -> 生成乐高积木的图案的js库 -> https://legrajs.com/
 
 ------
 
@@ -410,7 +412,7 @@
 
 ------
 
-### 实用插件
+### 实用库
 
 | 名称         | 介绍                                        | 资源                                    |
 | ------------ | ------------------------------------------- | --------------------------------------- |
