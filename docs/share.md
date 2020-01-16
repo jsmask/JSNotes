@@ -82,6 +82,7 @@
 78. mithril -> 轻量级前端框架 -> https://mithril.js.org/
 79. knDB -> 轻量级Node.js 数据持久化库 -> https://github.com/Knove/knDB/blob/master/README.CN.md
 80. charles -> 实用的抓包工具 -> https://www.charlesproxy.com/
+81. fontawesome -> 实用的图标集 -> https://fontawesome.com/
 
 ------
 
