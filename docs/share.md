@@ -83,6 +83,9 @@
 79. knDB -> 轻量级Node.js 数据持久化库 -> https://github.com/Knove/knDB/blob/master/README.CN.md
 80. charles -> 实用的抓包工具 -> https://www.charlesproxy.com/
 81. fontawesome -> 实用的图标集 -> https://fontawesome.com/
+82. pixlrX -> 基于 Canvas 和 WebGL 的在线图像编辑器 -> https://pixlr.com/x
+83. magicCss -> 实现各类图形的css库 -> http://chokcoco.github.io/magicCss/html/index.html
+84. happyhues -> 提供一系列实时切换、定制的配色方案 -> https://www.happyhues.co/
 
 ------
 
@@ -157,6 +160,7 @@
 10. multer -> 处理文件上传
 11. blueimp-md5 -> 实现md5加密
 12. http-proxy-middleware -> 代理服务器
+13. uuid -> 模拟生成id
 
 ------
 
