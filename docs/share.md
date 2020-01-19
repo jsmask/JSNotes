@@ -104,6 +104,7 @@
 11. 逐行剖析 Vue.js 源码 -> https://nlrx-wjc.github.io/Learn-Vue-Source-Code/
 12. 使用Typescript重构axios -> https://www.cnblogs.com/wangjiachen666/p/11234180.html
 13. 常用的webpack优化方法 -> https://www.cnblogs.com/wangjiachen666/p/11561186.html
+14. 通过这些Android应用学习Java -> https://hackernoon.com/learn-java-with-these-mobile-apps-k9h35iu
 
 ------
 
