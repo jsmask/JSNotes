@@ -87,6 +87,8 @@
 83. magicCss -> 实现各类图形的css库 -> http://chokcoco.github.io/magicCss/html/index.html
 84. happyhues -> 提供一系列实时切换、定制的配色方案 -> https://www.happyhues.co/
 85. ffmpeg -> 处理音视频的跨端解决方案 -> http://ffmpeg.org/
+86. chocolatey -> 针对Windows的包管理工具  -> https://chocolatey.org/
+87. brew -> 针对MacOS或Linux的包管理工具 -> https://brew.sh/
 
 ------
 
