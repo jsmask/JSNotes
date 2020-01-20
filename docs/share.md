@@ -86,6 +86,7 @@
 82. pixlrX -> 基于 Canvas 和 WebGL 的在线图像编辑器 -> https://pixlr.com/x
 83. magicCss -> 实现各类图形的css库 -> http://chokcoco.github.io/magicCss/html/index.html
 84. happyhues -> 提供一系列实时切换、定制的配色方案 -> https://www.happyhues.co/
+85. ffmpeg -> 处理音视频的跨端解决方案 -> http://ffmpeg.org/
 
 ------
 
