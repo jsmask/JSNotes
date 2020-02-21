@@ -89,6 +89,7 @@
 85. ffmpeg -> 处理音视频的跨端解决方案 -> http://ffmpeg.org/
 86. chocolatey -> 针对Windows的包管理工具  -> https://chocolatey.org/
 87. brew -> 针对MacOS或Linux的包管理工具 -> https://brew.sh/
+88. snowpack -> JS打包工具，将node模块转成单个的 JS文件 -> https://www.snowpack.dev/
 
 ------
 
@@ -147,6 +148,7 @@
 4. 打字机实时呈现 -> https://www.strml.net/
 5. 3D小车网站 -> https://bruno-simon.com/
 6. 英文字特效 -> https://leon-kim.com/
+7. 萤火虫 -> https://ncase.me/fireflies/
 
 ------
 
