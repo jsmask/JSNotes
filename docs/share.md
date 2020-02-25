@@ -90,6 +90,7 @@
 86. chocolatey -> 针对Windows的包管理工具  -> https://chocolatey.org/
 87. brew -> 针对MacOS或Linux的包管理工具 -> https://brew.sh/
 88. snowpack -> JS打包工具，将node模块转成单个的 JS文件 -> https://www.snowpack.dev/
+89. segmentfault -> 新一代开发者社区 -> https://segmentfault.com/
 
 ------
 
