@@ -91,6 +91,7 @@
 87. brew -> 针对MacOS或Linux的包管理工具 -> https://brew.sh/
 88. snowpack -> JS打包工具，将node模块转成单个的 JS文件 -> https://www.snowpack.dev/
 89. segmentfault -> 新一代开发者社区 -> https://segmentfault.com/
+90. cbiancheng -> 编程设计模式总汇 ->  http://c.biancheng.net/view/1383.html
 
 ------
 
@@ -197,6 +198,8 @@
 22. react-hook-form -> 针对react-hook的表单组件
 23. react-virtualized -> 虚拟列表处理无限滚动dom过多卡顿
 24. vuedraggable ->  针对vue提供的元素拖拽
+25. styled-components -> 处理样式，体现 css in js 的前端工程化神器
+26. immutable -> 持久性数据结构处理的库
 
 ------
 
