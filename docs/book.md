@@ -23,5 +23,12 @@
 ### 代码质量
 
 1. [代码整洁之道](https://book.douban.com/subject/4199741/)
-
 2. [代码大全（第2版）](https://book.douban.com/subject/1477390/)
+
+### 思维拓展 
+
+1. [七周七语言](https://book.douban.com/subject/26921107/)
+2. [程序员修炼之道](https://book.douban.com/subject/5387402/)
+
+
+
