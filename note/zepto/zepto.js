@@ -166,7 +166,8 @@
   zepto.fragment = function(html, name, properties) {
     var dom, nodes, container
 
-    // A special case optimization for a single tag
+    // 如果是单一的标签
+    // 直接进行创建
     if (singleTagRE.test(html)) dom = $(document.createElement(RegExp.$1))
 
     if (!dom) {
@@ -210,8 +211,11 @@
   // takes a CSS selector and an optional context (and handles various
   // special cases).
   // This method can be overridden in plugins.
-  // zepto 核心
+
+  // zepto 核心部分之一
+  // 类似于外观模式
   // 拾取处理传入的选择器还原出dom
+  // 最后统一创建出Z函数
   zepto.init = function(selector, context) {
     var dom
     // 如果没有给出任何内容，则返回一个空的Zepto集合
@@ -223,7 +227,6 @@
       // 如果它是一个html片段，则从中创建节点
       // 第一个字符为<  并且是可闭合的，意为如果是一个标签形式
       // 例如：zepto.init("<p></p>")
-      // ！并非是一个全兼容的写法
       if (selector[0] == '<' && fragmentRE.test(selector))
         dom = zepto.fragment(selector, RegExp.$1, context), selector = null
       // 如果有context 
@@ -261,6 +264,8 @@
   // function just call `$.zepto.init, which makes the implementation
   // details of selecting nodes and creating Zepto collections
   // patchable in plugins.
+  // 将 $符号 当做中介 
+  // 实则执行了zepto.init函数返回new出Z函数
   $ = function(selector, context){
     return zepto.init(selector, context)
   }
