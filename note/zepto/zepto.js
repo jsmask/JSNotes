@@ -1,6 +1,30 @@
 /**
  * 进行中20%
- */
+ **/
+
+/**
+ * 核心结构分析
+ **/
+/*
+(function(global, factory) {
+  if (typeof define === 'function' && define.amd)
+    define(function() { return factory(global) })
+  else factory(global)
+  }(this, function(window) {
+     var Zepto = (function(){
+      var $,zepto;
+      zepto.init=function(){}
+      $.fn = {} // ...
+      zepto.Z.prototype = Z.prototype = $.fn
+      return $
+     });
+     window.Zepto = Zepto;
+     window.$ === undefined && (window.$ = Zepto);
+     $.ajax = function(){}
+     $.event = function(){}
+     // ...
+  }))
+*/
 
 /* Zepto v1.2.0 - zepto event ajax form ie - zeptojs.com/license */
 (function(global, factory) {
@@ -985,6 +1009,7 @@
 
 window.Zepto = Zepto
 window.$ === undefined && (window.$ = Zepto)
+
 
 ;(function($){
   var _zid = 1, undefined,
