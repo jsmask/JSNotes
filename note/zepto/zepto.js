@@ -14,7 +14,7 @@
      var Zepto = (function(){
       var $,zepto;
       zepto.init=function(){}
-      $.fn = {} // ...
+      $.fn = {} // add find remove ...
       zepto.Z.prototype = Z.prototype = $.fn
       return $
      });
