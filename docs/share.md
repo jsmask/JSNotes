@@ -92,6 +92,8 @@
 88. snowpack -> JS打包工具，将node模块转成单个的 JS文件 -> https://www.snowpack.dev/
 89. segmentfault -> 新一代开发者社区 -> https://segmentfault.com/
 90. cbiancheng -> 编程设计模式总汇 ->  http://c.biancheng.net/view/1383.html
+91. troyhunt -> Troy Hunt的博客 -> https://www.troyhunt.com/
+92. xiezuocat -> 写作猫，AI写作助手 [https://xiezuocat.com](https://xiezuocat.com/)
 
 ------
 
@@ -112,6 +114,8 @@
 13. 常用的webpack优化方法 -> https://www.cnblogs.com/wangjiachen666/p/11561186.html
 14. 通过这些Android应用学习Java -> https://hackernoon.com/learn-java-with-these-mobile-apps-k9h35iu
 15. MVVM实现 -> https://github.com/YvetteLau/Blog/issues/6
+16. 如何打造一个serverless的微信小程序 -> https://www.smilingleo.net/2020/how-to-build-a-serverless-wechat-mini-program/
+17. 手动学深度学习 -> https://zh.d2l.ai/
 
 ------
 

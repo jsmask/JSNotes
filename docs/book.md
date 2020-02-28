@@ -29,6 +29,5 @@
 
 1. [七周七语言](https://book.douban.com/subject/26921107/)
 2. [程序员修炼之道](https://book.douban.com/subject/5387402/)
-
-
+3. [高效能程序员的修炼](https://book.douban.com/subject/24868904/)
 
