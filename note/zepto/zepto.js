@@ -1,8 +1,4 @@
 /**
- * 进行中20%
- **/
-
-/**
  * 核心结构分析
  **/
 /*
@@ -14,6 +10,9 @@
      var Zepto = (function(){
       var $,zepto;
       zepto.init=function(){}
+      $ = function(selector, context){
+        return zepto.init(selector, context)
+      }
       $.fn = {} // add find remove ...
       zepto.Z.prototype = Z.prototype = $.fn
       return $
@@ -25,6 +24,20 @@
      // ...
   }))
 */
+
+  // nodeType：
+  // 1	ELEMENT_NODE
+  // 2	ATTRIBUTE_NODE
+  // 3	TEXT_NODE
+  // 4	CDATA_SECTION_NODE
+  // 5	ENTITY_REFERENCE_NODE
+  // 6	ENTITY_NODE
+  // 7	PROCESSING_INSTRUCTION_NODE
+  // 8	COMMENT_NODE
+  // 9	DOCUMENT_NODE
+  // 10	DOCUMENT_TYPE_NODE
+  // 11	DOCUMENT_FRAGMENT_NODE
+  // 12	NOTATION_NODE
 
 /* Zepto v1.2.0 - zepto event ajax form ie - zeptojs.com/license */
 (function(global, factory) {
@@ -63,6 +76,8 @@
     zepto = {},
     camelize, uniq,
     tempParent = document.createElement('div'),
+    // 给 prop使用 
+    // 主要为了格式统一成小写，书写方便
     propMap = {
       'tabindex': 'tabIndex',
       'readonly': 'readOnly',
@@ -94,25 +109,25 @@
     return match
   }
 
-  //判断类型，String(null) -> null 所以不用执行class2type
+  // 判断类型，String(null) -> null 所以不用执行class2type
   function type(obj) {
     return obj == null ? String(obj) :
       class2type[toString.call(obj)] || "object"
   }
 
-  //判断是否Function类型
+  // 判断是否Function类型
   function isFunction(value) { return type(value) == "function" }
-  //判断是否Window对象 
+  // 判断是否Window对象 
   function isWindow(obj)     { return obj != null && obj == obj.window }
-  //判断是否Document  DOCUMENT_NODE为原型链底Node层参数
+  // 判断是否Document  DOCUMENT_NODE为原型链底Node层参数
   function isDocument(obj)   { return obj != null && obj.nodeType == obj.DOCUMENT_NODE }
-  //判断是否Object类型
+  // 判断是否Object类型
   function isObject(obj)     { return type(obj) == "object" }
-  //判断该对象是否有正常js对象，观察原型指向地址是否有变
+  // 判断该对象是否有正常js对象，观察原型指向地址是否有变
   function isPlainObject(obj) {
     return isObject(obj) && !isWindow(obj) && Object.getPrototypeOf(obj) == Object.prototype
   }
-  //判断是否是数组或对象数组
+  // 判断是否是数组或集合
   function likeArray(obj) {
     var length = !!obj && 'length' in obj && obj.length,
       type = $.type(obj)
@@ -122,15 +137,16 @@
         (typeof length == 'number' && length > 0 && (length - 1) in obj)
     )
   }
-  //筛选非空数组数据
+  // 筛选非空数组数据
   function compact(array) { return filter.call(array, function(item){ return item != null }) }
 
+  // 向集合追加元素
   function flatten(array) { return array.length > 0 ? $.fn.concat.apply([], array) : array }
   
-  //将字符串将 - 转成 驼峰命名
+  // 将字符串将 - 转成 驼峰命名
   camelize = function(str){ return str.replace(/-+(.)?/g, function(match, chr){ return chr ? chr.toUpperCase() : '' }) }
 
-  //转化？ :: ->10 /  _ -> - 大小写
+  // 转化？ :: ->10 /  _ -> - 大小写
   function dasherize(str) {
     return str.replace(/::/g, '/')
            .replace(/([A-Z]+)([A-Z][a-z])/g, '$1_$2')
@@ -169,12 +185,14 @@
     return elementDisplay[nodeName]
   }
 
+  // 如果元素有子则利用map返回所有ELEMENT_NODE
   function children(element) {
     return 'children' in element ?
       slice.call(element.children) :
       $.map(element.childNodes, function(node){ if (node.nodeType == 1) return node })
   }
 
+  // 处理接入的dom和选择器
   function Z(dom, selector) {
     var i, len = dom ? dom.length : 0
     for (i = 0; i < len; i++) this[i] = dom[i]
@@ -206,6 +224,9 @@
       })
     }
 
+    // 如果传入properties原型链上具有Object的原型
+    // 将node 转成 Z函数
+    // 给其遍历，赋予val、css等函数
     if (isPlainObject(properties)) {
       nodes = $(dom)
       $.each(properties, function(key, value) {
@@ -294,7 +315,7 @@
     return zepto.init(selector, context)
   }
 
-  //深度拷贝
+  // 深度拷贝
   function extend(target, source, deep) {
     for (key in source)
       if (deep && (isPlainObject(source[key]) || isArray(source[key]))) {
@@ -322,6 +343,7 @@
   // `$.zepto.qsa` is Zepto's CSS selector implementation which
   // uses `document.querySelectorAll` and optimizes for some special cases, like `#id`.
   // This method can be overridden in plugins.
+  // 传入对象和选择器的处理
   zepto.qsa = function(element, selector){
     var found,
         maybeID = selector[0] == '#',
@@ -357,11 +379,14 @@
     return isFunction(arg) ? arg.call(context, idx, payload) : arg
   }
 
+  // 根据传入处理元素设置或删除其属性
   function setAttribute(node, name, value) {
     value == null ? node.removeAttribute(name) : node.setAttribute(name, value)
   }
 
-  // access className property while respecting SVGAnimatedString
+  // 访问className属性，同时考虑SVGAnimatedString
+  // SVGAnimatedString是从每个SVG声明进行动画处理的字符串属性
+  // 未出现baseVal（即SVGAnimatedString.baseVal）则使用className
   function className(node, value){
     var klass = node.className || '',
         svg   = klass && klass.baseVal !== undefined
@@ -399,7 +424,7 @@
   $.isArray = isArray
   $.isPlainObject = isPlainObject
 
-  //判断对象为空
+  // 判断对象为空
   $.isEmptyObject = function(obj) {
     var name
     for (name in obj) return false
@@ -413,14 +438,14 @@
       !isNaN(num) && isFinite(num) || false
   }
 
-  //获取某对象在该数组的位置
+  // 获取某对象在该数组的位置
   $.inArray = function(elem, array, i){
     return emptyArray.indexOf.call(array, elem, i)
   }
 
   $.camelCase = camelize
 
-  //传入字符串去除头尾空格
+  // 传入字符串去除头尾空格
   $.trim = function(str) {
     return str == null ? "" : String.prototype.trim.call(str)
   }
@@ -431,22 +456,26 @@
   $.expr = { }
   $.noop = function() {}
 
+  // map遍历且过滤的空数据
   $.map = function(elements, callback){
     var value, values = [], i, key
+    // 如果是数组或集合 
     if (likeArray(elements))
       for (i = 0; i < elements.length; i++) {
         value = callback(elements[i], i)
         if (value != null) values.push(value)
       }
-    else
-      for (key in elements) {
+    // 如果不是当对象处理
+    else  
+      for (key in elements) { 
         value = callback(elements[key], key)
         if (value != null) values.push(value)
       }
+    // 返回新的数组
     return flatten(values)
   }
 
-  //变量对象或数组型
+  // 变量对象或数组型
   $.each = function(elements, callback){
     var i, key
     if (likeArray(elements)) {
@@ -460,11 +489,12 @@
     return elements
   }
 
-  //相当于调取数组的filter方法
+  // 相当于调取数组的filter方法
   $.grep = function(elements, callback){
     return filter.call(elements, callback)
   }
 
+  // 如果浏览器支持JSON 那么就用JSON.parse去转化json
   if (window.JSON) $.parseJSON = JSON.parse
 
   // Populate the class2type map
@@ -475,7 +505,7 @@
 
   // Define methods that will be available on all
   // Zepto collections
-  //方法集合
+  // 方法集合
   $.fn = {
     constructor: zepto.Z,
     length: 0,
@@ -911,7 +941,7 @@
   // for now
   $.fn.detach = $.fn.remove
 
-  // Generate the `width` and `height` functions
+  // 生成width和height函数
   ;['width', 'height'].forEach(function(dimension){
     var dimensionProperty =
       dimension.replace(/./, function(m){ return m[0].toUpperCase() })
@@ -1007,10 +1037,20 @@
   return $
 })()
 
+//写入全局
 window.Zepto = Zepto
 window.$ === undefined && (window.$ = Zepto)
 
+//给Zepto追加功能
+//使用闭包防止了全局污染
+/*
+  ;(function($){
+    $.fn ...
+  })(Zepto)
+*/
 
+// 追加事件 $.fn
+// Object.getPrototypeOf($()) === $.fn
 ;(function($){
   var _zid = 1, undefined,
       slice = Array.prototype.slice,
@@ -1283,6 +1323,7 @@ window.$ === undefined && (window.$ = Zepto)
 
 })(Zepto)
 
+// ajax与ajaxJSONP
 ;(function($){
   var jsonpID = +new Date(),
       document = window.document,
@@ -1298,7 +1339,7 @@ window.$ === undefined && (window.$ = Zepto)
 
   originAnchor.href = window.location.href
 
-  // trigger a custom event and return false if it was cancelled
+  // 触发自定义事件，如果已取消，则返回false
   function triggerAndReturn(context, eventName, data) {
     var event = $.Event(eventName)
     $(context).trigger(event, data)
@@ -1464,6 +1505,7 @@ window.$ === undefined && (window.$ = Zepto)
       xmlTypeRE.test(mime) && 'xml' ) || 'text'
   }
 
+  // 转化地址与其参数
   function appendQuery(url, query) {
     if (query == '') return url
     return (url + '&' + query).replace(/[&?]{1,2}/, '?')
@@ -1481,10 +1523,11 @@ window.$ === undefined && (window.$ = Zepto)
   $.ajax = function(options){
 
     // 处理配置
-    // 如果没有配置项使用默认配置
+    // 进行深度拷贝
     var settings = $.extend({}, options || {}),
         deferred = $.Deferred && $.Deferred(),
         urlAnchor, hashIndex
+    // 如果没有配置项使用默认配置    
     for (key in $.ajaxSettings) if (settings[key] === undefined) settings[key] = $.ajaxSettings[key]
 
     ajaxStart(settings)
@@ -1668,6 +1711,7 @@ window.$ === undefined && (window.$ = Zepto)
   }
 })(Zepto)
 
+// 追加 serializeArray serialize submit
 ;(function($){
   $.fn.serializeArray = function() {
     var name, type, result = [],
@@ -1706,8 +1750,10 @@ window.$ === undefined && (window.$ = Zepto)
 })(Zepto)
 
 ;(function(){
+
   // getComputedStyle shouldn't freak out when called
   // without a valid element as argument
+  // 在没有有效元素作为参数的情况下调用getComputedStyle时不出错
   try {
     getComputedStyle(undefined)
   } catch(e) {
