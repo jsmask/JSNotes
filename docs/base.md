@@ -74,25 +74,18 @@ ___
 
 > ###### 基本概念：
 >
-> 1. 一类特别的函数:
+> 1. 一类特别的函数
+>   1. 接收函数类型的参数
+>       2. 返回值也是函数
 >
->    a. 接收函数类型的参数
->
->    b. 返回值也是函数
->
-> 2. 例如：
->
->    a. 定时器: setTimeout() / setInterval()
->
->    b. Promise: Promise(()=>{}) / then(()=>{},reason=>{})
->
->    c. 数组遍历相关的方法: forEach() / filter() / map() / reduce() /find() / findIndex()
->
->    d. 函数对象的bind()
->
->    e. antd Form: Form.create()() / Form.getFieldDecorator()()
->
-> 3. 高阶函数更新动态，更加具有扩展性
+>    2. 例如：
+>   1. 定时器: setTimeout() / setInterval()
+>    2. Promise: Promise(()=>{}) / then(()=>{},reason=>{})
+>   3.  数组遍历相关的方法: forEach() / filter() / map() / reduce() /find() / findIndex()
+>       4. 函数对象的bind()
+>   5.  antd Form: Form.create()() / Form.getFieldDecorator()()
+>    
+>3. 高阶函数更新动态，更加具有扩展性
 
 ------
 
@@ -572,7 +565,6 @@ class Compiler {
    });
    console.log(store.getState());
    ```
-
 
 ____
 
