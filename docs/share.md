@@ -95,6 +95,7 @@
 91. troyhunt -> Troy Hunt的博客 -> https://www.troyhunt.com/
 92. xiezuocat -> 写作猫，AI写作助手 [https://xiezuocat.com](https://xiezuocat.com/)
 93. ipaddress -> 查询ip地址 -> https://www.ipaddress.com/
+94. electron-vue -> vue系electron -> https://simulatedgreg.gitbooks.io/electron-vue/content/cn/
 
 ------
 
