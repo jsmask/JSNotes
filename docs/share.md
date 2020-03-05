@@ -118,6 +118,7 @@
 15. MVVM实现 -> https://github.com/YvetteLau/Blog/issues/6
 16. 如何打造一个serverless的微信小程序 -> https://www.smilingleo.net/2020/how-to-build-a-serverless-wechat-mini-program/
 17. 手动学深度学习 -> https://zh.d2l.ai/
+18. Chrome插件(扩展)开发全攻略 -> https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html
 
 ------
 
