@@ -120,6 +120,7 @@
 19. [静态网站为什么需要 HTTPS](https://www.troyhunt.com/heres-why-your-static-website-needs-https/)
 20. [关于分析redux](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
 21. [es6在线手册](http://es6.ruanyifeng.com/)
+22. [nginx 配置 https](https://juejin.im/post/5e44a2aa6fb9a07c9f3fd170)
 
 ------
 
