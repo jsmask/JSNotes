@@ -118,9 +118,10 @@
 17. [手动学深度学习](https://zh.d2l.ai/)
 18. [Chrome插件开发攻略](https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html)
 19. [静态网站为什么需要 HTTPS](https://www.troyhunt.com/heres-why-your-static-website-needs-https/)
-20. [关于分析redux](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
+20. [Redux 入门教程](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
 21. [es6在线手册](http://es6.ruanyifeng.com/)
 22. [nginx 配置 https](https://juejin.im/post/5e44a2aa6fb9a07c9f3fd170)
+23. [写给 Web 端同事的一些iOS知识分享](https://juejin.im/post/5e4de24be51d45271c2feb7a)
 
 ------
 
