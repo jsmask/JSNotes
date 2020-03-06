@@ -351,8 +351,7 @@
 6. 全局安装react-native脚手架夹 ->  npm i -g yarn react-native-cli
 7. 创建react-native脚手架于xxx文件夹 -> react-native init xxx
 8. 安装vue cli3 下的cube-ui模板 -> vue add cube-ui
-9. 安装npx操作命令 -> npm install -g npx
-10. 创建next脚手架于xxx文件夹 ->create-next-app xxx
+10. 创建next脚手架于xxx文件夹 -> create-next-app xxx
 
 ------
 
