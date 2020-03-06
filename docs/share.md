@@ -149,13 +149,15 @@
 2. [神三元](https://github.com/sanyuan0704) -> 《React打造精美WebApp》作者【中国】
 3. [廖雪峰](https://github.com/liaoxuefeng) -> 《Spring 2.0核心技术与最佳实践》作者【中国】
 4. [yui540](https://github.com/yui540) -> 《臆病な魔女》作者【日本】
+5. [Maihaoche](https://github.com/maihaoche) -> 卖好车团队【中国】
+6. 
 
 ------
 
 ### 优秀网页分享
 
 1. [404猴子](https://codepen.io/thejohnyagiz/pen/npDyq)
-2. [臆病な魔女]>(https://github.com/yui540/Cowardly-Witch)
+2. [臆病な魔女](https://github.com/yui540/Cowardly-Witch)
 3. [中国古典颜色表](https://colors.ichuantong.cn/)
 4. [打字机实时呈现](https://www.strml.net/)
 5. [3D小车网站](https://bruno-simon.com/)
