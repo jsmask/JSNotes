@@ -151,7 +151,6 @@
 3. [廖雪峰](https://github.com/liaoxuefeng) -> 《Spring 2.0核心技术与最佳实践》作者【中国】
 4. [yui540](https://github.com/yui540) -> 《臆病な魔女》作者【日本】
 5. [Maihaoche](https://github.com/maihaoche) -> 卖好车团队【中国】
-6. 
 
 ------
 
@@ -247,21 +246,23 @@
 
 ### webpack 相关
 
-1. VueLoaderPlugin(安装vue后，存在于vue-loader/lib/plugin) -> 解析vue文件
+1. thread-loader
 
-2. BannerPlugin(自带) -> 头部声明注释
+2. VueLoaderPlugin(安装vue后，存在于vue-loader/lib/plugin) -> 解析vue文件
 
-3. UglifyjsPlugin(需下载安装uglifyjs-webpack-plugin) -> 丑化js代码
+3. BannerPlugin(自带) -> 头部声明注释
 
-4. WebpackDevServer(需下载安装webpack-dev-server 依赖express) -> 本地服务器自动更新
+4. UglifyjsPlugin(需下载安装uglifyjs-webpack-plugin) -> 丑化js代码
 
-5. WebpackMerge(需下载安装webpack-merge) -> 合并文件
+5. WebpackDevServer(需下载安装webpack-dev-server 依赖express) -> 本地服务器自动更新
 
-6. cross-env -> 获取环境变量
+6. WebpackMerge(需下载安装webpack-merge) -> 合并文件
 
-7. webpack-merge -> 模式区分打包
+7. cross-env -> 获取环境变量
 
-8. postcss-pxtorem ->  px转换rem  
+8. webpack-merge -> 模式区分打包
+
+9. postcss-pxtorem ->  px转换rem  
 
    ```json
    {  
@@ -278,15 +279,15 @@
    }
    ```
 
-9. babel-plugin-component -> 按需加载
+10. babel-plugin-component -> 按需加载
 
-10. clean-webpack-plugin -> 清除打包文件
+11. clean-webpack-plugin -> 清除打包文件
 
-11. html-webpack-plugin -> 设置模板页
+12. html-webpack-plugin -> 设置模板页
 
-12. mini-css-extract-plugin -> 导出css文件
+13. mini-css-extract-plugin -> 导出css文件
 
-13. split-chunks-plugin -> 代码分割
+14. split-chunks-plugin -> 代码分割
 
     ```javascript
     //webpack中还提供了一种更加方便的代码分割
