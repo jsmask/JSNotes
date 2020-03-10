@@ -146,11 +146,12 @@
 
 ### 优秀Github作者
 
-1. [阮一峰](https://github.com/ruanyf) -> 《ECMAScript 6入门》作者【中国】 
-2. [神三元](https://github.com/sanyuan0704) -> 《React打造精美WebApp》作者【中国】
-3. [廖雪峰](https://github.com/liaoxuefeng) -> 《Spring 2.0核心技术与最佳实践》作者【中国】
-4. [yui540](https://github.com/yui540) -> 《臆病な魔女》作者【日本】
-5. [Maihaoche](https://github.com/maihaoche) -> 卖好车团队【中国】
+1. [阮一峰](https://github.com/ruanyf) -> 《ECMAScript 6入门》作者 
+2. [神三元](https://github.com/sanyuan0704) -> 《React打造精美WebApp》作者
+3. [廖雪峰](https://github.com/liaoxuefeng) -> 《Spring 2.0核心技术与最佳实践》作者
+4. [yui540](https://github.com/yui540) -> 《臆病な魔女》作者
+5. [Maihaoche](https://github.com/maihaoche) -> 卖好车团队
+6. [黄奕](https://github.com/ustbhuangyi) ->《better-scroll》、《cube-ui》作者
 
 ------
 
