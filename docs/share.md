@@ -213,6 +213,7 @@
 24. vuedraggable ->  针对vue提供的元素拖拽
 25. styled-components -> 处理样式，体现 css in js 的前端工程化神器
 26. immutable -> 持久性数据结构处理的库
+27. h-regular -> 上百种正则表达式
 
 ------
 
