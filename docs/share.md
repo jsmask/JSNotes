@@ -94,6 +94,7 @@
 92. [xiezuocat](https://xiezuocat.com/) -> 写作猫，AI写作助手
 93. [ipaddress](https://www.ipaddress.com/) -> 查询ip地址
 94. [electron-vue](https://simulatedgreg.gitbooks.io/electron-vue/content/cn/)-> vue系electron
+93. [proton-native](https://github.com/kusti8/proton-native) -> 开发跨平台的桌面应用程序
 
 ------
 
@@ -122,6 +123,7 @@
 21. [es6在线手册](http://es6.ruanyifeng.com/)
 22. [nginx 配置 https](https://juejin.im/post/5e44a2aa6fb9a07c9f3fd170)
 23. [写给 Web 端同事的一些iOS知识分享](https://juejin.im/post/5e4de24be51d45271c2feb7a)
+24. [灵活运用CSS开发技巧](https://juejin.im/post/5d4d0ec651882549594e7293)
 
 ------
 
@@ -146,12 +148,11 @@
 
 ### 优秀Github作者
 
-1. [阮一峰](https://github.com/ruanyf) -> 《ECMAScript 6入门》作者 
-2. [神三元](https://github.com/sanyuan0704) -> 《React打造精美WebApp》作者
-3. [廖雪峰](https://github.com/liaoxuefeng) -> 《Spring 2.0核心技术与最佳实践》作者
-4. [yui540](https://github.com/yui540) -> 《臆病な魔女》作者
-5. [Maihaoche](https://github.com/maihaoche) -> 卖好车团队
-6. [黄奕](https://github.com/ustbhuangyi) ->《better-scroll》、《cube-ui》作者
+1. [阮一峰](https://github.com/ruanyf) -> 《ECMAScript 6入门》、《科技爱好者周刊》
+2. [神三元](https://github.com/sanyuan0704) -> 《React打造精美WebApp》
+3. [yui540](https://github.com/yui540) -> 《臆病な魔女》
+4. [黄奕](https://github.com/ustbhuangyi) ->《better-scroll》、《cube-ui》
+5. [卖好车团队](https://github.com/maihaoche) -> 《卖好车期刊》
 
 ------
 
@@ -214,6 +215,7 @@
 25. styled-components -> 处理样式，体现 css in js 的前端工程化神器
 26. immutable -> 持久性数据结构处理的库
 27. h-regular -> 上百种正则表达式
+28. darken -> 让网页变为暗模式的插件
 
 ------
 
