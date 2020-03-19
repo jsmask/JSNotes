@@ -95,6 +95,8 @@
 93. [ipaddress](https://www.ipaddress.com/) -> 查询ip地址
 94. [electron-vue](https://simulatedgreg.gitbooks.io/electron-vue/content/cn/)-> vue系electron
 93. [proton-native](https://github.com/kusti8/proton-native) -> 开发跨平台的桌面应用程序
+94. [patorjk](http://patorjk.com/) -> 自定义log
+95. [codelf](https://unbug.github.io/codelf/) -> 变量取名
 
 ------
 
@@ -126,6 +128,7 @@
 24. [灵活运用CSS开发技巧](https://juejin.im/post/5d4d0ec651882549594e7293)
 25. [灵活运用JS开发技巧](https://juejin.im/post/5cc7afdde51d456e671c7e48)
 26. [25个你不得不知道的数组reduce高级用法](https://juejin.im/post/5e44002c6fb9a07c9f3fd135)
+27. [总结移动端H5开发常用技巧](https://juejin.im/post/5e4a0162f265da57133b2005)
 
 ------
 
