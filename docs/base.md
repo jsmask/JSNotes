@@ -6,7 +6,7 @@
 >
 > 统一资源定位符
 >
-> 协议://主机:端口/路径?查询
+> 协议://主机:端口/路径?查询#锚点
 >
 > scheme://host:port/path?query#fragment
 
