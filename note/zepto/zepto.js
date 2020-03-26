@@ -1274,11 +1274,20 @@ window.$ === undefined && (window.$ = Zepto)
     })
   }
 
+  //触发事件
+  // 法1：
+  // window.dispatchEvent(new Event("resize"));
+  // 法2：        
+  // let event = document.createEvent("resize");
+  // event.initEvent("resize", true, true);
+  // window.dispatchEvent(event);
+
   $.fn.trigger = function(event, args){
     event = (isString(event) || $.isPlainObject(event)) ? $.Event(event) : compatible(event)
     event._args = args
     return this.each(function(){
       // handle focus(), blur() by calling them directly
+      // focus = { focus: 'focusin', blur: 'focusout' }
       if (event.type in focus && typeof this[event.type] == "function") this[event.type]()
       // items in the collection might not be DOM elements
       else if ('dispatchEvent' in this) this.dispatchEvent(event)
