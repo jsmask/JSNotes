@@ -97,6 +97,7 @@
 93. [proton-native](https://github.com/kusti8/proton-native) -> 开发跨平台的桌面应用程序
 94. [patorjk](http://patorjk.com/) -> 自定义log
 95. [codelf](https://unbug.github.io/codelf/) -> 变量取名
+96. [i-Book.in](https://book.tstrs.me/) -> 电子书搜索引擎
 
 ------
 
