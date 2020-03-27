@@ -129,6 +129,7 @@
 25. [灵活运用JS开发技巧](https://juejin.im/post/5cc7afdde51d456e671c7e48)
 26. [25个你不得不知道的数组reduce高级用法](https://juejin.im/post/5e44002c6fb9a07c9f3fd135)
 27. [总结移动端H5开发常用技巧](https://juejin.im/post/5e4a0162f265da57133b2005)
+28. [GitHub中文排行榜](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts)
 
 ------
 
