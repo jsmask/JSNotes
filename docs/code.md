@@ -1247,3 +1247,18 @@ function loadScript(url, func) {
 
 ____
 
+### debugger反调试
+
+```javascript
+// 法1：
+(function anonymous() {debugger})
+// 法2：
+(function() {
+    var a = new Date(); 
+    debugger;
+    return new Date() - a > 100;
+}())
+```
+
+___
+
