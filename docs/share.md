@@ -98,6 +98,8 @@
 94. [patorjk](http://patorjk.com/) -> 自定义log
 95. [codelf](https://unbug.github.io/codelf/) -> 变量取名
 96. [i-Book.in](https://book.tstrs.me/) -> 电子书搜索引擎
+97. [Packt](https://subscription.packtpub.com/) -> 外国优质的电子书库
+98. [hzbook](http://www.hzbook.com/index.php/Index/index.html) -> 华章书城
 
 ------
 
