@@ -101,6 +101,8 @@
 97. [Packt](https://subscription.packtpub.com/) -> 外国优质的电子书库
 98. [hzbook](http://www.hzbook.com/index.php/Index/index.html) -> 华章书城
 99. [glslsandbox](http://glslsandbox.com/) -> GLSL沙箱
+100. [paperjs](http://paperjs.org/) -> svg脚本库
+101. [snapjs](http://snapsvg.io/) -> svg脚本库
 
 ------
 
