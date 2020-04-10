@@ -103,6 +103,7 @@
 99. [glslsandbox](http://glslsandbox.com/) -> GLSL沙箱
 100. [paperjs](http://paperjs.org/) -> svg脚本库
 101. [snapjs](http://snapsvg.io/) -> svg脚本库
+102. [facetypejs](http://gero3.github.io/facetype.js) -> 在线转换TrueType和OpenType字体
 
 ------
 
