@@ -461,6 +461,17 @@
 
 ------
 
+### 3D开发相关
+
+| 名称                                     | 简介                            |
+| ---------------------------------------- | ------------------------------- |
+| [Blender](https://www.blender.org/)      | 创建复杂的网格开源三维软件      |
+| [Away3D](http://away3d.com/)             | Flash平台的开源实时3D引擎       |
+| [BABYLON.JS](https://www.babylonjs.com/) | 强大，美观，简单的Web3D渲染引擎 |
+| [PlayCanvas](https://playcanvas.com/)    | HTML5 3D游戏引擎                |
+
+____
+
 ### 实用库
 
 | 名称             | 介绍                                        | 资源                                           |
