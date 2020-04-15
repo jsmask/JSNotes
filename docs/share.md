@@ -470,6 +470,7 @@
 | [Away3D](http://away3d.com/)             | Flash平台的开源实时3D引擎       |
 | [BABYLON.JS](https://www.babylonjs.com/) | 强大，美观，简单的Web3D渲染引擎 |
 | [PlayCanvas](https://playcanvas.com/)    | HTML5 3D游戏引擎                |
+| [Mixamo](https://www.mixamo.com/)        | 为游戏或电影等制作3D角色动画    |
 
 ____
 
