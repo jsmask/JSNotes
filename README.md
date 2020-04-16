@@ -12,11 +12,11 @@ ______
 
 1. [基础概念](./docs/base.md)
 
-2. [常用分享](https://github.com/jsmask/JS-Notes/blob/master/docs/share.md)
+2. [常用分享](./docs/share.md)
 
-3. [常用代码](https://github.com/jsmask/JS-Notes/blob/master/docs/code.md)
+3. [常用代码](./docs/code.md)
 
-4. [推荐书籍](https://github.com/jsmask/JS-Notes/blob/master/docs/book.md)
+4. [推荐书籍](./docs/book.md)
 
 ______
 
