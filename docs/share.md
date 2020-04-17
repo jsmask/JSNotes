@@ -105,6 +105,7 @@
 101. [snapjs](http://snapsvg.io/) -> svg脚本库
 102. [facetypejs](http://gero3.github.io/facetype.js) -> 在线转换TrueType和OpenType字体
 103. [PDB](http://www.rcsb.org/) -> 蛋白质数据银行
+104. [mixamo](https://www.mixamo.com/) -> 3d动画模型资源
 
 ------
 
