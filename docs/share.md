@@ -106,6 +106,9 @@
 102. [facetypejs](http://gero3.github.io/facetype.js) -> 在线转换TrueType和OpenType字体
 103. [PDB](http://www.rcsb.org/) -> 蛋白质数据银行
 104. [mixamo](https://www.mixamo.com/) -> 3d动画模型资源
+105. [panorama-to-cubemap/](https://jaxry.github.io/panorama-to-cubemap/) -> 全景图转立方图
+106. [360toolkit](https://360toolkit.co/) -> 全景图转立方图
+107. [literallycanvas/](http://literallycanvas.com/) -> 在画布草绘工程图的插件
 
 ------
 
