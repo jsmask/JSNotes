@@ -110,6 +110,8 @@
 106. [360toolkit](https://360toolkit.co/) -> 全景图转立方图
 107. [literallycanvas](http://literallycanvas.com/) -> 在画布草绘工程图的插件
 108. [Physijs](http://chandlerprall.github.io/Physijs/)  ->  实用的js物理引擎
+109. [heropatterns](http://www.heropatterns.com/) -> 生成css丰富背景代码的网站
+110. [98.css](https://jdan.github.io/98.css/) -> win98风格的css库
 
 ------
 
@@ -143,6 +145,7 @@
 26. [25个你不得不知道的数组reduce高级用法](https://juejin.im/post/5e44002c6fb9a07c9f3fd135)
 27. [总结移动端H5开发常用技巧](https://juejin.im/post/5e4a0162f265da57133b2005)
 28. [GitHub中文排行榜](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts)
+29. [Node.js中的WebSocket演示服务器](https://lostmoa.com/blog/WebSocketDemoServerInNodeJS/)
 
 ------
 
