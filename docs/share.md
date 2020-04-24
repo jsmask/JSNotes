@@ -109,7 +109,6 @@
 105. [panorama-to-cubemap](https://jaxry.github.io/panorama-to-cubemap/) -> 全景图转立方图
 106. [360toolkit](https://360toolkit.co/) -> 全景图转立方图
 107. [literallycanvas](http://literallycanvas.com/) -> 在画布草绘工程图的插件
-108. [Physijs](http://chandlerprall.github.io/Physijs/)  ->  实用的js物理引擎
 109. [heropatterns](http://www.heropatterns.com/) -> 生成css丰富背景代码的网站
 110. [98.css](https://jdan.github.io/98.css/) -> win98风格的css库
 
@@ -472,13 +471,14 @@
 
 ### 3D开发相关
 
-| 名称                                     | 简介                            |
-| ---------------------------------------- | ------------------------------- |
-| [Blender](https://www.blender.org/)      | 创建复杂的网格开源三维软件      |
-| [Away3D](http://away3d.com/)             | Flash平台的开源实时3D引擎       |
-| [BABYLON.JS](https://www.babylonjs.com/) | 强大，美观，简单的Web3D渲染引擎 |
-| [PlayCanvas](https://playcanvas.com/)    | HTML5 3D游戏引擎                |
-| [Mixamo](https://www.mixamo.com/)        | 为游戏或电影等制作3D角色动画    |
+| 名称                                               | 简介                            |
+| -------------------------------------------------- | ------------------------------- |
+| [Blender](https://www.blender.org/)                | 创建复杂的网格开源三维软件      |
+| [Away3D](http://away3d.com/)                       | Flash平台的开源实时3D引擎       |
+| [BABYLON.JS](https://www.babylonjs.com/)           | 强大，美观，简单的Web3D渲染引擎 |
+| [PlayCanvas](https://playcanvas.com/)              | HTML5 3D游戏引擎                |
+| [Mixamo](https://www.mixamo.com/)                  | 为游戏或电影等制作3D角色动画    |
+| [Physijs](http://chandlerprall.github.io/Physijs/) | 针对THREE的物理引擎             |
 
 ____
 
