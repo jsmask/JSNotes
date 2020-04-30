@@ -111,6 +111,7 @@
 107. [literallycanvas](http://literallycanvas.com/) -> 在画布草绘工程图的插件
 109. [heropatterns](http://www.heropatterns.com/) -> 生成css丰富背景代码的网站
 110. [98.css](https://jdan.github.io/98.css/) -> win98风格的css库
+110. [dbooks](https://www.dbooks.org/) -> 国外免费电子书库
 
 ------
 
