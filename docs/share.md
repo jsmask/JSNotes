@@ -112,6 +112,7 @@
 109. [heropatterns](http://www.heropatterns.com/) -> 生成css丰富背景代码的网站
 110. [98.css](https://jdan.github.io/98.css/) -> win98风格的css库
 110. [dbooks](https://www.dbooks.org/) -> 国外免费电子书库
+111. [storepreviewer](https://www.storepreviewer.com/) -> 在线生成 App 商店展示图工具
 
 ------
 
@@ -146,6 +147,8 @@
 27. [总结移动端H5开发常用技巧](https://juejin.im/post/5e4a0162f265da57133b2005)
 28. [GitHub中文排行榜](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts)
 29. [Node.js中的WebSocket演示服务器](https://lostmoa.com/blog/WebSocketDemoServerInNodeJS/)
+30. [每个开发人员应了解的TCP知识](https://robertovitillo.com/what-every-developer-should-know-about-tcp/)
+31. [如何实现单个Web组件](https://ckeditor.com/blog/implementing-single-file-web-components/)
 
 ------
 

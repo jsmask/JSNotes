@@ -127,7 +127,7 @@
   function isPlainObject(obj) {
     return isObject(obj) && !isWindow(obj) && Object.getPrototypeOf(obj) == Object.prototype
   }
-  // 判断是否是数组或集合
+  // 判断是否是数组或对象数组
   function likeArray(obj) {
     var length = !!obj && 'length' in obj && obj.length,
       type = $.type(obj)
