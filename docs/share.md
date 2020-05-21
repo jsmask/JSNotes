@@ -149,6 +149,7 @@
 29. [Node.js中的WebSocket演示服务器](https://lostmoa.com/blog/WebSocketDemoServerInNodeJS/)
 30. [每个开发人员应了解的TCP知识](https://robertovitillo.com/what-every-developer-should-know-about-tcp/)
 31. [如何实现单个Web组件](https://ckeditor.com/blog/implementing-single-file-web-components/)
+32. [任务,微任务,队列和时间表](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
 
 ------
 
