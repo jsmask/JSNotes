@@ -11,7 +11,7 @@ Food.prototype.put = function(){
 	throw new Error("需要写子类方法put");
 }
 Food.prototype.souse = function(){
-	throw new Error("需要写子类方法put");
+	throw new Error("需要写子类方法souse");
 }
 Food.prototype.heating = function(){
 	throw new Error("需要写子类方法heating");
