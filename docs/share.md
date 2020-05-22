@@ -113,6 +113,7 @@
 110. [98.css](https://jdan.github.io/98.css/) -> win98风格的css库
 110. [dbooks](https://www.dbooks.org/) -> 国外免费电子书库
 111. [storepreviewer](https://www.storepreviewer.com/) -> 在线生成 App 商店展示图工具
+112. [NGINX Config](https://www.digitalocean.com/community/tools/nginx) -> Nginx 的图形配置界面
 
 ------
 
@@ -430,7 +431,8 @@ ___
 6. [vant](https://youzan.github.io/vant/#/zh-CN) -> 有赞解决方案(Vue Mobile)
 7. [antd-mobile](https://mobile.ant.design/index-cn ) -> 支付宝UI框架(React Mobile / Native)
 8. [antd](https://ant.design/index-cn) -> 支付宝UI框架(React  PC  Vue)
-9. [zarm](https://zarm.design/#/) - >众安科技UI框架(React  Vue)
+9. [zarm](https://zarm.design/#/) - > 众安科技UI框架(React  Vue)
+10. [vuepress](https://www.vuepress.cn/) -> Vue 驱动的静态网站生成器(Vue PC)
 
 ------
 
