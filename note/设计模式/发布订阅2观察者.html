@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var Subject = (function(){
+				var _subject = function(){
+					this.state = false;
+					this.observes = [];
+				};
+				_subject.prototype.attach = function(observer){
+					if(observer instanceof Observer){
+						this.observes.push(observer);
+					}
+				}
+				_subject.prototype.setState = function(value){
+					this.state = value;
+					this.observes.forEach(function(observer){
+						observer.update();
+					})
+				}
+				return _subject;
+			})();
+	 		
+			var Observer = (function(){
+				var _observer = function(name){
+					this.name = name;
+				}
+				_observer.prototype.update = function(){
+					console.log(this.name)
+				}
+				return _observer;
+			})();
+			
+			var subject = new Subject();
+			
+			var observer1 = new Observer("暴龙兽");
+			var observer2 = new Observer("加鲁鲁兽");
+			
+			subject.attach(observer1);
+			subject.attach(observer2);
+			
+			subject.setState(true);
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var MyEvent = (function(){
+				var _event = function(){
+					this.clientList = {};
+				};
+				_event.prototype.on = function(){
+					var _key = Array.prototype.shift.call(arguments);
+					(this.clientList[_key] || (this.clientList[_key] = [])).push(Array.prototype.shift.call(arguments));
+				}
+				_event.prototype.emit = function(){
+					var _key = Array.prototype.shift.call(arguments);
+					if(!this.clientList[_key]) return false;
+					var args = arguments;
+					this.clientList[_key].forEach(function(fn){
+						fn.apply(this,args);
+					})
+				}
+				_event.prototype.off = function(key,fn){
+					var fns = this.clientList[key];
+					if(!fns) return false;
+					if(!fn) fns && (fns.length = 0);		
+					for (var i = fns.length;item = fns[--i];) {
+						if(item === fn) fns.splice(i,1);
+					}
+					return true;
+				}			
+				return _event;
+			})();
+			
+			var $Event = new MyEvent();
+			var attack1 = function(name,skill){
+				console.log(name+"收到攻击指令");
+			}
+			var attack2 = function(name,skill){
+				console.log(name+"发起"+skill);
+			}
+			var wait = function(name){
+				console.log(name+"发呆");
+			}
+			$Event.on("attack",attack1);
+			$Event.on("attack",attack2);
+			$Event.on("wait",wait);
+			
+			$Event.emit("attack","亚古兽","小型火焰");
+			$Event.emit("wait","亚古兽");
+			
+			$Event.off("attack",attack1);
+			$Event.off("wait");
+			
+			$Event.emit("attack","亚古兽","普通攻击");
+			$Event.emit("wait","亚古兽");
+			
+		</script>
+	</body>
+</html>
