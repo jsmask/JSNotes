@@ -580,7 +580,7 @@ this.$bus.$emit("myOnLoad");
 //上级中执行监听
 this.$bus.$on("myOnLoad",this.myEvent);
 //上级中取消监听
-this.$bus.$off("myOnLoad"this.myEvent);
+this.$bus.$off("myOnLoad",this.myEvent);
 ```
 
 ------
