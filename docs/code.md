@@ -430,7 +430,8 @@ const mutations = {
         else state.user = null;
     }
 };
-//若存在异步须使用actions，若只是同步mutations也可直接使用
+// 若存在异步须使用actions($store.dispatch)，
+// 若只是同步mutations也可($store.commit)
 const actions = {
     setUser: ({ commit }, user) => {
         return new Promise((resolve,reject)=>{
