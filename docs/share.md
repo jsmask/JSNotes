@@ -59,7 +59,6 @@
 57. [yupoo](https://x.yupoo.com) -> 免费图片上传平台（100M）
 58. [pages.github](https://pages.github.com/) -> 在github部署静态页(1G)
 59. [hackernoon](https://hackernoon.com/) -> 外国对程序员和创业者学习开放平台 
-60. [leetcode](https://leetcode-cn.com/) -> 算法、数据结构、系统设计等技术题库平台
 61. [dwz](https://dwz.cn/) -> 百度的短网址服务
 62. [sunny-ngrok](http://www.ngrok.cc/) -> 模拟公网IP端口
 63. [pinbox](https://withpinbox.com/) -> 跨平台收藏工具
@@ -117,6 +116,10 @@
 113. [processon](https://processon.com/) -> 在线作图工具
 114. [jc2182](https://www.jc2182.com/) -> 集合了一批技术学习文档
 115. [Sendfiles.online](https://sendfiles.online/) -> 免费在线文件储存服务(保存2天)
+115. [wifi.dev](https://wifi.dev.bdw.to/) -> 生成 Wifi 登录二维码的在线工具
+116. [Unscreen](https://www.unscreen.com/) -> 免费删除视频背景的在线工具
+117. [Thumbor](https://web.dev/use-thumbor/) -> 免费的开源图像 CDN，可压缩、调整大小和转换图像
+118. [fuun.fun](https://fuun.fun/) -> 该网站收集了一些有趣的网页项目
 
 ------
 
@@ -154,6 +157,8 @@
 30. [每个开发人员应了解的TCP知识](https://robertovitillo.com/what-every-developer-should-know-about-tcp/)
 31. [如何实现单个Web组件](https://ckeditor.com/blog/implementing-single-file-web-components/)
 32. [任务,微任务,队列和时间表](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+33. [如何使用 JavaScript 访问摄像头](https://www.webdevdrops.com/en/how-to-access-device-cameras-with-javascript/)
+34. [深入设计模式](https://refactoringguru.cn/design-patterns)
 
 ------
 
@@ -174,6 +179,9 @@
 13. [open21ic公开课](http://open.21ic.com/)
 14. [顶你学堂](http://www.topu.com/)
 15. [撩课学院](http://itlike.com/)
+16. [leetcode](https://leetcode-cn.com/)
+17. [牛客网](https://www.nowcoder.com/)
+18. [jc2182](https://www.jc2182.com/)
 
 ------
 
