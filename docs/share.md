@@ -159,6 +159,7 @@
 32. [任务,微任务,队列和时间表](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
 33. [如何使用 JavaScript 访问摄像头](https://www.webdevdrops.com/en/how-to-access-device-cameras-with-javascript/)
 34. [深入设计模式](https://refactoringguru.cn/design-patterns)
+35. [Fetch的使用](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
 
 ------
 
