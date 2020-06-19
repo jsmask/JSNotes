@@ -120,6 +120,7 @@
 116. [Unscreen](https://www.unscreen.com/) -> 免费删除视频背景的在线工具
 117. [Thumbor](https://web.dev/use-thumbor/) -> 免费的开源图像 CDN，可压缩、调整大小和转换图像
 118. [fuun.fun](https://fuun.fun/) -> 该网站收集了一些有趣的网页项目
+119. [brie](https://brie.fi/ng) -> 浏览器视频聊天室
 
 ------
 
@@ -256,6 +257,7 @@
 26. immutable -> 持久性数据结构处理的库
 27. h-regular -> 上百种正则表达式
 28. darken -> 让网页变为暗模式的插件
+29. mind-elixir -> 思维导图核心库
 
 ___
 
@@ -446,6 +448,7 @@ ___
 8. [antd](https://ant.design/index-cn) -> 支付宝UI框架(React  PC  Vue)
 9. [zarm](https://zarm.design/#/) - > 众安科技UI框架(React  Vue)
 10. [vuepress](https://www.vuepress.cn/) -> Vue 驱动的静态网站生成器(Vue PC)
+11. [chakra]([https://chakra-ui.com](https://chakra-ui.com/)) - > Chakra UI框架(React)
 
 ------
 
