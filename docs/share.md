@@ -124,6 +124,7 @@
 120. [brie](https://brie.fi/ng) -> 浏览器视频聊天室
 121. [regexper](https://regexper.com/) -> 正则表达式视图展示工具
 122. [codepen](https://codepen.io/) -> 面向前端设计人员的调试展示平台
+123. [gradienthunt](https://gradienthunt.com/) -> 颜色渐变展示平台
 
 ------
 
