@@ -111,17 +111,19 @@
 109. [heropatterns](http://www.heropatterns.com/) -> 生成css丰富背景代码的网站
 110. [98.css](https://jdan.github.io/98.css/) -> win98风格的css库
 110. [dbooks](https://www.dbooks.org/) -> 国外免费电子书库
+110. [link.springer](https://link.springer.com/) -> 国外免费电子书库
 111. [storepreviewer](https://www.storepreviewer.com/) -> 在线生成 App 商店展示图工具
 112. [NGINX Config](https://www.digitalocean.com/community/tools/nginx) -> Nginx 的图形配置界面
 113. [processon](https://processon.com/) -> 在线作图工具
 114. [jc2182](https://www.jc2182.com/) -> 集合了一批技术学习文档
 115. [Sendfiles.online](https://sendfiles.online/) -> 免费在线文件储存服务(保存2天)
-115. [wifi.dev](https://wifi.dev.bdw.to/) -> 生成 Wifi 登录二维码的在线工具
-116. [Unscreen](https://www.unscreen.com/) -> 免费删除视频背景的在线工具
-117. [Thumbor](https://web.dev/use-thumbor/) -> 免费的开源图像 CDN，可压缩、调整大小和转换图像
-118. [fuun.fun](https://fuun.fun/) -> 该网站收集了一些有趣的网页项目
-119. [brie](https://brie.fi/ng) -> 浏览器视频聊天室
-120. [regexper](https://regexper.com/) -> 正则表达式视图展示工具
+116. [wifi.dev](https://wifi.dev.bdw.to/) -> 生成 Wifi 登录二维码的在线工具
+117. [Unscreen](https://www.unscreen.com/) -> 免费删除视频背景的在线工具
+118. [Thumbor](https://web.dev/use-thumbor/) -> 免费的开源图像 CDN，可压缩、调整大小和转换图像
+119. [fuun.fun](https://fuun.fun/) -> 该网站收集了一些有趣的网页项目
+120. [brie](https://brie.fi/ng) -> 浏览器视频聊天室
+121. [regexper](https://regexper.com/) -> 正则表达式视图展示工具
+122. [codepen](https://codepen.io/) -> 面向前端设计人员的调试展示平台
 
 ------
 
@@ -430,9 +432,10 @@ ___
 3. 创建vue cli3脚手架于xxx文件夹 -> vue create xxx
 4. 创建vue nuxt脚手架于xxx文件夹 -> npx create-nuxt-app xxx
 5. 创建react脚手架于xxx文件夹 -> create-react-app xxx
-6. 全局安装react-native脚手架夹 ->  npm i -g yarn react-native-cli
-7. 创建react-native脚手架于xxx文件夹 -> react-native init xxx
-8. 安装vue cli3 下的cube-ui模板 -> vue add cube-ui
+6. 创建react脚手架(ts)于xxx文件夹 -> create-react-app xxx --typescript --use-npm
+7. 全局安装react-native脚手架夹 ->  npm i -g react-native-cli
+8. 创建react-native脚手架于xxx文件夹 -> react-native init xxx
+9. 安装vue cli3 下的cube-ui模板 -> vue add cube-ui
 10. 创建next脚手架于xxx文件夹 -> create-next-app xxx
 
 ------
