@@ -294,6 +294,7 @@ ___
 | CamanJS          | 画布操作库                                  | http://camanjs.com/                            |
 | MarvinJ          | js图像处理框架                              | https://github.com/gabrielarchanjo/marvinj     |
 | grade            | 从图像中的前 2 种主色生成互补的渐变背景色   | https://github.com/benhowdle89/grade           |
+| gsap             | 轻量级JavaScript动画库                      | https://greensock.com/                         |
 
 ------
 
