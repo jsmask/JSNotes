@@ -126,6 +126,7 @@
 122. [codepen](https://codepen.io/) -> 面向前端设计人员的调试展示平台
 123. [gradienthunt](https://gradienthunt.com/) -> 颜色渐变展示网站
 124. [easings](https://easings.net/) -> 获取各种缓动函数的网站
+125. [alteredqualia](https://alteredqualia.com/) -> 收集一些炫酷的特效网站
 
 ------
 
@@ -295,6 +296,7 @@ ___
 | MarvinJ          | js图像处理框架                              | https://github.com/gabrielarchanjo/marvinj     |
 | grade            | 从图像中的前 2 种主色生成互补的渐变背景色   | https://github.com/benhowdle89/grade           |
 | gsap             | 轻量级JavaScript动画库                      | https://greensock.com/                         |
+| sketch           | 轻量级JavaScript动画创作框架                | https://github.com/soulwire/sketch.js          |
 
 ------
 
