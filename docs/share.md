@@ -36,9 +36,7 @@
 34. [myjson](http://myjson.com/) -> 一个json仓库可以模拟请求
 35. [gulp](https://www.gulpjs.com.cn/) ->  自动化构建工具
 36. [easymock](https://www.easy-mock.com/) -> 可视化模拟数据的平台
-37. [Zdog](https://zzz.dog/) ->  一个javascript的3D设计和动画制作库
 38. [Writeathon](https://www.writeathon.cn/) -> 一款基于极简理念的在线写作工具
-39. [yarn](https://yarnpkg.com/zh-Hans/docs/cli/) -> yarn命令介绍
 40. [next](https://nextjs.frontendx.cn/) -> 一个轻量级的 React 服务端渲染应用框架的中文官网
 41. [electron](https://electronjs.org/) -> js+html+css构建跨平台的桌面应用
 42. [docschina](https://www.docschina.org/) -> 为前端开发人员提供优质文档的平台
@@ -129,6 +127,7 @@
 125. [alteredqualia](https://alteredqualia.com/) -> 收集一些炫酷的特效网站
 126. [svgomg](https://jakearchibald.github.io/svgomg/) -> 在线GUI优化工具
 127. [grunticon](http://www.grunticon.com/) -> svg自动压缩和生成Sprite图表
+126. [netlify](https://www.netlify.com/) -> 前端自动化部署服务平台
 
 ------
 
@@ -536,14 +535,15 @@ ___
 
 ### 3D开发相关
 
-| 名称                                               | 简介                            |
-| -------------------------------------------------- | ------------------------------- |
-| [Blender](https://www.blender.org/)                | 创建复杂的网格开源三维软件      |
-| [Away3D](http://away3d.com/)                       | Flash平台的开源实时3D引擎       |
-| [BABYLON.JS](https://www.babylonjs.com/)           | 强大，美观，简单的Web3D渲染引擎 |
-| [PlayCanvas](https://playcanvas.com/)              | HTML5 3D游戏引擎                |
-| [Mixamo](https://www.mixamo.com/)                  | 为游戏或电影等制作3D角色动画    |
-| [Physijs](http://chandlerprall.github.io/Physijs/) | 针对THREE的物理引擎             |
+| 名称                                               | 简介                               |
+| -------------------------------------------------- | ---------------------------------- |
+| [Blender](https://www.blender.org/)                | 创建复杂的网格开源三维软件         |
+| [Away3D](http://away3d.com/)                       | Flash平台的开源实时3D引擎          |
+| [BABYLON.JS](https://www.babylonjs.com/)           | 强大，美观，简单的Web3D渲染引擎    |
+| [PlayCanvas](https://playcanvas.com/)              | HTML5 3D游戏引擎                   |
+| [Mixamo](https://www.mixamo.com/)                  | 为游戏或电影等制作3D角色动画       |
+| [Physijs](http://chandlerprall.github.io/Physijs/) | 针对THREE的物理引擎                |
+| [Zdog](https://zzz.dog/)                           | 一个javascript的3D设计和动画制作库 |
 
 ____
 
