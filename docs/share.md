@@ -127,6 +127,8 @@
 123. [gradienthunt](https://gradienthunt.com/) -> 颜色渐变展示网站
 124. [easings](https://easings.net/) -> 获取各种缓动函数的网站
 125. [alteredqualia](https://alteredqualia.com/) -> 收集一些炫酷的特效网站
+126. [svgomg](https://jakearchibald.github.io/svgomg/) -> 在线GUI优化工具
+127. [grunticon](http://www.grunticon.com/) -> svg自动压缩和生成Sprite图表
 
 ------
 
