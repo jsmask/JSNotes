@@ -128,6 +128,7 @@
 126. [svgomg](https://jakearchibald.github.io/svgomg/) -> 在线GUI优化工具
 127. [grunticon](http://www.grunticon.com/) -> svg自动压缩和生成Sprite图表
 126. [netlify](https://www.netlify.com/) -> 前端自动化部署服务平台
+127. [designcode](https://designcode.io) -> 开发人员学习设计的平台
 
 ------
 
@@ -265,6 +266,7 @@
 27. h-regular -> 上百种正则表达式
 28. darken -> 让网页变为暗模式的插件
 29. mind-elixir -> 思维导图核心库
+30. react-motion -> 针对react实现动画
 
 ___
 
@@ -272,6 +274,8 @@ ___
 
 | 名称             | 介绍                                        | 资源                                           |
 | ---------------- | ------------------------------------------- | ---------------------------------------------- |
+| mojs             | 专注动效的JavaScript库                      | https://mojs.github.io/                        |
+| hammerjs         | 手势库                                      | http://hammerjs.github.io/                     |
 | imagesloaded     | 图片加载插件,能够监测图片的加载状态         | https://imagesloaded.desandro.com/             |
 | TweenMax         | 超高性能专业级动画插件                      | https://www.tweenmax.com.cn/                   |
 | charming         | 改变单个字体                                | https://github.com/yuanqing/charming           |
