@@ -169,6 +169,8 @@
 33. [如何使用 JavaScript 访问摄像头](https://www.webdevdrops.com/en/how-to-access-device-cameras-with-javascript/)
 34. [深入设计模式](https://refactoringguru.cn/design-patterns)
 35. [Fetch的使用](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
+36. [React Hook四种常见写法错误](https://www.lorenzweiss.de/common_mistakes_react_hooks/)
+37. [字体反爬的攻与防](https://cjting.me/2020/07/01/douyu-crawler-and-font-anti-crawling/)
 
 ------
 
@@ -468,14 +470,15 @@ ___
 
 ### 游戏开发常用工具
 
-| 名称             | 介绍             |
-| ---------------- | ---------------- |
-| ShoeBox          | 拆分合并图片资源 |
-| BMFont           | 字体资源制作     |
-| TexturePackerGUI | 拆分合并图片资源 |
-| Cinema 4D        | 视觉特效制作     |
-| Particle2dx      | 粒子特效制作     |
-| FairyGUI         | 超强 UI 编辑器   |
+| 名称             | 介绍               |
+| ---------------- | ------------------ |
+| ShoeBox          | 拆分合并图片资源   |
+| BMFont           | 字体资源制作       |
+| TexturePackerGUI | 拆分合并图片资源   |
+| Cinema 4D        | 视觉特效制作       |
+| Particle2dx      | 粒子特效制作       |
+| FairyGUI         | 超强 UI 编辑器     |
+| Live2d           | 伪3D人物动作编辑器 |
 
 ------
 
