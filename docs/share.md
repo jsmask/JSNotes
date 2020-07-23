@@ -333,6 +333,8 @@ ___
 4. XMLHttpRequest
 5. performance
 6. Object.defineProperty
+7. URLSearchParams
+8. location.search
 
 ------
 
