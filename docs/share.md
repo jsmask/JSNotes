@@ -68,7 +68,7 @@
 69. [parceljs](https://parceljs.docschina.org/) -> 零配置打包工具
 70. [whocanuse](https://whocanuse.com/) -> 配色可用性查看工具
 71. [wuruihong](http://icon.wuruihong.com/) -> 生成app启动图的图标工场
-72. [Paint.net](https://www.getpaint.net/) -> 简易版的Photoshop
+72. [Paint](https://www.getpaint.net/) -> 简易版的Photoshop
 73. [Trello](https://trello.com/) -> 智能的团队协作工具
 74. [codecks](https://www.codecks.io/) -> 针对游戏开发的项目管理工具
 75. [riot](https://riot.js.org/) -> 简单优雅的基于组件的UI库
@@ -129,6 +129,7 @@
 127. [grunticon](http://www.grunticon.com/) -> svg自动压缩和生成Sprite图表
 126. [netlify](https://www.netlify.com/) -> 前端自动化部署服务平台
 127. [designcode](https://designcode.io) -> 开发人员学习设计的平台
+128. [3d-book-css](https://3d-book-css.netlify.app/) -> 3d book生成器
 
 ------
 
