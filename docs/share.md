@@ -326,16 +326,18 @@ ___
 
 ------
 
-### JS重要对象或函数
+### 重要api
 
-1. URL.createObjectURL
-2. FormData
-3. FileReader
-4. XMLHttpRequest
-5. performance
-6. Object.defineProperty
-7. URLSearchParams
-8. location.search
+1. [URL.createObjectURL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL/createObjectURL)
+2. [FormData](https://developer.mozilla.org/zh-CN/docs/Web/API/FormData)
+3. [FileReader](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader)
+4. [XMLHttpRequest](https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest)
+5. [performance](https://developer.mozilla.org/zh-CN/docs/Web/API/Performance)
+6. [Object.defineProperty](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+7. [URLSearchParams](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams)
+8. [location.search](https://developer.mozilla.org/zh-CN/docs/Web/API/Location/search)
+9. [IntersectionObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver)
+10. [Worker](https://developer.mozilla.org/zh-CN/docs/Web/API/Worker)
 
 ------
 
