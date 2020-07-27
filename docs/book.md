@@ -3,10 +3,9 @@
 ### 算法逻辑
 
 1. [啊哈!算法](https://book.douban.com/subject/25894685/)
-
 2. [算法图解](https://book.douban.com/subject/26979890/)
-
 3. [算法（第4版）](https://book.douban.com/subject/19952400/)
+4. [算法导论](https://book.douban.com/subject/1885170/)
 
 
 ### 设计模式
