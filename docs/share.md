@@ -559,13 +559,13 @@ ____
 
 ### react安装脚手架
 
-| 指令                                | 解释                                      |
-| ----------------------------------- | ----------------------------------------- |
-| npm i -g create-react-app           | 全局安装                                  |
-| create-react-app react-basic        | 创建react-basic基础模板                   |
-| cd react-basic                      | 进入react-basic项目文件                   |
-| npm start                           | react-basic项目构建预览                   |
-| npm i redux react-redux redux-thunk | 安装redux，react-redux和中间件redux-thunk |
+| 指令                                                         | 解释                      |
+| ------------------------------------------------------------ | ------------------------- |
+| npm i -g create-react-app                                    | 全局安装                  |
+| create-react-app react-basic                                 | 创建react-basic基础模板   |
+| cd react-basic                                               | 进入react-basic项目文件   |
+| npm start                                                    | react-basic项目构建预览   |
+| npm i redux react-redux redux-thunk redux-logger redux-devtools-extension | 安装redux常用工具和中间件 |
 
 ------
 
