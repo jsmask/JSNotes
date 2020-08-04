@@ -270,6 +270,7 @@
 28. darken -> 让网页变为暗模式的插件
 29. mind-elixir -> 思维导图核心库
 30. react-motion -> 针对react实现动画
+31. core-decorators -> es7装饰器类库
 
 ___
 
