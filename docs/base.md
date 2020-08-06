@@ -20,6 +20,21 @@
 
 ___
 
+### for...of 循环
+
+1. 实质上是iterator迭代器+while遍历的实现
+2. for..of循环适用于有序集合。如：Array,String,NodeList, Set,Map,arguments,TypedArray,Generator函数返回值
+3. object不是有序集合，可以用Map代替
+4. 有序集合标志是Symbol.iterator
+
+```javascript
+typeof Array.prototype[Symbol.iterator]; //function
+typeof Set.prototype[Symbol.iterator]; //function
+typeof Object.prototype[Symbol.iterator]; //undefined
+```
+
+______
+
 ### 页面加载过程
 
 1. 用户输入网址
