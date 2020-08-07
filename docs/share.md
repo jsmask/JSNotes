@@ -130,6 +130,11 @@
 126. [netlify](https://www.netlify.com/) -> 前端自动化部署服务平台
 127. [designcode](https://designcode.io) -> 开发人员学习设计的平台
 128. [3d-book-css](https://3d-book-css.netlify.app/) -> 3d book生成器
+129. [storycreatorapp](https://storycreatorapp.com/) -> 在线视频编辑器
+130. [yandex](https://yandex.com/images/) -> 俄罗斯的搜索引擎 Yandex
+131. [godbolt](https://godbolt.org/) -> 在线编译器学习工具
+132. [creator.nightcafe](https://creator.nightcafe.studio/) -> 在线图片处理工具，让照片变成世界名画
+133. [js1024](https://js1024.fun/) -> js1024竞赛
 
 ------
 
@@ -271,6 +276,7 @@
 29. mind-elixir -> 思维导图核心库
 30. react-motion -> 针对react实现动画
 31. core-decorators -> es7装饰器类库
+32. Luckysheet -> 网页表格库
 
 ___
 
