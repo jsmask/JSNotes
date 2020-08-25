@@ -135,6 +135,10 @@
 131. [godbolt](https://godbolt.org/) -> 在线编译器学习工具
 132. [creator.nightcafe](https://creator.nightcafe.studio/) -> 在线图片处理工具，让照片变成世界名画
 133. [js1024](https://js1024.fun/) -> js1024竞赛
+134. [h5anli](https://www.h5anli.com/) -> h5案例分享
+135. [mvp.css](https://andybrewer.github.io/mvp/) -> 最简化的 CSS 库
+136. [QRpicture](https://www.qrpicture.com/) -> 将二维码和图片融合的在线工具
+137. [isoflow](https://isoflow.io/) -> 绘制3d示意图工具
 
 ------
 
@@ -177,6 +181,7 @@
 35. [Fetch的使用](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
 36. [React Hook四种常见写法错误](https://www.lorenzweiss.de/common_mistakes_react_hooks/)
 37. [字体反爬的攻与防](https://cjting.me/2020/07/01/douyu-crawler-and-font-anti-crawling/)
+38. [CSS 生成艺术](https://generative-art-with-css.commons.host/)
 
 ------
 
@@ -200,6 +205,7 @@
 16. [leetcode](https://leetcode-cn.com/)
 17. [牛客网](https://www.nowcoder.com/)
 18. [jc2182](https://www.jc2182.com/)
+19. [H5课堂](https://www.h5ketang.com/)
 
 ------
 
@@ -210,6 +216,7 @@
 3. [yui540](https://github.com/yui540) -> 《臆病な魔女》
 4. [黄奕](https://github.com/ustbhuangyi) ->《better-scroll》、《cube-ui》
 5. [卖好车团队](https://github.com/maihaoche) -> 《卖好车期刊》
+6. [腾讯AlloyTeam](https://github.com/AlloyTeam) -> 《[Tencent AlloyTeam](http://alloyteam.github.io/)》
 
 ------
 
@@ -277,6 +284,7 @@
 30. react-motion -> 针对react实现动画
 31. core-decorators -> es7装饰器类库
 32. Luckysheet -> 网页表格库
+33. PhyTouch -> 动画触摸解决方案
 
 ___
 
