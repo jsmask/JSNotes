@@ -206,6 +206,7 @@
 17. [牛客网](https://www.nowcoder.com/)
 18. [jc2182](https://www.jc2182.com/)
 19. [H5课堂](https://www.h5ketang.com/)
+20. [路飞学城](https://www.luffycity.com/)
 
 ------
 
@@ -320,6 +321,7 @@ ___
 | grade            | 从图像中的前 2 种主色生成互补的渐变背景色   | https://github.com/benhowdle89/grade           |
 | gsap             | 轻量级JavaScript动画库                      | https://greensock.com/                         |
 | sketch           | 轻量级JavaScript动画创作框架                | https://github.com/soulwire/sketch.js          |
+| howler           | JavaScript音频操作库                        | https://howlerjs.com/                          |
 
 ------
 
@@ -571,6 +573,18 @@ ___
 | [Mixamo](https://www.mixamo.com/)                  | 为游戏或电影等制作3D角色动画       |
 | [Physijs](http://chandlerprall.github.io/Physijs/) | 针对THREE的物理引擎                |
 | [Zdog](https://zzz.dog/)                           | 一个javascript的3D设计和动画制作库 |
+
+____
+
+### uni-app脚手架搭建
+
+| 指令                         | 解释                                                         |
+| ---------------------------- | ------------------------------------------------------------ |
+| npm i -g @vue/cli            | 全局安装                                                     |
+| create-react-app react-basic | 创建项目                                                     |
+| npm run dev:mp-weixin        | 启动微信小程序项目（微信小程序工具打开导入项目目录dist下的微信文件夹） |
+| npm i node-sass sass-loader  | 安装sass依赖 (<style lang="scss"></style>)                   |
+|                              |                                                              |
 
 ____
 
