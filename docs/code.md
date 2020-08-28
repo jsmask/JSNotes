@@ -720,8 +720,8 @@ new Vue({
 ```javascript
 const serverUrl = ""; //配置请求服务器路径
 
-export default {
-	serverUrl
+module.exports = {
+    serverUrl
 }
 ```
 
@@ -732,7 +732,7 @@ import {
 	serverUrl
 } from "./config.js";
 
-function sendRrquest({
+function sendRequest({
 	url,
 	method,
 	data,
@@ -747,7 +747,7 @@ function sendRrquest({
 			data,
 			method,
 			header,
-			success: resolve,
+			success: res => resolve(res.data),
 			fail: reject,
 			complete: () => {
 				uni.hideLoading();
@@ -764,7 +764,8 @@ function MyHttp(defaultParams, allRequest) {
 	for (let key in allRequest) {
 		let request = allRequest[key];
 		resource[key] = (data) => {
-			return sendRrquest({
+            data = Object.assign({},defaultParams,data);
+			return sendRequest({
 				url: serverUrl + request.url,
 				method: request.method,
 				data,

@@ -288,6 +288,7 @@
 31. core-decorators -> es7装饰器类库
 32. Luckysheet -> 网页表格库
 33. PhyTouch -> 动画触摸解决方案
+34. filepond -> 文件上传库
 
 ___
 
