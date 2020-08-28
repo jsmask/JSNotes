@@ -139,6 +139,7 @@
 135. [mvp.css](https://andybrewer.github.io/mvp/) -> 最简化的 CSS 库
 136. [QRpicture](https://www.qrpicture.com/) -> 将二维码和图片融合的在线工具
 137. [isoflow](https://isoflow.io/) -> 绘制3d示意图工具
+138. [gradientmagic](https://www.gradientmagic.com/) -> css渐变背景平台
 
 ------
 
@@ -182,6 +183,7 @@
 36. [React Hook四种常见写法错误](https://www.lorenzweiss.de/common_mistakes_react_hooks/)
 37. [字体反爬的攻与防](https://cjting.me/2020/07/01/douyu-crawler-and-font-anti-crawling/)
 38. [CSS 生成艺术](https://generative-art-with-css.commons.host/)
+39. [leetcode算法小抄](https://labuladong.gitbook.io/algo/)
 
 ------
 
@@ -321,7 +323,8 @@ ___
 | grade            | 从图像中的前 2 种主色生成互补的渐变背景色   | https://github.com/benhowdle89/grade           |
 | gsap             | 轻量级JavaScript动画库                      | https://greensock.com/                         |
 | sketch           | 轻量级JavaScript动画创作框架                | https://github.com/soulwire/sketch.js          |
-| howler           | JavaScript音频操作库                        | https://howlerjs.com/                          |
+| howler           | 音频操作库                                  | https://howlerjs.com/                          |
+| ztext            | 字体变成 3D 效果插件                        | https://bennettfeely.com/ztext/                |
 
 ------
 
