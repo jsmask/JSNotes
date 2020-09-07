@@ -44,3 +44,4 @@
 42. luminosity -> 光度
 43. reference -> 查阅
 44. composite -> 合成
+45. operate ->  操作
