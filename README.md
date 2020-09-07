@@ -16,7 +16,9 @@ ______
 
 3. [常用代码](./docs/code.md)
 
-4. [推荐书籍](./docs/book.md)
+4. [常用单词](./docs/word.md)
+
+5. [推荐书籍](./docs/book.md)
 
 ______
 

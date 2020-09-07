@@ -140,6 +140,8 @@
 136. [QRpicture](https://www.qrpicture.com/) -> 将二维码和图片融合的在线工具
 137. [isoflow](https://isoflow.io/) -> 绘制3d示意图工具
 138. [gradientmagic](https://www.gradientmagic.com/) -> css渐变背景平台
+139. [css-doodle](https://css-doodle.com/)  -> 一个用于使用CSS绘制图案的Web组件
+140. [pugjs](https://pugjs.org/api/getting-started.html) -> 省略HTML标签格式
 
 ------
 
