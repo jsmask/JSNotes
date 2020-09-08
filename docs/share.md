@@ -142,6 +142,16 @@
 138. [gradientmagic](https://www.gradientmagic.com/) -> css渐变背景平台
 139. [css-doodle](https://css-doodle.com/)  -> 一个用于使用CSS绘制图案的Web组件
 140. [pugjs](https://pugjs.org/api/getting-started.html) -> 省略HTML标签格式
+141. [chp.shadiao](https://chp.shadiao.app/) -> 彩虹屁生成器
+142. [imgkr](https://imgkr.com/) -> 免费的图床
+143. [webp2jpg-online](https://renzhezhilu.gitee.io/webp2jpg-online/) -> 图片压缩工具
+144. [compress-image](https://www.iloveimg.com/zh-cn/compress-image) -> 图片压缩工具
+145. [gif-mp4](https://convertio.co/zh/gif-mp4/) -> git转换为mp4
+146. [photopea](https://www.photopea.com/) -> 在线的图片编辑器
+147. [qiuziti](http://www.qiuziti.com/) -> 快速识别字体
+148. [tool.liumingye-douyin](http://tool.liumingye.cn/douyin/) -> 抖音无水印下载
+149. [100font](www.100font.com) -> 免费商用字体下载网站
+150. [bitly](https://bitly.com/) -> 短连接生成器
 
 ------
 
@@ -211,6 +221,7 @@
 18. [jc2182](https://www.jc2182.com/)
 19. [H5课堂](https://www.h5ketang.com/)
 20. [路飞学城](https://www.luffycity.com/)
+21. [后盾人](https://www.houdunren.com/)
 
 ------
 
