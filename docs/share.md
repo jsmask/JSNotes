@@ -152,6 +152,7 @@
 148. [tool.liumingye-douyin](http://tool.liumingye.cn/douyin/) -> 抖音无水印下载
 149. [100font](www.100font.com) -> 免费商用字体下载网站
 150. [bitly](https://bitly.com/) -> 短连接生成器
+151. [skeletonreact](https://skeletonreact.com/) -> 骨架屏生成器
 
 ------
 
