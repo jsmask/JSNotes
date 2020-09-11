@@ -197,6 +197,7 @@
 37. [字体反爬的攻与防](https://cjting.me/2020/07/01/douyu-crawler-and-font-anti-crawling/)
 38. [CSS 生成艺术](https://generative-art-with-css.commons.host/)
 39. [leetcode算法小抄](https://labuladong.gitbook.io/algo/)
+40. [Web API的设计](https://livebook.manning.com/book/the-design-of-everyday-apis/chapter-1/)
 
 ------
 
