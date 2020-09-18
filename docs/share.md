@@ -155,6 +155,8 @@
 151. [bitly](https://bitly.com/) -> 短连接生成器
 152. [skeletonreact](https://skeletonreact.com/) -> 骨架屏生成器
 153. [vercel](https://vercel.com) -> 部署任何前端应用程序的平台
+154. [screely](https://www.screely.com/) -> 生成网页示意图的工具
+155. [ignitionrobotics](https://app.ignitionrobotics.org/) -> 谷歌3D 扫描物品
 
 ------
 
@@ -200,6 +202,7 @@
 38. [CSS 生成艺术](https://generative-art-with-css.commons.host/)
 39. [leetcode算法小抄](https://labuladong.gitbook.io/algo/)
 40. [Web API的设计](https://livebook.manning.com/book/the-design-of-everyday-apis/chapter-1/)
+41. [微前端“容器” microcosmos](https://juejin.im/post/6864381092061773831)
 
 ------
 
