@@ -203,6 +203,8 @@
 39. [leetcode算法小抄](https://labuladong.gitbook.io/algo/)
 40. [Web API的设计](https://livebook.manning.com/book/the-design-of-everyday-apis/chapter-1/)
 41. [微前端“容器” microcosmos](https://juejin.im/post/6864381092061773831)
+42. [vue2.xx版本在线编译](https://template-explorer.vuejs.org/#)
+43. [vue3.xx版本在线编译](https://vue-next-template-explorer.netlify.app/#)
 
 ------
 
@@ -495,6 +497,7 @@ ___
 8. 创建react-native脚手架于xxx文件夹 -> react-native init xxx
 9. 安装vue cli3 下的cube-ui模板 -> vue add cube-ui
 10. 创建next脚手架于xxx文件夹 -> create-next-app xxx
+11. 创建vue3于xxx文件夹 -> create-vite-app xxx
 
 ------
 
