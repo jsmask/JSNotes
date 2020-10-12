@@ -212,6 +212,7 @@
 43. [vue3.xx版本在线编译](https://vue-next-template-explorer.netlify.app/#)
 44. [如何使用 Canvas 模拟对象碰撞](https://joshbradley.me/object-collisions-with-canvas/)
 45. [Intl.RelativeTimeFormat相对时间格式化](http://www.deathghost.cn/article/javascript/53)
+46. [Git练习](https://gitexercises.fracz.com/)
 
 ------
 
@@ -323,38 +324,39 @@ ___
 
 ### 实用库
 
-| 名称             | 介绍                                        | 资源                                           |
-| ---------------- | ------------------------------------------- | ---------------------------------------------- |
-| mojs             | 专注动效的JavaScript库                      | https://mojs.github.io/                        |
-| hammerjs         | 手势库                                      | http://hammerjs.github.io/                     |
-| imagesloaded     | 图片加载插件,能够监测图片的加载状态         | https://imagesloaded.desandro.com/             |
-| TweenMax         | 超高性能专业级动画插件                      | https://www.tweenmax.com.cn/                   |
-| charming         | 改变单个字体                                | https://github.com/yuanqing/charming           |
-| swiper           | 移动端网页触摸内容滑动插件                  | https://www.swiper.com.cn/                     |
-| fullpage         | 全屏滑动插件                                | http://fullpage.81hu.com/                      |
-| wow              | 实现滚动页面时触发CSS 动画效果的插件        | https://www.delac.io/wow/                      |
-| animejs          | 轻量级JavaScript动画库                      | https://www.animejs.cn/                        |
-| AnnieJS          | 专注于Html5 互动交互的2d动画引擎（偏flash） | http://www.annie2x.com/                        |
-| Hilo             | 轻量Html5小游戏引擎（阿里）                 | http://hiloteam.github.io/                     |
-| paperjs          | 矢量图形脚本框架                            | http://paperjs.org/                            |
-| Sortable         | 适用于PC和移动端的拖拽插件                  | https://github.com/SortableJS/Sortable         |
-| photoswipe       | 浏览放大图片插件                            | https://photoswipe.com/                        |
-| jtopo            | 轻量级拓扑图形化界面开发工具                | http://www.jtopo.com/                          |
-| QRCode           | 二维码生成器                                | https://github.com/davidshimjs/qrcodejs        |
-| html2canvas      | 将页面渲染成画布                            | https://github.com/niklasvh/html2canvas        |
-| mescroll         | 滚动加载刷新                                | http://www.mescroll.com                        |
-| svg-text-animate | 将文字转为 SVG 动画                         | https://github.com/oubenruing/svg-text-animate |
-| pica             | 减小大图的上传大小插件                      | https://github.com/nodeca/pica                 |
-| lena             | 图像滤镜库                                  | https://github.com/davidsonfellipe/lena.js     |
-| compressor       | js图像压缩器                                | https://github.com/fengyuanchen/compressorjs   |
-| cropper          | js图像裁剪器                                | https://github.com/fengyuanchen/cropperjs      |
-| CamanJS          | 画布操作库                                  | http://camanjs.com/                            |
-| MarvinJ          | js图像处理框架                              | https://github.com/gabrielarchanjo/marvinj     |
-| grade            | 从图像中的前 2 种主色生成互补的渐变背景色   | https://github.com/benhowdle89/grade           |
-| gsap             | 轻量级JavaScript动画库                      | https://greensock.com/                         |
-| sketch           | 轻量级JavaScript动画创作框架                | https://github.com/soulwire/sketch.js          |
-| howler           | 音频操作库                                  | https://howlerjs.com/                          |
-| ztext            | 字体变成 3D 效果插件                        | https://bennettfeely.com/ztext/                |
+| 名称             | 介绍                                        | 资源                                            |
+| ---------------- | ------------------------------------------- | ----------------------------------------------- |
+| mojs             | 专注动效的JavaScript库                      | https://mojs.github.io/                         |
+| hammerjs         | 手势库                                      | http://hammerjs.github.io/                      |
+| imagesloaded     | 图片加载插件,能够监测图片的加载状态         | https://imagesloaded.desandro.com/              |
+| TweenMax         | 超高性能专业级动画插件                      | https://www.tweenmax.com.cn/                    |
+| charming         | 改变单个字体                                | https://github.com/yuanqing/charming            |
+| swiper           | 移动端网页触摸内容滑动插件                  | https://www.swiper.com.cn/                      |
+| fullpage         | 全屏滑动插件                                | http://fullpage.81hu.com/                       |
+| wow              | 实现滚动页面时触发CSS 动画效果的插件        | https://www.delac.io/wow/                       |
+| animejs          | 轻量级JavaScript动画库                      | https://www.animejs.cn/                         |
+| AnnieJS          | 专注于Html5 互动交互的2d动画引擎（偏flash） | http://www.annie2x.com/                         |
+| Hilo             | 轻量Html5小游戏引擎（阿里）                 | http://hiloteam.github.io/                      |
+| paperjs          | 矢量图形脚本框架                            | http://paperjs.org/                             |
+| Sortable         | 适用于PC和移动端的拖拽插件                  | https://github.com/SortableJS/Sortable          |
+| photoswipe       | 浏览放大图片插件                            | https://photoswipe.com/                         |
+| jtopo            | 轻量级拓扑图形化界面开发工具                | http://www.jtopo.com/                           |
+| QRCode           | 二维码生成器                                | https://github.com/davidshimjs/qrcodejs         |
+| html2canvas      | 将页面渲染成画布                            | https://github.com/niklasvh/html2canvas         |
+| mescroll         | 滚动加载刷新                                | http://www.mescroll.com                         |
+| svg-text-animate | 将文字转为 SVG 动画                         | https://github.com/oubenruing/svg-text-animate  |
+| pica             | 减小大图的上传大小插件                      | https://github.com/nodeca/pica                  |
+| lena             | 图像滤镜库                                  | https://github.com/davidsonfellipe/lena.js      |
+| compressor       | js图像压缩器                                | https://github.com/fengyuanchen/compressorjs    |
+| cropper          | js图像裁剪器                                | https://github.com/fengyuanchen/cropperjs       |
+| CamanJS          | 画布操作库                                  | http://camanjs.com/                             |
+| MarvinJ          | js图像处理框架                              | https://github.com/gabrielarchanjo/marvinj      |
+| grade            | 从图像中的前 2 种主色生成互补的渐变背景色   | https://github.com/benhowdle89/grade            |
+| gsap             | 轻量级JavaScript动画库                      | https://greensock.com/                          |
+| sketch           | 轻量级JavaScript动画创作框架                | https://github.com/soulwire/sketch.js           |
+| howler           | 音频操作库                                  | https://howlerjs.com/                           |
+| ztext            | 字体变成 3D 效果插件                        | https://bennettfeely.com/ztext/                 |
+| particlesjs      | 创建粒子的轻量级js库                        | https://github.com/VincentGarreau/particles.js/ |
 
 ------
 
