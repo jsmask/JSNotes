@@ -162,6 +162,9 @@
 158. [dev.to](https://dev.to/) ->  dev知识库(国外)
 159. [yuque](https://www.yuque.com) ->  语雀知识库
 160. [flexboxdefense](http://www.flexboxdefense.com/) -> 针对css练习的弹框游戏
+161. [bensound](https://www.bensound.com/) -> 音效网站
+162. [rollupjs](https://rollupjs.org/guide/en/) -> 轻量级模块打包工具
+163. [polypane.3d-transform](https://polypane.app/css-3d-transform-examples/) -> CSS 3D 示例
 
 ------
 
@@ -213,6 +216,8 @@
 44. [如何使用 Canvas 模拟对象碰撞](https://joshbradley.me/object-collisions-with-canvas/)
 45. [Intl.RelativeTimeFormat相对时间格式化](http://www.deathghost.cn/article/javascript/53)
 46. [Git练习](https://gitexercises.fracz.com/)
+47. [如何写一个最简单的 React 实现](https://zserge.com/posts/worst-react-ever/)
+48. [漫游者的压缩知识指南](https://go-compression.github.io/)
 
 ------
 
