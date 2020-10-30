@@ -165,6 +165,8 @@
 161. [bensound](https://www.bensound.com/) -> 音效网站
 162. [rollupjs](https://rollupjs.org/guide/en/) -> 轻量级模块打包工具
 163. [polypane.3d-transform](https://polypane.app/css-3d-transform-examples/) -> CSS 3D 示例
+164. [freepn](https://www.freepn.org/) -> 免费vpn
+165. [diode](https://support.diode.io/article/ss32engxlq)  -> 可以将本机的网站公开到互联网
 
 ------
 
@@ -218,6 +220,7 @@
 46. [Git练习](https://gitexercises.fracz.com/)
 47. [如何写一个最简单的 React 实现](https://zserge.com/posts/worst-react-ever/)
 48. [漫游者的压缩知识指南](https://go-compression.github.io/)
+49. [图片加载失败后CSS样式处理最佳实践](https://www.zhangxinxu.com/wordpress/2020/10/css-style-image-load-fail/)
 
 ------
 
