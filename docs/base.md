@@ -2,13 +2,77 @@
 
 ### URL
 
-> ##### 基本概念：
->
 > 统一资源定位符
 >
 > 协议://主机:端口/路径?查询#锚点
 >
 > scheme://host:port/path?query#fragment
+
+------
+
+### DOCTYPE
+
+> DTD(document type definition，文档类型定义)是一系列的语法规则，用来定义XML或(X)HTML的文件类型，浏览器会使用它来判断文档类型，决定使用何种协议来解析，以及切换浏览器模式。
+>
+> DOCTYPE是用来声明文档类型和DTD规范的，一个主要的用途便是文件的合法性验证。如果文件代码不合法，那么浏览器解析时片会出现一些差错。
+>
+> ##### 常见的DOCTYPE：
+>
+> ```html
+> <!--HTML5-->
+> <!DOCTYPE html>
+> 
+> <!--HTML4.01 Transitional（过渡版）,包含扩展性和弃用的元素-->
+> <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "
+> http://www.w3.org/TR/html4/loose.dtd">
+> 
+> <!--HTML4.01 Strict(严格版),不包含扩展性和弃用的元素-->
+> <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+> 
+> ```
+
+------
+
+### POST与GET请求的区别
+
+1. GET在浏览器回退时是无害的，而POST会再次提交请求
+2. GET产生的URL地址可以被收藏，而POST不可以
+3. GET请求会被浏览器主动缓存，而POST不会，除非手动设置
+4. GET请求只能进行url编码，而POST支持多种编码方式
+5. GET请求参数会完整保留在浏览器的历史记录里，而POST不会
+6. GET请求在URL中传递的参数是有长度限制，而POST没有限制
+7. 对参数类型，GET只会接收ASCII字符，而POST没有限制
+8. GET比POST更不安全，因为参数直接暴露在URL上，所以不能直接传递敏感信息
+9. GET参数通过URL传递，POST放在Request Body中
+
+------
+
+### HTTP状态码
+
++ 1xx:  指示信息，表示请求已接收，继续处理
++ 2xx:  成功，表示请求已被成功接收
++ 3xx: 重定向，要完成请求必须进行进行进一步操作
++ 4xx: 客户端错误，请求有语法错误或者请求无法实现
++ 5xx:  服务器错误，服务器未能实现合法的请求
+
+___
+
+### 提升页面的性能的方法
+
+1. 资源压缩合并，减少HTTP请求
+
+2. 非核心代码异步加载
+
+3. 利用浏览器缓存
+
+4. 使用CDN
+
+5. 与解析DNS
+
+   ```html
+   <meta http-equiv="x-dns-prefetch-control" content="on">
+   <link rel="dns-prefetch" href="//host_name_to_prefetch.com">
+   ```
 
 ------
 

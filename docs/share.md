@@ -167,6 +167,9 @@
 163. [polypane.3d-transform](https://polypane.app/css-3d-transform-examples/) -> CSS 3D 示例
 164. [freepn](https://www.freepn.org/) -> 免费vpn
 165. [diode](https://support.diode.io/article/ss32engxlq)  -> 可以将本机的网站公开到互联网
+166. [gopng](http://alloyteam.github.io/gopng/) -> 在线合并雪碧图
+167. [hoppscotch](https://github.com/hoppscotch/hoppscotch) -> 调试 HTTP 请求的在线工具
+168. https://pfpmaker.com/ -> 在线自动提取头像生成大头照
 
 ------
 
@@ -221,6 +224,7 @@
 47. [如何写一个最简单的 React 实现](https://zserge.com/posts/worst-react-ever/)
 48. [漫游者的压缩知识指南](https://go-compression.github.io/)
 49. [图片加载失败后CSS样式处理最佳实践](https://www.zhangxinxu.com/wordpress/2020/10/css-style-image-load-fail/)
+50. [腾讯云开发者手册](https://cloud.tencent.com/developer/devdocs)
 
 ------
 
@@ -239,14 +243,13 @@
 11. [万门大学](https://www.wanmen.org/)
 12. [中国大学MOOC](https://www.icourse163.org/)
 13. [open21ic公开课](http://open.21ic.com/)
-14. [顶你学堂](http://www.topu.com/)
-15. [撩课学院](http://itlike.com/)
 16. [leetcode](https://leetcode-cn.com/)
 17. [牛客网](https://www.nowcoder.com/)
 18. [jc2182](https://www.jc2182.com/)
 19. [H5课堂](https://www.h5ketang.com/)
 20. [路飞学城](https://www.luffycity.com/)
 21. [后盾人](https://www.houdunren.com/)
+20. [极客时间](https://time.geekbang.org/)
 
 ------
 
