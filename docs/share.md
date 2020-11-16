@@ -169,7 +169,8 @@
 165. [diode](https://support.diode.io/article/ss32engxlq)  -> 可以将本机的网站公开到互联网
 166. [gopng](http://alloyteam.github.io/gopng/) -> 在线合并雪碧图
 167. [hoppscotch](https://github.com/hoppscotch/hoppscotch) -> 调试 HTTP 请求的在线工具
-168. https://pfpmaker.com/ -> 在线自动提取头像生成大头照
+168. [pfpmaker](https://pfpmaker.com/) -> 在线自动提取头像生成大头照
+169. [svg-path-editor](https://yqnn.github.io/svg-path-editor/) -> svg在线编辑器
 
 ------
 
@@ -330,6 +331,8 @@
 32. Luckysheet -> 网页表格库
 33. PhyTouch -> 动画触摸解决方案
 34. filepond -> 文件上传库
+35. driver.js -> 新人引导
+36. VuePress -> Vue驱动的静态网站生成器
 
 ___
 
@@ -401,6 +404,7 @@ ___
 8. [location.search](https://developer.mozilla.org/zh-CN/docs/Web/API/Location/search)
 9. [IntersectionObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver)
 10. [Worker](https://developer.mozilla.org/zh-CN/docs/Web/API/Worker)
+11. [speechSynthesis](https://developer.mozilla.org/zh-CN/docs/Web/API/SpeechSynthesis)
 
 ------
 
