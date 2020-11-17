@@ -1,6 +1,6 @@
-## 常用代码
+# 代码篇
 
-### express中路由简易使用
+## express中路由简易使用
 
 ```javascript
 const express = require("express");
@@ -14,7 +14,7 @@ router.get("/test", (req, res) => {
 
 ------
 
-### mongoose简易使用&演示
+## mongoose简易使用&演示
 
 1. 连接数据库
 
@@ -106,7 +106,7 @@ router.post("/register", (req, res) => {
 
 ____
 
-### webpack 基础配置
+## webpack 基础配置
 
 ```javascript
 const path = require("path");
@@ -242,7 +242,7 @@ module.exports = {
 
 ____
 
-### webpack vue配置
+## webpack vue配置
 
 1. 创建webpack.config.js文件
 2. babel安装 -> npm install --save-dev babel-loader@7 babel-core babel-preset-es2015
@@ -317,7 +317,7 @@ module.exports={
 
 ------
 
-### Redux基本使用
+## Redux基本使用
 
 1. 创建store目录
 2. 在store目录下创建reducer.js
@@ -404,7 +404,7 @@ export default App;
 
 ------
 
-### Vuex基本使用
+## Vuex基本使用
 
 1. store.js
 
@@ -468,7 +468,7 @@ this.$store
 
 ------
 
-### vue.config.js配置
+## vue.config.js配置
 
 ```javascript
 module.exports = {
@@ -549,7 +549,7 @@ module.exports = {
 
 ------
 
-### next.config.js配置
+## next.config.js配置
 
 ```javascript
 //详见：https://nextjs.frontendx.cn/docs
@@ -564,7 +564,7 @@ module.exports = withCss({})
 
 ------
 
-### Vue事件总线
+## Vue事件总线
 
 ```javascript
 //在main.js中挂在在原型挂在一个全新的vue实例
@@ -585,7 +585,7 @@ this.$bus.$off("myOnLoad",this.myEvent);
 
 ------
 
-### Vue插件封装
+## Vue插件封装
 
 1. 介绍
 
@@ -711,9 +711,9 @@ new Vue({
 
 ------
 
-### 网络模块封装
+## 网络模块封装
 
-#### 案例:uni-app
+### 案例:uni-app
 
 1. 创建config.js
 
@@ -799,7 +799,7 @@ module.exports = API;
 
 ------
 
-#### 案例:element-ui+axios
+### 案例:element-ui+axios
 
 1. 创建request.js
 
@@ -877,7 +877,7 @@ export function getProductData(type, page) {
 
 ------
 
-### FastClick的使用
+## FastClick的使用
 
 - javascript
 
@@ -906,7 +906,7 @@ $(function() {
 
 ------
 
-### rem转换
+## rem转换
 
 ```javascript
 (function(doc, win) {
@@ -925,7 +925,7 @@ $(function() {
 
 ------
 
-### 防抖&节流
+## 防抖&节流
 
 1. 防抖
 
@@ -962,7 +962,7 @@ function trottle(handler, delay) {
 
 ------
 
-### 浅拷贝
+## 浅拷贝
 
 ```javascript
 Object.assign = Object.assign || function(){
@@ -982,7 +982,7 @@ Object.assign = Object.assign || function(){
 
 ------
 
-### 深度拷贝
+## 深度拷贝
 
 ```javascript
 function deepClone(obj1, obj2) {
@@ -1006,7 +1006,7 @@ function deepClone(obj1, obj2) {
 
 ------
 
-### 对象是否为空
+## 对象是否为空
 
 ```javascript
 function isEmpty(value) {
@@ -1021,7 +1021,7 @@ function isEmpty(value) {
 
 ------
 
-### 获取浏览器信息
+## 获取浏览器信息
 
 ```javascript
 function getExplorerInfo() {
@@ -1056,7 +1056,7 @@ function getExplorerInfo() {
 
 ------
 
-### 禁止键盘某些事件
+## 禁止键盘某些事件
 
 ```javascript
 document.addEventListener('keydown', function(event){
@@ -1074,7 +1074,7 @@ document.addEventListener('keydown', function(event){
 
 ------
 
-### 禁止右键、选择、复制
+## 禁止右键、选择、复制
 
 ```javascript
 ['contextmenu', 'selectstart', 'copy'].forEach(function(ev){
@@ -1086,7 +1086,7 @@ document.addEventListener('keydown', function(event){
 
 ------
 
-### 性能分析
+## 性能分析
 
 ```javascript
 window.onload = function(){
@@ -1109,7 +1109,7 @@ window.onload = function(){
 
 ------
 
-### 是否为PC浏览器
+## 是否为PC浏览器
 
 ```javascript
 function isPCBroswer() {
@@ -1128,7 +1128,7 @@ function isPCBroswer() {
 
 ------
 
-### 时间格式化
+## 时间格式化
 
 ```javascript
 function dateFormater(formater, t){
@@ -1153,7 +1153,7 @@ function dateFormater(formater, t){
 
 ------
 
-### 获取URL参数
+## 获取URL参数
 
 ```javascript
 function GetUrlParam(){
@@ -1173,7 +1173,7 @@ function GetUrlParam(){
 
 ------
 
-### 随机数获取
+## 随机数获取
 
 ```javascript
 function random(lower, upper){
@@ -1185,7 +1185,7 @@ function random(lower, upper){
 
 ------
 
-### 上传图片
+## 上传图片
 
 ```javascript
 document.querySelector("input[type=file]").onchange=e=>{
@@ -1200,7 +1200,7 @@ document.querySelector("input[type=file]").onchange=e=>{
 
 ------
 
-### 判断小数是否相等
+## 判断小数是否相等
 
 ```javascript
 function epsEqu1(x,y) {  
@@ -1217,7 +1217,7 @@ epsEqu2(0.1 + 0.2, 0.3) // true
 
 ------
 
-### requestAnimFrame 兼容
+## requestAnimFrame 兼容
 
 ```javascript
 window.requestAnimFrame = (function() {
@@ -1230,7 +1230,7 @@ window.requestAnimFrame = (function() {
 
 ___
 
-### 动态创建script标签
+## 动态创建script标签
 
 ```javascript
 function loadScript(url, func) {
@@ -1249,7 +1249,7 @@ function loadScript(url, func) {
 
 ____
 
-### debugger反调试
+## debugger反调试
 
 ```javascript
 // 法1：
@@ -1264,7 +1264,7 @@ ____
 
 ___
 
-### Base64转Blob
+## Base64转Blob
 
 ```javascript
 function dataUrlToBlob(dataUrl) {

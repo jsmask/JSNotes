@@ -1,6 +1,6 @@
-## 常用分享
+# 分享篇
 
-### 文档&工具&资源
+## 文档&工具&资源
 
 1. [Postman](https://www.getpostman.com/) -> 接口测试工具
 2. [mlab](https://mlab.com/) -> 线上免费mongodb
@@ -174,7 +174,7 @@
 
 ------
 
-### 文章&电子书&教程
+## 文章&电子书&教程
 
 1. [彻底理解服务端渲染原理](https://juejin.im/post/5d1fe6be51882579db031a6d)
 2. [React打造精美WebApp](https://sanyuan0704.github.io/react-cloud-music/)
@@ -229,7 +229,7 @@
 
 ------
 
-### 优秀在线学习网站
+## 优秀在线学习网站
 
 1. [慕课网](https://www.imooc.com/)
 2. [优达学城](https://cn.udacity.com/)
@@ -254,7 +254,7 @@
 
 ------
 
-### 优秀Github作者
+## 优秀Github作者
 
 1. [阮一峰](https://github.com/ruanyf) -> 《ECMAScript 6入门》、《科技爱好者周刊》
 2. [神三元](https://github.com/sanyuan0704) -> 《React打造精美WebApp》
@@ -265,7 +265,7 @@
 
 ------
 
-### 优秀网页分享
+## 优秀网页分享
 
 1. [404猴子](https://codepen.io/thejohnyagiz/pen/npDyq)
 2. [臆病な魔女](https://github.com/yui540/Cowardly-Witch)
@@ -277,7 +277,7 @@
 
 ------
 
-### npm常用包(后端)
+## npm常用包(后端)
 
 1. bcrypt -> 加密解密
 2. gravatar -> 通过https://cn.gravatar.com/邮箱获取头像
@@ -295,7 +295,7 @@
 
 ------
 
-### npm常用包(前端)
+## npm常用包(前端)
 
 1. axios -> 异步请求
 2. jwt-decode -> 解析token
@@ -336,7 +336,7 @@
 
 ___
 
-### 实用库
+## 实用库
 
 | 名称             | 介绍                                        | 资源                                            |
 | ---------------- | ------------------------------------------- | ----------------------------------------------- |
@@ -374,7 +374,7 @@ ___
 
 ------
 
-### 数据可视化图表库
+## 数据可视化图表库
 
 1. echarts
    a. https://echarts.baidu.com/
@@ -392,7 +392,7 @@ ___
 
 ------
 
-### 重要api
+## 重要api
 
 1. [URL.createObjectURL](https://developer.mozilla.org/zh-CN/docs/Web/API/URL/createObjectURL)
 2. [FormData](https://developer.mozilla.org/zh-CN/docs/Web/API/FormData)
@@ -408,7 +408,7 @@ ___
 
 ------
 
-### webpack 相关
+## webpack 相关
 
 1. thread-loader
 
@@ -482,7 +482,7 @@ ___
 
 ------
 
-### gulp 相关
+## gulp 相关
 
 1. gulp-sass -> sass编译成css
 2. gulp-less -> less编译成css
@@ -509,7 +509,7 @@ ___
 
 ------
 
-### 构建项目常用指令
+## 构建项目常用指令
 
 1. 安装淘宝镜像 -> npm install -g cnpm --registry=https://registry.npm.taobao.orgnpm install -g cnpm --registry=[https://registry.npm.taobao.org](https://registry.npm.taobao.org)
 2. 创建vue cli2脚手架于xxx文件夹 -> vue init webpack xxx
@@ -525,7 +525,7 @@ ___
 
 ------
 
-### 常用UI框架
+## 常用UI框架
 
 1. [element-ui](http://element-cn.eleme.io/#/zh-CN) -> 饿了么UI框架(Vue PC)
 2. [mint-ui](http://mint-ui.github.io/#!/zh-cn) -> 饿了么UI框架(Vue Mobile)
@@ -541,7 +541,7 @@ ___
 
 ------
 
-### 游戏开发常用工具
+## 游戏开发常用工具
 
 | 名称             | 介绍               |
 | ---------------- | ------------------ |
@@ -555,7 +555,7 @@ ___
 
 ------
 
-### cmd常用命令
+## cmd常用命令
 
 1. dir -> 查看文件夹下的文件
 2. ls -> 查看文件夹下的文件
@@ -570,7 +570,7 @@ ___
 
 ------
 
-### git常用命令
+## git常用命令
 
 ```
 1. git init -> 初始化
@@ -613,7 +613,7 @@ ___
 
 ------
 
-### 3D开发相关
+## 3D开发相关
 
 | 名称                                               | 简介                               |
 | -------------------------------------------------- | ---------------------------------- |
@@ -628,7 +628,7 @@ ___
 
 ____
 
-### uni-app脚手架搭建
+## uni-app脚手架搭建
 
 | 指令                         | 解释                                                         |
 | ---------------------------- | ------------------------------------------------------------ |
@@ -640,7 +640,7 @@ ____
 
 ____
 
-### react安装脚手架
+## react安装脚手架
 
 | 指令                                                         | 解释                      |
 | ------------------------------------------------------------ | ------------------------- |
@@ -652,7 +652,7 @@ ____
 
 ------
 
-### npm&yarn命令对比
+## npm&yarn命令对比
 
 | npm指令                      | yarn指令             |
 | :--------------------------- | :------------------- |
@@ -664,7 +664,7 @@ ____
 
 ------
 
-### typescript(vscode)配置
+## typescript(vscode)配置
 
 | 指令或操作                        | 解释                                 |
 | --------------------------------- | ------------------------------------ |
@@ -679,7 +679,7 @@ ____
 
 ------
 
-### ESLint配置
+## ESLint配置
 
 1. 安装ESLint: npm install eslint eslint-loader -D
 2. 安装plugin: npm install eslint-plugin-react -D
@@ -733,7 +733,7 @@ import React from 'react';
 
 ------
 
-### Jest配置
+## Jest配置
 
 1. 安装Webpack: npm install webpack webpack-cli -D 
 2. 安装Jest: npm install jest@23.6.0 jest-webpack -D
