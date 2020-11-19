@@ -1215,6 +1215,21 @@ epsEqu1(0.1 + 0.2, 0.3) // true
 epsEqu2(0.1 + 0.2, 0.3) // true
 ```
 
+_____
+
+## 精确小数 
+
+```javascript
+// es6
+const RoundNum = (num, decimal) => Math.round(num * 10 ** decimal) / 10 ** decimal;
+
+// es5
+function RoundNum(num, decimal){
+    return Math.round(num * Math.pow(10,decimal)) / Math.pow(10,decimal);
+}
+
+```
+
 ------
 
 ## requestAnimFrame 兼容
@@ -1277,6 +1292,22 @@ function dataUrlToBlob(dataUrl) {
 		u8arr[n] = bstr.charCodeAt(n);
     }
     return new Blob([u8arr], { type: mime });
+}
+```
+
+___
+
+## 复制文本
+
+```javascript
+function copyText(str) {
+    var input = document.createElement("input");
+    var body = document.querySelector("body");
+    body.append(input);
+    input.value = str
+    input.select();
+    document.execCommand("copy");
+    input.remove();
 }
 ```
 
