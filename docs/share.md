@@ -172,6 +172,7 @@
 168. [pfpmaker](https://pfpmaker.com/) -> 在线自动提取头像生成大头照
 169. [svg-path-editor](https://yqnn.github.io/svg-path-editor/) -> svg在线编辑器
 170. [APIJSON](https://github.com/Tencent/APIJSON) ->  自动化 RESTful 接口生成
+171. [xftsoft](https://www.xftsoft.com/) -> 整站下载软件
 
 ------
 
@@ -754,3 +755,24 @@ import React from 'react';
 
 4. npm run test
 5. 添加测试用例
+
+___
+
+## electron下载慢或失败
+
+1. npm config ls -l 
+2. 如果没有.npmrc则通过指令生成: npm config set registry https://registry.npm.taobao.org 
+3. 找到.npmrc文件，做出以下修改：
+
+```xml
+registry=https://registry.npm.taobao.org
+
+sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+ 
+phantomjs_cdnurl=http://npm.taobao.org/mirrors/phantomjs
+ 
+electron_mirror=https://npm.taobao.org/mirrors/electron/
+```
+
+___
+
