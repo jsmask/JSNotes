@@ -173,6 +173,7 @@
 169. [svg-path-editor](https://yqnn.github.io/svg-path-editor/) -> svg在线编辑器
 170. [APIJSON](https://github.com/Tencent/APIJSON) ->  自动化 RESTful 接口生成
 171. [xftsoft](https://www.xftsoft.com/) -> 整站下载软件
+172. [www.ziticangku](https://www.ziticangku.com/) -> 字体仓库
 
 ------
 
@@ -374,6 +375,7 @@ ___
 | howler           | 音频操作库                                  | https://howlerjs.com/                           |
 | ztext            | 字体变成 3D 效果插件                        | https://bennettfeely.com/ztext/                 |
 | particlesjs      | 创建粒子的轻量级js库                        | https://github.com/VincentGarreau/particles.js/ |
+| lottie           | AE制作动画加载到程序                        | https://airbnb.design/lottie/                   |
 
 ------
 
@@ -524,7 +526,7 @@ ___
 8. 创建react-native脚手架于xxx文件夹 -> react-native init xxx
 9. 安装vue cli3 下的cube-ui模板 -> vue add cube-ui
 10. 创建next脚手架于xxx文件夹 -> create-next-app xxx
-11. 创建vue3于xxx文件夹 -> create-vite-app xxx
+11. 创建vue3(vite)于xxx文件夹 -> create-vite-app xxx
 
 ------
 
