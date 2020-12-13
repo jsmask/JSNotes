@@ -174,6 +174,7 @@
 170. [APIJSON](https://github.com/Tencent/APIJSON) ->  自动化 RESTful 接口生成
 171. [xftsoft](https://www.xftsoft.com/) -> 整站下载软件
 172. [www.ziticangku](https://www.ziticangku.com/) -> 字体仓库
+173. [multiplayer](https://repl.it/site/multiplayer) -> 多人在线编程
 
 ------
 
@@ -230,6 +231,9 @@
 49. [图片加载失败后CSS样式处理最佳实践](https://www.zhangxinxu.com/wordpress/2020/10/css-style-image-load-fail/)
 50. [腾讯云开发者手册](https://cloud.tencent.com/developer/devdocs)
 51. [fastclick解析与ios11.3相关bug原因分析](https://segmentfault.com/a/1190000015234652)
+52. [CSS text-combine-upright 竖行横书组合](http://www.deathghost.cn/article/css/86)
+53. [react 国际化 react-intl-universal](https://blog.csdn.net/zhuming3834/article/details/98847188)
+54. [视频标签 video的一些特殊属性详解](http://caibaojian.com/h5-video.html)
 
 ------
 
@@ -337,6 +341,11 @@
 34. filepond -> 文件上传库
 35. driver.js -> 新人引导
 36. VuePress -> Vue驱动的静态网站生成器
+37. js-cookie -> 操作cookie
+38. accounting -> 处理数字与货币
+39. qrcode.react ->  用于生成QR码的React组件
+40. react-sortable-hoc -> 列表可拖动的React组件
+41. braft-editor -> 美观易用的富文本编辑器
 
 ___
 
@@ -771,6 +780,15 @@ registry=https://registry.npm.taobao.org
  
 electron_mirror=https://npm.taobao.org/mirrors/electron/
 ```
+
+___
+
+## yarn无法使用
+
+1. 管理员身份开启命令行
+2. set-ExecutionPolicy RemoteSigned
+3. get-ExecutionPolicy
+4. yarn -v
 
 ___
 

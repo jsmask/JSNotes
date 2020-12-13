@@ -242,6 +242,203 @@ module.exports = {
 
 ____
 
+## webpack 多页打包
+
++ 基本
+
+```javascript
+const filenames = fs.readdirSync('./src').filter(item => /\.html$/ig.test(item)).map(item => item.replace(/\.html$/ig, ''))
+const obj = {}
+filenames.map(item => {
+    obj[item] = `./src/js/${item}.js`
+})
+
+// ...
+
+module.exports = {
+    /.../
+    entry: {
+        rem: './src/js/rem.js',
+        common: './src/js/common.js',
+        ...obj,
+    },
+    /.../
+    plugins: [
+        ...filenames.map(item => {
+            return new HtmlWebpackPlugin({
+                template: `./src/${item}.html`,
+                filename: `${item}.html`,
+                chunks: ['rem', 'common', item]
+            })
+        })
+    ]
+}
+```
+
++ 完整
+
+```javascript
+const path = require('path')
+const fs = require('fs')
+const webpack = require('webpack')
+
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+// 显示进程的完成进度
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+// 设置进度字体颜色
+const chalk = require('chalk');
+// 清空dist文件夹
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
+
+const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin');
+
+
+const isProduction = process.env.npm_lifecycle_event !== 'dev'
+const plugins = []
+console.log(process.env.npm_lifecycle_event)
+if (isProduction) {
+    plugins.push(
+        new CleanWebpackPlugin()
+    )
+}
+
+
+const filenames = fs.readdirSync('./src').filter(item => /\.html$/ig.test(item)).map(item => item.replace(/\.html$/ig, ''))
+console.log(filenames)
+const obj = {}
+filenames.map(item => {
+    obj[item] = `./src/js/${item}.js`
+})
+
+
+module.exports = {
+    mode: isProduction ? 'production' : 'development',
+    optimization: {
+        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+        splitChunks: {
+            name: (module, chunks, cacheGroupKey) => {
+                // console.log('-----', module, chunks, cacheGroupKey,'-----')
+                return 'v_commons'
+            },
+            // 分割代码块（多页应用才会用到）
+            cacheGroups: {
+                //缓存组
+                common: {
+                    // 公共的模块
+                    chunks: "initial", // 从开始处抽离，有多种配置，像异步模块什么的
+                    minSize: 0, // 最小大小
+                    minChunks: 2 //  引用次数
+                },
+                vendor: {  // 此处为了抽离第三方的公共模块，比如jquery（前提是index和other都引入jquery了）
+                    priority: 1,  //权重， 如果不给这个字段，那么就此例来说，会先走上边的“common”，会把jquery和a.js，b.js合并在一个文件中。
+                    //如果还有别的入口只使用jquery了，但是a和b对于它来说就是无用的。加上权重之后，会将第三方模块单独抽离
+                    test: /node_modules/,
+                    minSize: 0,
+                    chunks: "initial",
+                    minChunks: 2,
+                }
+            }
+        }
+    },
+    entry: {
+        rem: './src/js/rem.js',
+        common: './src/js/common.js',
+        ...obj,
+    },
+    output: {
+        path: path.resolve(__dirname, './dist'),
+        filename: 'js/[name].js'
+    },
+    devServer: {
+        host: '0.0.0.0',
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        port: 9000,
+        hot: true,
+        hotOnly: true,
+        open: false,
+        noInfo: true
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.(less)$/,
+                use: [
+                    isProduction ? {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../'
+                        }
+                    } : 'style-loader',
+                    'css-loader', 'postcss-loader', 'less-loader'
+                ]
+            },
+            {
+                test: /\.html$/,
+                use: ['html-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                loader: require.resolve('url-loader'),
+                options: {
+                    limit: 1000,
+                    name: 'images/[name].[ext]',
+                },
+            },
+        ]
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify(process.env.npm_lifecycle_event)
+            }
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: './src/public', to: './public' },
+            ],
+        }),
+        new UglifyJsPlugin({
+            test: /\.js$/,
+            include: /\/js/,
+            exclude: [/node_modules/]
+        }),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].css',
+            path: '../'
+        }),
+        ...filenames.map(item => {
+            return new HtmlWebpackPlugin({
+                template: `./src/${item}.html`,
+                filename: `${item}.html`,
+                chunks: ['rem', 'common', item]
+            })
+        }),
+        // require('autoprefixer'),
+        ...plugins,
+        new ProgressBarPlugin({
+            format: chalk.green('Progressing') + '[:bar]' + chalk.green(':percent') + '(:elapsed seconds)',
+            clear: false
+        }),
+    ]
+}
+```
+
+
+
+___
+
 ## webpack vue配置
 
 1. 创建webpack.config.js文件
@@ -316,6 +513,37 @@ module.exports={
 ```
 
 ------
+
+## React懒加载组件
+
+```javascript
+import React, { lazy } from 'react';
+const getLazyComponent = (path)=> ( lazy(()=> import(`../${path}`) ) );
+const App = getLazyComponent('App');
+```
+
+___
+
+## React包装图标
+
+```javascript
+import React from 'react';
+import * as icons from '@ant-design/icons';
+/**
+ * props
+ * iconName <String>   ant-design 中图标的名字
+ * */
+function AntIcons(props) {
+    if(!props.iconName) return <></>;
+    
+    const icon = icons[props.iconName];
+    return React.createElement( icon );
+}
+
+export default AntIcons;
+```
+
+___
 
 ## Redux基本使用
 
@@ -908,6 +1136,8 @@ $(function() {
 
 ## rem转换
 
++ 方案1
+
 ```javascript
 (function(doc, win) {
 	var docEl = doc.documentElement,
@@ -923,7 +1153,30 @@ $(function() {
 })(document, window);
 ```
 
-------
++ 方案2
+
+```javascript
+(function () {
+    var html = document.documentElement;
+    function onWindowResize() {
+        var head, viewport
+        /(iPhone|iPad|iPhone OS|Phone|iPod|iOS)/i.test(navigator.userAgent) && (
+            head = document.getElementsByTagName('head'), viewport = document.createElement('meta'), viewport.name = 'viewport', viewport.content = 'target-densitydpi=device-dpi, width=480px, user-scalable=no', head.length > 0 && head[head.length - 1].appendChild(viewport)
+        );
+        if (html.getBoundingClientRect().width >= 1024) {
+            html.style.fontSize = 16 + 'px';
+            return
+        }
+        html.style.fontSize = html.getBoundingClientRect().width / 3.75 + 'px';
+        // console.log(html.getBoundingClientRect().width)
+    }
+
+    window.addEventListener('resize', onWindowResize);
+    onWindowResize();
+})();
+```
+
+___
 
 ## 防抖&节流
 
@@ -1308,6 +1561,135 @@ function copyText(str) {
     input.select();
     document.execCommand("copy");
     input.remove();
+}
+```
+
+___
+
+## 数组打乱顺序
+
+```javascript
+function shuffle(array) {
+    var m = array.length, t, i;
+    while (m) {
+        i = Math.floor(Math.random() * m--);
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+    }
+    return array;
+}
+```
+
+___
+
+## 匹配简写
+
+```javascript
+export const simplifiedChinesePatt = /^[\u4E00-\u9FA5]+$/;
+```
+
+___
+
+## 千位分隔
+
+```javascript
+function separationThousandFilters (value) {
+    // 首先确定不是脏数据
+    if (value === null || value === undefined || value === '') return ''
+    // 之后将数据转为字符串
+    value = value.toString()
+    const hasPercent = value.indexOf('%') !== -1 // 是否有百分号
+    const transNum =  num => num.replace(/\B(?=(\d{3})+\b)/g, ',');
+    // 判断是否是否可以转成数字也就是判断是否是脏数据
+    if (isNaN(value) && !hasPercent) return value
+    const hasPoint = value.indexOf('.') !== -1  // 是否有小数点
+    // 既不带小数点 也不带百分号
+    if (!hasPoint && !hasPercent) {
+        return transNum(value) + '.00'
+        // 不带小数点 带百分号
+    } else if (!hasPoint && hasPercent) {
+        return transNum(value.split('%')[0]) + '%'
+        // 带小数点 不带百分号
+    } else if (hasPoint && !hasPercent) {
+        return transNum(value.split('.')[0]) + '.' + value.split('.')[1]
+    } else {
+        // 既带小数点 也带百分号
+        return value.replace(/(\d+)\.(\d+)%/, function (a, b, c, d) {
+            if (c.length === 1) {
+                return transNum(b) + '.' + c + '0' + '%'
+            } else {
+                return transNum(b) + '.' + c + '%'
+            }
+        })
+    }
+}
+// 12345678 -> "12,345,678.00"
+```
+
+___
+
+## 全屏模式
+
+```javascript
+/**
+ * screenChange <Function> 为窗口变化的 的回调函数  参数为当前是否为全屏状态
+ */
+const init = (screenChange)=>{
+
+    // 取值17是为了处理页面内容出现滚动条的情况
+    let isFull = window.screen.height - window.document.documentElement.clientHeight <= 17;
+    
+    // 阻止F11键默认事件，用HTML5全屏API代替
+    window.addEventListener('keydown', function (e) {
+        e = e || window.event;
+        if (e.keyCode===122 && !isFull) {
+            e.preventDefault();
+            enterFullScreen();
+        }
+    });
+    //监听窗口变化
+    window.onresize = function () {
+        isFull = window.screen.height - window.document.documentElement.clientHeight <= 17;
+        screenChange(isFull);
+    }
+};
+
+//进入全屏
+const enterFullScreen  = ()=>{
+    let el = document.documentElement;
+    let rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullscreen
+    if (rfs) { // typeof rfs != "undefined" && rfs
+        rfs.call(el)
+    } else if (typeof window.ActiveXObject !== 'undefined') {
+        // for IE，这里其实就是模拟了按下键盘的F11，使浏览器全屏
+        let wscript = new ActiveXObject('WScript.Shell');  //eslint-disable-line
+        if (wscript != null) {
+            wscript.SendKeys('{F11}')
+        }
+    }
+};
+
+
+// 退出全屏
+const exitFullScreen = ()=>{
+    let el = document;
+    let cfs = el.cancelFullScreen || el.mozCancelFullScreen || el.msExitFullscreen || el.webkitExitFullscreen || el.exitFullscreen;
+    if (cfs) { // typeof cfs != "undefined" && cfs
+        cfs.call(el);
+    } else if (typeof window.ActiveXObject !== 'undefined') {
+        // for IE，这里和fullScreen相同，模拟按下F11键退出全屏
+        let wscript = new ActiveXObject('WScript.Shell'); //eslint-disable-line
+        if (wscript != null) {
+            wscript.SendKeys('{F11}')
+        }
+    }
+};
+
+export default {
+    init,
+    enterFullScreen,
+    exitFullScreen
 }
 ```
 
