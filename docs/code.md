@@ -1313,3 +1313,24 @@ function copyText(str) {
 
 ___
 
+## 转换数字单位k与w
+
+```javascript
+function formatNumber(num) {
+    return num >= 1e3 && num < 1e4 ? (num / 1e3).toFixed(1) + 'k' : num >= 1e4 ? (num / 1e4).toFixed(1) + 'w' : num
+}
+```
+
+___
+
+## 获取地址某参数的值
+
+```javascript
+const getQueryString = function(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
+}
+```
+

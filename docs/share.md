@@ -174,6 +174,22 @@
 170. [APIJSON](https://github.com/Tencent/APIJSON) ->  自动化 RESTful 接口生成
 171. [xftsoft](https://www.xftsoft.com/) -> 整站下载软件
 172. [www.ziticangku](https://www.ziticangku.com/) -> 字体仓库
+173. [RegExLib](https://regexlib.com/) -> 收集各种常用的正则表达式的网站
+174. [ruffle](https://ruffle.rs/) -> 模拟Flash的 WebAssembly 库
+175. [repl.it Multiplayer](https://repl.it/site/multiplayer) -> 多人在线实时协同编程平台
+176. [BundlePhobia](https://bundlephobia.com/) -> 分析 npm 软件包的体积和加载性能的在线工具
+177. [restore-picture](https://hotpot.ai/restore-picture) -> 去除老照片的破损和折痕的在线工具
+178. [geometrize.co](https://www.geometrize.co.uk/) -> 将照片转成基于几何形状的水彩画的在线工具
+179. [holiday-card-maker](https://photoroom.com/holiday-card-maker/) ->  生成各种节日照片的在线工具
+180. [insomnia.rest](https://insomnia.rest/) -> 接口测试工具
+181. [releaseeye](https://releaseeye.info/) -> 列出最近发行新版本的软件的网站
+182. [dall-e](https://openai.com/blog/dall-e/) -> 通过文字描述生成图片的神经网络
+183. [thumbnail](https://thumbnail.ai/) -> 根据输入的URL自动生成标题图片
+184. [parceljs](https://parceljs.org/) -> 前端打包工具
+185. [merge-videos-files](https://slowapi.com/merge-videos-files/) -> 视频片段合并工具
+186. [Andala](https://www.aliciaunderhill.xyz/Andala/) -> 在线对称画板
+187. [multiavatar](https://multiavatar.com/) -> 根据输入文字生成图片
+188. [freecodecamp](https://learn.freecodecamp.one/) -> 编程关卡挑战
 
 ------
 
@@ -230,6 +246,10 @@
 49. [图片加载失败后CSS样式处理最佳实践](https://www.zhangxinxu.com/wordpress/2020/10/css-style-image-load-fail/)
 50. [腾讯云开发者手册](https://cloud.tencent.com/developer/devdocs)
 51. [fastclick解析与ios11.3相关bug原因分析](https://segmentfault.com/a/1190000015234652)
+52. [Fetch API 教程](http://www.ruanyifeng.com/blog/2020/12/fetch-tutorial.html)
+53. [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)
+54. [去你丫的算法](https://labuladong.gitee.io/algo/)
+55. [WebSocket教程(阮一峰)](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
 
 ------
 
@@ -255,6 +275,7 @@
 20. [路飞学城](https://www.luffycity.com/)
 21. [后盾人](https://www.houdunren.com/)
 20. [极客时间](https://time.geekbang.org/)
+21. [思否编程](https://ke.sifou.com/)
 
 ------
 
@@ -337,6 +358,12 @@
 34. filepond -> 文件上传库
 35. driver.js -> 新人引导
 36. VuePress -> Vue驱动的静态网站生成器
+37. [mdpdf](https://github.com/BlueHatbRit/mdpdf) -> Markdown转pdf库
+38. [tinymce](http://tinymce.ax-z.cn/) -> 富文本编辑器
+39. [countup](https://github.com/inorganik/CountUp.js) -> 数字滚动
+40. [accounting](https://github.com/openexchangerates/accounting.js) -> 转换数字货币单位
+41. [scrollama](https://github.com/russellgoldenberg/scrollama) -> 网页滚动效果库
+42. [PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe) -> 图片预览插件
 
 ___
 
