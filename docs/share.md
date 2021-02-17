@@ -147,7 +147,7 @@
 143. [webp2jpg-online](https://renzhezhilu.gitee.io/webp2jpg-online/) -> 图片压缩工具
 144. [compress-image](https://www.iloveimg.com/zh-cn/compress-image) -> 图片压缩工具
 145. [recompressor](https://zh.recompressor.com/) -> 图片压缩工具
-146. [gif-mp4](https://convertio.co/zh/gif-mp4/) -> git转换为mp4
+146. [gif-mp4](https://convertio.co/zh/gif-mp4/) -> gif转换为mp4
 147. [photopea](https://www.photopea.com/) -> 在线的图片编辑器
 148. [qiuziti](http://www.qiuziti.com/) -> 快速识别字体
 149. [tool.liumingye-douyin](http://tool.liumingye.cn/douyin/) -> 抖音无水印下载
@@ -371,6 +371,7 @@ ___
 
 | 名称             | 介绍                                        | 资源                                            |
 | ---------------- | ------------------------------------------- | ----------------------------------------------- |
+| curtainsjs       | 对图像和视频进行动画处理的WebGL工具         | https://www.curtainsjs.com/                     |
 | mojs             | 专注动效的JavaScript库                      | https://mojs.github.io/                         |
 | hammerjs         | 手势库                                      | http://hammerjs.github.io/                      |
 | imagesloaded     | 图片加载插件,能够监测图片的加载状态         | https://imagesloaded.desandro.com/              |
