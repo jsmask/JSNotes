@@ -192,6 +192,7 @@
 188. [freecodecamp](https://learn.freecodecamp.one/) -> 编程关卡挑战
 189. [webgradients](https://webgradients.com/) -> css渐变色网站
 190. [sm.ms](https://sm.ms/) -> 免费图床
+191. [seeseed](https://www.seeseed.com/) -> 设计平台资源入口
 
 ------
 
@@ -252,6 +253,7 @@
 53. [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)
 54. [去你丫的算法](https://labuladong.gitee.io/algo/)
 55. [WebSocket教程(阮一峰)](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
+56. [文科数学(英文)](https://courses.lumenlearning.com/waymakermath4libarts/)
 
 ------
 
@@ -607,20 +609,6 @@ ___
 
 ## git常用命令
 
-```
-1. git init -> 初始化
-2. git status -> 查看文件状态
-3. git add . ->提交所有文件
-4. git commit -m 'commit message' -> 提交声明
-5. git config --list -> 查看git配置列表
-6. git --config user.name "xxx" -> 配置git 用户名
-7. git --config user.email "xxx" -> 配置git 邮箱
-8. git remote add origin https://github.com/xxx/xxx.git -> 添加源
-9. git remote rm origin  -> 删除源
-10. git push -u origin master -> 上传
-11. git rm -r --cache . ->移除所有文件
-```
-
 ```javascript
 1. 创建远程仓库
 2. 创建本地仓库
@@ -646,7 +634,37 @@ ___
     git pull origin dev
 ```
 
-------
+```javascript
+git config --global user.name "xxx"   //配置git 用户名
+git config --global user.email "xxx@xx.com" //配置git 邮箱
+git clone xxx.git  //克隆
+git init //初始化
+git pull //拉取
+git pull origin xxx:xxx //拉取远程分支
+git status //查看状态
+git branch //查看本地分支
+git branch -a //查看远程分支
+git branch xxx //创建分支
+git branch -d //删除分支
+git checkout xxx //切换分支
+git checkout -b xxx //创建并切换分支
+git stash //暂存
+git stash list //暂存列表
+git stash apply //恢复暂存
+git stash pop //删除一个缓存区
+git stash drop stash@{0} //清除暂存区第一个
+git add . //全部添加
+git commit -m 'xxx'  //提交修改信息
+git push origin xxx //推送到xxx分支
+git log --oneline //查看简洁历史
+git tag -a v1.0 //打版本标签
+git merge //合并分支
+git rebase master //修改主分支基础点
+git remote rm origin  //删除源
+git rm -r --cache . //移除所有文件
+```
+
+___
 
 ## 3D开发相关
 
@@ -804,3 +822,13 @@ electron_mirror=https://npm.taobao.org/mirrors/electron/
 
 ___
 
+## VSCode常用插件
+
+1. Chinese (Simplified) Language Pack for Visual Studio Code -> 简体中文语音包
+2. Live Server -> 运行前端静态文件的服务器
+3. Vetur -> Vue开发利器
+4. Vue 3 Snippets -> Vue开发利器
+5. Vue VSCode Snippets -> Vue开发利器
+6. Prettier -> 代码格式化
+7. color-info -> 颜色属性识别
+8. svgviewer -> svg编辑

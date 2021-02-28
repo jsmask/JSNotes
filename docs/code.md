@@ -317,6 +317,199 @@ module.exports={
 
 ------
 
+## webpack多文件打包
+
+```javascript
+const filenames = fs.readdirSync('./src').filter(item => /\.html$/ig.test(item)).map(item => item.replace(/\.html$/ig, ''))
+const obj = {}
+filenames.map(item => {
+    obj[item] = `./src/js/${item}.js`
+})
+
+// ...
+
+module.exports = {
+    /.../
+    entry: {
+        rem: './src/js/rem.js',
+        common: './src/js/common.js',
+        ...obj,
+    },
+    /.../
+    plugins: [
+        ...filenames.map(item => {
+            return new HtmlWebpackPlugin({
+                template: `./src/${item}.html`,
+                filename: `${item}.html`,
+                chunks: ['rem', 'common', item]
+            })
+        })
+    ]
+}
+```
+
++ 完整版案例
+
+  ```javascript
+  const path = require('path')
+  const fs = require('fs')
+  const webpack = require('webpack')
+  
+  const HtmlWebpackPlugin = require('html-webpack-plugin')
+  // 显示进程的完成进度
+  const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+  // 设置进度字体颜色
+  const chalk = require('chalk');
+  // 清空dist文件夹
+  const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+  
+  const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+  
+  
+  const TerserJSPlugin = require('terser-webpack-plugin');
+  const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+  const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+  const CopyPlugin = require('copy-webpack-plugin');
+  
+  
+  const isProduction = process.env.npm_lifecycle_event !== 'dev'
+  const plugins = []
+  console.log(process.env.npm_lifecycle_event)
+  if (isProduction) {
+      plugins.push(
+          new CleanWebpackPlugin()
+      )
+  }
+  
+  
+  const filenames = fs.readdirSync('./src').filter(item => /\.html$/ig.test(item)).map(item => item.replace(/\.html$/ig, ''))
+  console.log(filenames)
+  const obj = {}
+  filenames.map(item => {
+      obj[item] = `./src/js/${item}.js`
+  })
+  
+  
+  module.exports = {
+      mode: isProduction ? 'production' : 'development',
+      optimization: {
+          minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+          splitChunks: {
+              name: (module, chunks, cacheGroupKey) => {
+                  // console.log('-----', module, chunks, cacheGroupKey,'-----')
+                  return 'v_commons'
+              },
+              // 分割代码块（多页应用才会用到）
+              cacheGroups: {
+                  //缓存组
+                  common: {
+                      // 公共的模块
+                      chunks: "initial", // 从开始处抽离，有多种配置，像异步模块什么的
+                      minSize: 0, // 最小大小
+                      minChunks: 2 //  引用次数
+                  },
+                  vendor: {  // 此处为了抽离第三方的公共模块，比如jquery（前提是index和other都引入jquery了）
+                      priority: 1,  //权重， 如果不给这个字段，那么就此例来说，会先走上边的“common”，会把jquery和a.js，b.js合并在一个文件中。
+                      //如果还有别的入口只使用jquery了，但是a和b对于它来说就是无用的。加上权重之后，会将第三方模块单独抽离
+                      test: /node_modules/,
+                      minSize: 0,
+                      chunks: "initial",
+                      minChunks: 2,
+                  }
+              }
+          }
+      },
+      entry: {
+          rem: './src/js/rem.js',
+          common: './src/js/common.js',
+          ...obj,
+      },
+      output: {
+          path: path.resolve(__dirname, './dist'),
+          filename: 'js/[name].js'
+      },
+      devServer: {
+          host: '0.0.0.0',
+          contentBase: path.join(__dirname, "dist"),
+          compress: true,
+          port: 9000,
+          hot: true,
+          hotOnly: true,
+          open: false,
+          noInfo: true
+      },
+      module: {
+          rules: [
+              {
+                  test: /\.js$/,
+                  use: 'babel-loader',
+                  exclude: /node_modules/
+              },
+              {
+                  test: /\.(less)$/,
+                  use: [
+                      isProduction ? {
+                          loader: MiniCssExtractPlugin.loader,
+                          options: {
+                              publicPath: '../'
+                          }
+                      } : 'style-loader',
+                      'css-loader', 'postcss-loader', 'less-loader'
+                  ]
+              },
+              {
+                  test: /\.html$/,
+                  use: ['html-loader']
+              },
+              {
+                  test: /\.(png|svg|jpg|gif)$/,
+                  loader: require.resolve('url-loader'),
+                  options: {
+                      limit: 1000,
+                      name: 'images/[name].[ext]',
+                  },
+              },
+          ]
+      },
+      plugins: [
+          new webpack.DefinePlugin({
+              'process.env': {
+                  'NODE_ENV': JSON.stringify(process.env.npm_lifecycle_event)
+              }
+          }),
+          new CopyPlugin({
+              patterns: [
+                  { from: './src/public', to: './public' },
+              ],
+          }),
+          new UglifyJsPlugin({
+              test: /\.js$/,
+              include: /\/js/,
+              exclude: [/node_modules/]
+          }),
+          new MiniCssExtractPlugin({
+              filename: 'css/[name].css',
+              path: '../'
+          }),
+          ...filenames.map(item => {
+              return new HtmlWebpackPlugin({
+                  template: `./src/${item}.html`,
+                  filename: `${item}.html`,
+                  chunks: ['rem', 'common', item]
+              })
+          }),
+          // require('autoprefixer'),
+          ...plugins,
+          new ProgressBarPlugin({
+              format: chalk.green('Progressing') + '[:bar]' + chalk.green(':percent') + '(:elapsed seconds)',
+              clear: false
+          }),
+      ]
+  }
+  ```
+
+___
+
 ## Redux基本使用
 
 1. 创建store目录
@@ -909,6 +1102,26 @@ $(function() {
 ## rem转换
 
 ```javascript
+(function () {
+    var html = document.documentElement;
+    function onWindowResize() {
+        var head, viewport
+        /(iPhone|iPad|iPhone OS|Phone|iPod|iOS)/i.test(navigator.userAgent) && (
+            head = document.getElementsByTagName('head'), viewport = document.createElement('meta'), viewport.name = 'viewport', viewport.content = 'target-densitydpi=device-dpi, width=480px, user-scalable=no', head.length > 0 && head[head.length - 1].appendChild(viewport)
+        );
+        if (html.getBoundingClientRect().width >= 1024) {
+            html.style.fontSize = 16 + 'px';
+            return
+        }
+        html.style.fontSize = html.getBoundingClientRect().width / 3.75 + 'px';
+    }
+
+    window.addEventListener('resize', onWindowResize);
+    onWindowResize();
+})();
+```
+
+```javascript
 (function(doc, win) {
 	var docEl = doc.documentElement,
 		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
@@ -1331,6 +1544,31 @@ const getQueryString = function(name) {
     var r = window.location.search.substr(1).match(reg);
     if (r != null) return unescape(r[2]);
     return null;
+}
+```
+
+___
+
+## 匹配简体字
+
+```javascript
+const simplifiedChinesePatt = /^[\u4E00-\u9FA5]+$/;
+```
+
+___
+
+## 数组打乱顺序
+
+```javascript
+function shuffle(array) {
+    var m = array.length, t, i;
+    while (m) {
+        i = Math.floor(Math.random() * m--);
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+    }
+    return array;
 }
 ```
 
