@@ -126,6 +126,75 @@ ______
 
 ___
 
+## 立即执行函数
+
+1. 立即执行函数(IIFE)：Immediately(立即地) Invoked(调用) Function(函数) Expression(表达式)
+
+2. 函数声明式：
+
+   ```javascript
+   function test(){
+     console.log('Function Declaration');
+   }
+   ```
+
+3.  函数表达式：把一个(匿名)函数(函数声明式)赋值给一个变量的形式
+
+   ```javascript
+   //PS：+1 !1 ~1 (1) 都算是函数表达式
+   var test = function(){
+       console.log('Function Expression');
+   }
+   ```
+
+4. 对于函数后面的括号，叫执行符合
+
+   ```javascript
+   test();
+   ```
+
+5. 当一个函数需要立即执行的情况，该函数必须是表达式形式
+
+   ```javascript
+   var test = function(){
+       console.log('Function Expression');
+   }();
+   
+   (function(){
+       console.log('Function Expression');
+   })()
+   
+   !function(){
+       console.log('Function Expression');
+   }()
+   ```
+
+   ```javascript
+   //W3C推荐的立即执行函数的编写规范
+   (function(){
+      console.log('Function Expression');
+   }());
+   
+   //实践中，为了清晰()要放到外面
+   //且前面加;防止上层没有;无法判定上下层关系而造成错误
+   ;(function(){
+       console.log('Function Expression');
+   })();
+   
+   ;(function test(a,b,c,d){
+       console.log(arguments.length); //3
+       console.log(test.length); //4
+   })(1,2,3)
+   ```
+
+6. 特点：
+   + 可以创建一个与外界没有任何关联的独立作用域
+   + 执行完成后，自动销毁
+   + ES3、ES5立场上是没有模块概念，立即执行函数来模拟模块化，封闭作用域、抛出接口
+   + 向外界抛出一系列属性和方法，也可以再window上保存属性和方法
+
+___
+
 ## performance
 
 1. performance.getEntriesByType('navigation') -> 获取加载信息

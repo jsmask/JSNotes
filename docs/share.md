@@ -193,6 +193,7 @@
 189. [webgradients](https://webgradients.com/) -> css渐变色网站
 190. [sm.ms](https://sm.ms/) -> 免费图床
 191. [seeseed](https://www.seeseed.com/) -> 设计平台资源入口
+192. [bestofreactjs](https://bestofreactjs.com/) -> 寻找React相关组件和库的平台
 
 ------
 
@@ -254,6 +255,7 @@
 54. [去你丫的算法](https://labuladong.gitee.io/algo/)
 55. [WebSocket教程(阮一峰)](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
 56. [文科数学(英文)](https://courses.lumenlearning.com/waymakermath4libarts/)
+57. [SVG的优点与缺点](https://www.eisfunke.com/article/svg-the-good-the-bad-and-the-ugly.html)
 
 ------
 
@@ -303,6 +305,7 @@
 5. [3D小车网站](https://bruno-simon.com/)
 6. [英文字特效](https://leon-kim.com/)
 7. [萤火虫](https://ncase.me/fireflies/)
+8. [故宫博物院藏品总目](https://zm-digicol.dpm.org.cn/)
 
 ------
 
