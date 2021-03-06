@@ -194,6 +194,10 @@
 190. [sm.ms](https://sm.ms/) -> 免费图床
 191. [seeseed](https://www.seeseed.com/) -> 设计平台资源入口
 192. [bestofreactjs](https://bestofreactjs.com/) -> 寻找React相关组件和库的平台
+193. [fuun.fun](https://fuun.fun/) -> 奇趣网站收藏家
+194. [yikm](https://www.yikm.net/) -> 小霸王在线老游戏平台
+195. [dos](https://dos.zczc.cz/) -> dos在线老游戏平台
+196. [skylinewebcams](https://www.skylinewebcams.com/)  -> 观看世界各地景区的实时摄像头画面
 
 ------
 
@@ -296,7 +300,7 @@
 
 ------
 
-## 优秀网页分享
+## 优秀网站&效果
 
 1. [404猴子](https://codepen.io/thejohnyagiz/pen/npDyq)
 2. [臆病な魔女](https://github.com/yui540/Cowardly-Witch)
@@ -306,6 +310,8 @@
 6. [英文字特效](https://leon-kim.com/)
 7. [萤火虫](https://ncase.me/fireflies/)
 8. [故宫博物院藏品总目](https://zm-digicol.dpm.org.cn/)
+9. [全景故宫](https://pano.dpm.org.cn/)
+10. [全历史](https://www.allhistory.com/)
 
 ------
 
