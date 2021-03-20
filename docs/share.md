@@ -260,6 +260,7 @@
 55. [WebSocket教程(阮一峰)](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
 56. [文科数学(英文)](https://courses.lumenlearning.com/waymakermath4libarts/)
 57. [SVG的优点与缺点](https://www.eisfunke.com/article/svg-the-good-the-bad-and-the-ugly.html)
+58. [使用 FFmpeg 将短视频转为 GIF 和 WebP 动画图片](https://mattj.io/posts/2021-02-27-create-animated-gif-and-webp-from-videos-using-ffmpeg/)
 
 ------
 
