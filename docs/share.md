@@ -557,7 +557,7 @@ ___
 
 ## 构建项目常用指令
 
-1. 安装淘宝镜像 -> npm install -g cnpm --registry=https://registry.npm.taobao.orgnpm install -g cnpm --registry=[https://registry.npm.taobao.org](https://registry.npm.taobao.org)
+1. 安装淘宝镜像 -> npm install -g cnpm --registry=https://registry.npm.taobao.org
 2. 创建vue cli2脚手架于xxx文件夹 -> vue init webpack xxx
 3. 创建vue cli3脚手架于xxx文件夹 -> vue create xxx
 4. 创建vue nuxt脚手架于xxx文件夹 -> npx create-nuxt-app xxx
@@ -692,13 +692,15 @@ ____
 
 ## uni-app脚手架搭建
 
-| 指令                         | 解释                                                         |
-| ---------------------------- | ------------------------------------------------------------ |
-| npm i -g @vue/cli            | 全局安装                                                     |
-| create-react-app react-basic | 创建项目                                                     |
-| npm run dev:mp-weixin        | 启动微信小程序项目（微信小程序工具打开导入项目目录dist下的微信文件夹） |
-| npm i node-sass sass-loader  | 安装sass依赖 (<style lang="scss"></style>)                   |
-|                              |                                                              |
+| 指令                                             | 解释                                                         |
+| ------------------------------------------------ | ------------------------------------------------------------ |
+| npm i -g @vue/cli                                | 全局安装vue-cli                                              |
+| vue create -p dcloudio/uni-preset-vue my-project | 创建项目                                                     |
+| npm run dev:mp-weixin                            | 启动微信小程序项目（微信小程序工具打开导入项目目录dist下的微信文件夹） |
+| npm run build:mp-weixin                          | 打包微信小程序                                               |
+| npm i node-sass sass-loader                      | 安装sass依赖 (<style lang="scss"></style>)                   |
+| npm i @dcloudio/uni-helper-json                  | 安装组件语法提示是uni-app的亮点                              |
+| npm i @types/uni-app @types/html5plus -D         | 安装types 语法提示                                           |
 
 ____
 
