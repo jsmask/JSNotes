@@ -173,7 +173,7 @@
 169. [svg-path-editor](https://yqnn.github.io/svg-path-editor/) -> svg在线编辑器
 170. [APIJSON](https://github.com/Tencent/APIJSON) ->  自动化 RESTful 接口生成
 171. [xftsoft](https://www.xftsoft.com/) -> 整站下载软件
-172. [www.ziticangku](https://www.ziticangku.com/) -> 字体仓库
+172. [ziticangku](https://www.ziticangku.com/) -> 字体仓库
 173. [RegExLib](https://regexlib.com/) -> 收集各种常用的正则表达式的网站
 174. [ruffle](https://ruffle.rs/) -> 模拟Flash的 WebAssembly 库
 175. [repl.it Multiplayer](https://repl.it/site/multiplayer) -> 多人在线实时协同编程平台
@@ -699,7 +699,7 @@ ____
 | vue create -p dcloudio/uni-preset-vue my-project | 创建项目                                                     |
 | npm run dev:mp-weixin                            | 启动微信小程序项目（微信小程序工具打开导入项目目录dist下的微信文件夹） |
 | npm run build:mp-weixin                          | 打包微信小程序                                               |
-| npm i node-sass sass-loader                      | 安装sass依赖 (<style lang="scss"></style>)                   |
+| npm i node-sass sass-loader                      | 安装sass依赖 (lang="scss")                                   |
 | npm i @dcloudio/uni-helper-json                  | 安装组件语法提示是uni-app的亮点                              |
 | npm i @types/uni-app @types/html5plus -D         | 安装types 语法提示                                           |
 
