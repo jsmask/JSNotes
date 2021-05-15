@@ -838,9 +838,10 @@ ___
 
 1. Chinese (Simplified) Language Pack for Visual Studio Code -> 简体中文语音包
 2. Live Server -> 运行前端静态文件的服务器
-3. Vetur -> Vue开发利器
-4. Vue 3 Snippets -> Vue开发利器
-5. Vue VSCode Snippets -> Vue开发利器
-6. Prettier -> 代码格式化
-7. color-info -> 颜色属性识别
-8. svgviewer -> svg编辑
+3. Vetur -> Vue开发利器(Vue 2)
+4. Volar ->  Vue开发利器(Vue 3)
+5. Vue 3 Snippets -> Vue开发利器
+6. Vue VSCode Snippets -> Vue开发利器
+7. Prettier -> 代码格式化
+8. color-info -> 颜色属性识别
+9. svgviewer -> svg编辑
